@@ -34,3 +34,12 @@
         background-color: $color7C987C;
     }
 }
+
+.light_bg_btn{
+    background-color: $color444547;
+    opacity: 0.5;
+    a{
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

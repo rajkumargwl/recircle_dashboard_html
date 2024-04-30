@@ -55,12 +55,22 @@
                     text-align: left !important;
                     box-shadow: none !important;
                     border: none !important;
+                    &.edit_view{
+                        a{
+                            &:first-child{
+                                margin-right: 6px;
+                            }
+                        }
+                    }
                     @media (max-width: 1400px) {
                         min-width: 180px;
                     }
                     .open_data{
                         display: flex;
                         gap: 4px;
+                        svg{
+                            margin-top: 2px;
+                        }
                     }
                 }
             }

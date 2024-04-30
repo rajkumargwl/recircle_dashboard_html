@@ -217,7 +217,7 @@ h1 {
 }
 
 .success_font {
-  color: #597559;
+  color: #3B5A71;
   font-family: "Mont";
   font-size: 14px;
   font-style: normal;
@@ -639,6 +639,9 @@ h1 {
   box-shadow: none !important;
   border: none !important;
 }
+.data_table table tbody tr td.edit_view a:first-child {
+  margin-right: 6px;
+}
 @media (max-width: 1400px) {
   .data_table table tbody tr td {
     min-width: 180px;
@@ -647,6 +650,9 @@ h1 {
 .data_table table tbody tr td .open_data {
   display: flex;
   gap: 4px;
+}
+.data_table table tbody tr td .open_data svg {
+  margin-top: 2px;
 }
 .data_table .success {
   color: #365236;
@@ -1344,6 +1350,29 @@ h1 {
   justify-content: center;
   padding: 0px 0px 32px 0px;
 }
+.successfully_modal.pallet_open_modal .modal-dialog .modal-content {
+  max-width: 528px;
+  min-width: 528px;
+}
+.successfully_modal.pallet_open_modal .modal-dialog .modal-content .data_items ul {
+  padding-left: 0px;
+  display: flex;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.successfully_modal.pallet_open_modal .modal-dialog .modal-content .data_items ul li p {
+  margin-bottom: 0px;
+  letter-spacing: inherit;
+}
+.successfully_modal.pallet_open_modal .modal-dialog .modal-content .data_items ul li p.light_font {
+  margin-bottom: 10px;
+  color: #7E8992;
+  line-height: 18px;
+}
+.successfully_modal.pallet_open_modal .modal-dialog .modal-content .data_items ul li p.dark_font {
+  line-height: 14px;
+}
 
 .btn_link {
   display: flex;
@@ -1381,6 +1410,15 @@ h1 {
   background-color: #7C987C;
 }
 
+.light_bg_btn {
+  background-color: #444547;
+  opacity: 0.5;
+}
+.light_bg_btn a {
+  font-weight: 500;
+  font-size: 14px;
+}
+
 .open_shipment .process_name .main_title svg {
   margin-right: 8px;
 }
@@ -1392,7 +1430,7 @@ h1 {
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.14px;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 38px;
 }
@@ -1404,4 +1442,40 @@ h1 {
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.14px;
+}
+
+.details_bar {
+  margin-bottom: 12px;
+}
+.details_bar .details_heading h2 {
+  color: var(--Grey-Grey-Dark, #232D35);
+  font-family: "Mont";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+.details_bar ul {
+  padding-left: 0px;
+  display: flex;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+}
+.details_bar ul li {
+  max-width: 185.33px;
+  margin-top: 10px;
+  min-width: 185.33px;
+}
+.details_bar ul li p {
+  margin-bottom: 0px;
+  letter-spacing: inherit;
+}
+.details_bar ul li p.light_font {
+  margin-bottom: 12px;
+  color: #7E8992;
+  line-height: 18px;
+}
+.details_bar ul li p.dark_font {
+  line-height: 14px;
 }/*# sourceMappingURL=style.css.map */

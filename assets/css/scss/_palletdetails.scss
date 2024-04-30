@@ -75,9 +75,11 @@
             border-radius: 8px;
             background: $colorwhite;
             max-width: 440px;
+
             .modal-header {
                 padding: 16px 20px;
                 border: 1px solid $colorEFEFEE;
+
                 .modal_title {
                     font-family: 'Mont';
                     font-size: 22px;
@@ -87,7 +89,8 @@
                     color: $color232D35;
                     margin-bottom: 0px;
                 }
-                .btn_close{
+
+                .btn_close {
                     border: none;
                     background: transparent;
                     margin-left: auto;
@@ -97,9 +100,11 @@
 
             .modal-body {
                 padding: 20px;
+
                 .main_content {
                     text-align: center;
                     padding-top: 22px;
+
                     p {
                         padding-top: 14px;
                         color: $color5D666C;
@@ -112,7 +117,8 @@
                         margin-bottom: 0px;
                     }
                 }
-                h4{
+
+                h4 {
                     margin-bottom: 0px;
                     margin-top: 14px;
                     color: $color365236;
@@ -124,6 +130,7 @@
                     line-height: 32px;
                 }
             }
+
             .modal-footer {
                 border: none;
                 justify-content: center;
@@ -131,4 +138,41 @@
             }
         }
     }
+
+    &.pallet_open_modal {
+        .modal-dialog {
+            .modal-content {
+                max-width: 528px;
+                min-width: 528px;
+                .data_items {
+                    ul {
+                        padding-left: 0px;
+                        display: flex;
+                        margin-bottom: 0px;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        li {
+
+                            p {
+                                margin-bottom: 0px;
+                                letter-spacing: inherit;
+
+                                &.light_font {
+                                    margin-bottom: 10px;
+                                    color: $color7E8992;
+                                    line-height: 18px;
+                                }
+
+                                &.dark_font {
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
 }

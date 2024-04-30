@@ -1,11 +1,12 @@
-.open_shipment{
-    .process_name{
-        .main_title{
-            svg{
+.open_shipment {
+    .process_name {
+        .main_title {
+            svg {
                 margin-right: 8px;
             }
         }
-        p{
+
+        p {
             color: $color7E8992;
             font-family: 'Mont';
             font-size: 14px;
@@ -13,10 +14,11 @@
             font-weight: 500;
             line-height: 18px;
             letter-spacing: -0.14px;
-            margin-top: 8px;
+            margin-top: 5px;
             margin-bottom: 0px;
             margin-left: 38px;
-            span{
+
+            span {
                 color: $color232D35;
                 font-family: 'Mont';
                 font-size: 14px;
@@ -24,6 +26,45 @@
                 font-weight: 500;
                 line-height: 18px;
                 letter-spacing: -0.14px;
+            }
+        }
+    }
+}
+
+.details_bar {
+    margin-bottom: 12px;
+    .details_heading {
+        h2 {
+            color: var(--Grey-Grey-Dark, #232D35);
+            font-family: 'Mont';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+    }
+
+    ul {
+        padding-left: 0px;
+        display: flex;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        li {
+            max-width: 185.33px;
+            margin-top: 10px;
+            min-width: 185.33px;
+            p {
+                margin-bottom: 0px;
+                letter-spacing: inherit;
+                &.light_font {
+                    margin-bottom: 12px;
+                    color: $color7E8992;
+                    line-height: 18px;
+                }
+                &.dark_font {
+                    line-height: 14px;
+                }
             }
         }
     }
