@@ -1,0 +1,226 @@
+.right_bar {
+    width: 100%;
+    background-color: $colorF2F2F4;
+
+    .right_header {
+        padding: 0px 24px;
+        height: 80px;
+        background-color: $colorwhite;
+        border-bottom: 1px solid $colorEFEFEE;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 950px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+            padding: 12px 12px;
+            height: auto;
+            border-bottom: none;
+        }
+        .process_name{
+            .main_title {
+                font-family: 'Mont';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                color: $color232D35;
+                margin-bottom: 0px;
+            }
+            @media (max-width: 767px) {
+                padding-left: 46px;
+            }
+        }
+       
+
+        .right-items {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            @media (max-width: 950px) {
+                margin: 10px 0px;
+            }
+
+            @media (max-width: 767px) {
+                flex-wrap: wrap;
+            }
+
+            .header_item {
+                position: relative;
+                &.filter{
+                    margin: 0px 12px;
+                }
+                .filter_modal {
+                    .offcanvas {
+                        max-width: 280px;
+
+                        .offcanvas-header {
+                            padding: 20px;
+                            border-bottom: 1px solid $colorEFEFEE;
+
+                            .btn_close{
+                                border: none;
+                                background: transparent;
+                                margin-left: auto;
+                                padding: 0px;
+                            }
+
+                            .offcanvas-title {
+                                color: $color232D35;
+                                font-family: 'Mont';
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 24px;
+                            }
+                        }
+
+                        .offcanvas_footer {
+                            padding-bottom: 20px;
+                            .btn_link{
+                                margin: 0 auto;
+                            }
+                        }
+
+                        .offcanvas-body {
+                            padding: 20px;
+
+                            .item {
+                                margin-bottom: 20px;
+
+                                select {
+                                    width: 100%;
+                                    height: 48px;
+                                    min-width: 240px;
+                                }
+                            }
+
+                            h6 {
+                                color: $color232D35;
+                                font-family: 'Mont';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 12px;
+                                letter-spacing: 0.6px;
+                                text-transform: uppercase;
+                                margin-bottom: 8px;
+                            }
+                        }
+
+                    }
+
+
+
+                }
+
+                .has-search {
+                    svg {
+                        position: absolute;
+                        z-index: 2;
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        text-align: center;
+                        pointer-events: none;
+                        top: 9px;
+                        left: 8px;
+                    }
+
+                    input {
+                        border-radius: 6px;
+                        border: 1px solid $colorEFEFEE;
+                        background: $colorwhite;
+                        padding: 13px 12px 12px 28px;
+                        color: $color7E8992;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px;
+                        letter-spacing: -0.14px;
+                        height: 36px;
+                        min-width: 210px;
+                        max-width: 210px;
+                        &::placeholder {
+                            color: $color7E8992;
+                            font-family: 'Mont';
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 16px;
+                            letter-spacing: -0.14px;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                select {
+                    padding: 7px 12px;
+                    min-width: 186px;
+                    height: 36px;
+                    color: $color232D35;
+                    font-family: 'Mont';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: -0.14px;
+                    border-radius: 6px;
+                    border: 1px solid $colorEFEFEE;
+                    background: $colorwhite;
+                    min-width: 210px;
+                    max-width: 210px;
+                    position: relative;
+                    background-image: url(../images/Polygon.svg);
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 12px);
+                    background-size: 10px;
+                    appearance: none;
+                }
+
+                a {
+                    span {
+                        color: $color365236;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 16px;
+                        margin-left: 5px;
+                        margin-right: 0px;
+                    }
+                }
+
+                a.add_new_item {
+                    padding: 0px 12px;
+                    height: 36px;
+                    display: block;
+                    background: $color597559;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 6px;
+
+                    span {
+                        color: $colorwhite;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

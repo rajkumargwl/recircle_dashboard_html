@@ -1,0 +1,36 @@
+.btn_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    margin: 0px;
+    a {
+        color: $colorwhite;
+        font-family: 'Mont';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        padding: 16px 24px;
+    }
+}
+
+.cancel_btn {
+    background: $color444547;
+    margin-right: 10px;
+    &:hover{
+        background-color: $color7E8992;
+    }
+}
+
+.next_btn {
+    background: $color597559;
+
+    svg {
+        margin-left: 5px;
+    }
+    &:hover{
+        background-color: $color7C987C;
+    }
+}

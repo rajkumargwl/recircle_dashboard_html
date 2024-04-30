@@ -1,0 +1,249 @@
+.left_bar {
+    border: 1px solid $colorEFEFEE;
+    background-color: $colorwhite;
+    max-width: 240px;
+    min-width: 240px;
+    border-bottom: none;
+    min-height: 100vh;
+    overflow: auto;
+
+    @media (max-width: 767px) {
+        min-width: inherit;
+    }
+    .overlay_mobile{
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%; 
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color232D35;
+      opacity: 0.6;
+      z-index: 10; 
+      cursor: pointer;
+    }
+    &.show {
+        .overlay_mobile{
+            display: block;
+        }
+        .sidebar {
+            opacity: 1;
+            visibility: visible;
+            left: -2px;
+            width: 70%;
+            position: absolute;
+        }
+       
+    }
+    .mobile_menu {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: block;
+            position: absolute;
+            left: 17px;
+            top: 14px;
+
+        }
+
+        .line {
+            background-color: $color232D35;
+            display: block;
+            margin-top: 5px;
+            width: 28px;
+            height: 2px;
+            border-radius: 4px;
+            transition: all .3s ease;
+        }
+    }
+
+    .header_logo {
+        padding: 20px;
+        border-bottom: 1px solid $colorEFEFEE;
+        height: 80px;
+        position: relative;
+        img {
+            max-width: 146px;
+            height: 46px;
+            margin-top: -3px;
+        }
+        .cancel_icon{
+            display: none;
+            @media (max-width: 767px) {
+                position: absolute;
+                right: 20px;
+                background-color: rgba(0,0,0,0);
+                border: none;
+                display: block;
+                top: 22px;
+                padding: 0px;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        @media (max-width: 767px) {
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0px 1px 6px -2px rgba(0, 0, 0, 0.10);
+            background-color: #fff;
+            left: -100%;
+            position: absolute;
+            z-index: 999;
+            transition: left 0.8s ease-in-out;
+            height: 100%;
+        }
+
+        .sidebar_menu {
+            ul {
+                padding-left: 0px;
+
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 0px;
+                    border-radius: 0px 4px 4px 0px;
+
+                    &.user_name {
+                        height: 75px;
+                        margin-top: 24px;
+
+                        a {
+                            padding: 20px;
+                        }
+
+                        &:hover {
+                            border-radius: 0px 4px 4px 0px;
+                            background: $colorE3F0FA;
+
+                            a {
+                                span {
+                                    color: $color232D35;
+                                    font-weight: 700;
+
+                                    &.designation {
+                                        color: $color7E8992;
+                                    }
+                                }
+
+                                svg {
+                                    path {
+                                        stroke: none;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                    &.active {
+                        border-radius: 0px 4px 4px 0px;
+                        background: $colorE3F0FA;
+
+                        a {
+                            border-radius: 0px 4px 4px 0px;
+                            border-left: 2px solid $color232D35;
+
+                            span {
+                                color: $color232D35;
+                                font-weight: 700;
+                            }
+
+                            svg {
+                                path {
+                                    stroke: $color232D35;
+                                }
+
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border-radius: 0px 4px 4px 0px;
+                        background: $colorE3F0FA;
+
+                        a {
+                            span {
+                                color: $color232D35;
+                                font-weight: 700;
+                            }
+
+                            svg {
+                                path {
+                                    stroke: $color232D35;
+                                }
+
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        display: flex;
+                        padding: 0px 20px;
+                        height: 44px;
+                        width: 100%;
+                        align-items: center;
+
+                        span {
+                            font-family: 'Mont';
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%;
+                            letter-spacing: -0.14px;
+                            color: $color232D35;
+                            margin-left: 12px;
+                            margin-top: 4px;
+
+                            &.designation {
+                                font-family: 'Mont';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 14px;
+                                letter-spacing: -0.12px;
+                                color: $color7E8992;
+                                margin-top: 0px;
+                                display: block;
+                                margin-top: 3px;
+                            }
+
+                            &.notification_count {
+                                color: $color232D35;
+                                font-family: 'Mont';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 12px;
+                                letter-spacing: -0.12px;
+                                display: flex;
+                                width: 22px;
+                                height: 20px;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 8px;
+                                border-radius: 4px;
+                                background: $colorE3F0FA;
+                            }
+                        }
+
+                        p {
+                            margin-bottom: 0px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+

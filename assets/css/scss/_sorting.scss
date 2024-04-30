@@ -1,0 +1,30 @@
+.open_shipment{
+    .process_name{
+        .main_title{
+            svg{
+                margin-right: 8px;
+            }
+        }
+        p{
+            color: $color7E8992;
+            font-family: 'Mont';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: -0.14px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            margin-left: 38px;
+            span{
+                color: $color232D35;
+                font-family: 'Mont';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: -0.14px;
+            }
+        }
+    }
+}

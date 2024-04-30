@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    background-color: $colorF2F2F4;
+}
+
+.middle_bar {
+    margin: 24px 24px 0px 24px;
+
+    @media (max-width: 950px) {
+        margin: 12px 12px 0px 12px;
+    }
+}
+
+.dahboard_footer {
+    display: flex;
+    padding-top: 24px;
+    padding-right: 20px;
+
+    .footer_right {
+        display: flex;
+        align-items: center;
+
+        p {
+            color: $color7E8992;
+            font-family: 'Mont';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin: 0px 8px;
+
+            &:nth-child(2) {
+                margin-right: 0px;
+            }
+        }
+
+        select {
+            border-radius: 6px;
+            border: 1px solid $colorEFEFEE;
+            background: $colorwhite;
+            padding: 12px;
+            color: $color232D35;
+            font-family: 'Mont';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 10px;
+            letter-spacing: -0.14px;
+        }
+    }
+}
