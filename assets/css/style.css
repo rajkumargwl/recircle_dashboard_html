@@ -359,7 +359,7 @@ h1 {
   cursor: pointer;
 }
 .slide_check input:checked[type=checkbox] {
-  background: #EFEFEE;
+  background: #5D666C;
 }
 .slide_check input[type=checkbox]:before {
   content: "";
@@ -854,6 +854,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 12px;
 }
 .data_table .bottom ul.pagination li a.first {
   display: none;
@@ -1445,6 +1446,19 @@ h1 {
   margin-left: auto;
   padding: 0px;
 }
+.successfully_modal .modal-dialog .modal-content .modal_content {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.successfully_modal .modal-dialog .modal-content .modal_content p {
+  color: #232D35;
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
 .successfully_modal .modal-dialog .modal-content .modal-body {
   padding: 20px;
 }
@@ -1561,13 +1575,11 @@ h1 {
   padding: 20px;
 }
 .successfully_modal.pallet_open_modal .modal-dialog .modal-footer .btn_link {
-  margin-right: 0px;
-}
-.successfully_modal.pallet_open_modal .modal-dialog .modal-footer .btn_link a {
   padding: 12px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  margin-right: 0px;
 }
 
 .btn_link {
@@ -1577,8 +1589,6 @@ h1 {
   border-radius: 8px;
   border: none;
   margin: 0px;
-}
-.btn_link a {
   color: #fff;
   font-family: "Mont";
   font-size: 16px;
@@ -1588,28 +1598,26 @@ h1 {
   padding: 16px 24px;
 }
 
-.cancel_btn {
+.secondary_btn {
   background: #444547;
 }
-.cancel_btn:hover {
+.secondary_btn:hover {
   background-color: #7E8992;
 }
 
-.next_btn {
+.primary-btn {
   background: #597559;
 }
-.next_btn svg {
+.primary-btn svg {
   margin-left: 5px;
 }
-.next_btn:hover {
+.primary-btn:hover {
   background-color: #7C987C;
 }
 
 .light_bg_btn {
   background-color: #444547;
   opacity: 0.5;
-}
-.light_bg_btn a {
   font-weight: 500;
   font-size: 14px;
   padding: 12px;
@@ -1899,4 +1907,33 @@ a.add_new_item svg {
   text-align: center;
   display: block;
   margin-top: 24px;
+}
+
+.carousel .slider_controler {
+  position: absolute;
+  top: 0px;
+  left: 45%;
+  background-color: #3B5A71;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .carousel .slider_controler {
+    left: 40%;
+  }
+}
+.carousel .slider_controler button {
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+}
+.carousel .slider_controler .center_box {
+  width: 60px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  padding-top: 4px;
 }/*# sourceMappingURL=style.css.map */
