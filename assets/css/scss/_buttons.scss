@@ -5,16 +5,13 @@
     border-radius: 8px;
     border: none;
     margin: 0px;
-
-    a {
-        color: $colorwhite;
-        font-family: 'Mont';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
-        padding: 16px 24px;
-    }
+    color: $colorwhite;
+    font-family: 'Mont';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 16px 24px;
 }
 
 .cancel_btn {
@@ -25,7 +22,7 @@
     }
 }
 
-.next_btn {
+.primary-btn {
     background: $color597559;
 
     svg {
@@ -40,12 +37,9 @@
 .light_bg_btn {
     background-color: $color444547;
     opacity: 0.5;
-
-    a {
-        font-weight: 500;
-        font-size: 14px;
-        padding: 12px;
-    }
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px;
 }
 .header_btn{
     margin-right: 0px;
