@@ -1,0 +1,29 @@
+.tabs_filter{
+    padding: 16px 16px 0px 16px;
+    background-color: $colorwhite;
+    border: 1px solid $colorEFEFEE;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    .tabs{
+        display: flex;
+        li{
+            padding-right: 20px;
+            a{
+                color: $color444547;
+                font-family: 'Mont';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: -0.14px;
+                padding-bottom: 16px;
+                display: block;
+                &.active{
+                    border-bottom: 2px solid $color597559;
+                    color: $color597559;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
