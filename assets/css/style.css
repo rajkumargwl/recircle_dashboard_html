@@ -440,6 +440,42 @@ h1 {
   display: none;
 }
 
+.primary-btn {
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #597559;
+}
+.primary-btn:hover {
+  background-color: #7C987C;
+  color: white;
+}
+
+.small-text {
+  color: #3B5A71;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  text-transform: uppercase;
+}
+
+.medium-text {
+  color: #3B5A71;
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+
 .left_bar {
   border: 1px solid #EFEFEE;
   background-color: #fff;
@@ -1744,4 +1780,123 @@ a.add_new_item svg {
 }
 .details_header .links a:first-child {
   padding-right: 24px;
+}
+
+.login-block .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .login-block .row {
+    margin: 0;
+  }
+}
+.login-block .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: calc(100vh - 0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .login-block .column {
+    height: calc(100vh - 100px);
+  }
+}
+.login-block .column.column-right {
+  background-color: #E3F0FA;
+  max-width: 50%;
+}
+.login-block .column.column-right .rt-img img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .login-block .column.column-right {
+    display: none;
+  }
+}
+.login-block .column.column-left {
+  background-color: white;
+  padding-left: 120px;
+  padding-right: 120px;
+  max-width: 50%;
+}
+@media (max-width: 1024px) {
+  .login-block .column.column-left {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+@media (max-width: 991px) {
+  .login-block .column.column-left {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .login-block .column.column-left {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+}
+.login-block .column .login_box {
+  max-width: 480px;
+  width: 100%;
+}
+.login-block .column .login_box .title {
+  font-family: "Mont";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #232D35;
+  padding-top: 60px;
+  margin-bottom: 22px;
+}
+.login-block .type_fields .form-label {
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #232D35;
+  margin-bottom: 8px;
+}
+.login-block .type_fields:not(:last-child) {
+  margin-bottom: 24px;
+}
+.login-block .type_fields input {
+  max-width: 434px;
+  border-left: 0;
+  padding: 18px 16px 16px 0px;
+  padding-left: 0;
+}
+.login-block .type_fields input::-moz-placeholder {
+  color: #7E8992;
+}
+.login-block .type_fields input::placeholder {
+  color: #7E8992;
+}
+.login-block .type_fields .input-group .input-group-text {
+  border: 1px solid #efefee;
+  background-color: transparent;
+  padding: 16px 8px 16px 16px;
+  height: 48px;
+}
+.login-block .login_btn {
+  max-width: 480px;
+  width: 100%;
+}
+.login-block .reset-text {
+  text-align: center;
+  display: block;
+  margin-top: 24px;
 }/*# sourceMappingURL=style.css.map */

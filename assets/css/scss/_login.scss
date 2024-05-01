@@ -1,0 +1,113 @@
+.login-block {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        @media (max-width: 1024px) {
+            margin: 0;
+        }
+    }
+      
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        height: calc(100vh - 0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 767px) {
+            height: calc(100vh - 100px);
+        }
+        &.column-right {
+            background-color: $colorE3F0FA;
+            max-width: 50%;
+            .rt-img {
+                img {
+                    width: 100%;
+                }
+            }
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+        &.column-left {
+            background-color: white;
+            padding-left: 120px;
+            padding-right: 120px;
+            max-width: 50%;
+            @media (max-width: 1024px) {
+                padding-left: 75px;
+                padding-right: 75px;
+            }
+            @media (max-width: 991px) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            @media (max-width: 767px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 100%;
+            }
+        }
+        .login_box {
+            max-width: 480px;
+            width: 100%;
+
+            .title {
+                font-family: 'Mont';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px; 
+                color: $color232D35;
+                padding-top: 60px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+    .type_fields {
+        .form-label {
+            font-family: 'Mont';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: $color232D35;
+            margin-bottom: 8px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        input {
+            max-width: 434px;
+            border-left: 0;
+            padding: 18px 16px 16px 0px;
+            &::placeholder {
+                color: $color7E8992;
+            }
+            padding-left: 0;
+        }
+        .input-group {
+            .input-group-text {
+                border: 1px solid #efefee;
+                background-color: transparent;
+                padding: 16px 8px 16px 16px;
+                height: 48px;
+            }
+        }
+    }
+    .login_btn {
+        max-width: 480px;
+        width: 100%;
+    }
+    .reset-text {
+        text-align: center;
+        display: block;
+        margin-top: 24px;
+    }
+}
