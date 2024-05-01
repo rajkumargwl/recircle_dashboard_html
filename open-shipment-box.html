@@ -165,7 +165,7 @@
                     <p>Sorting / <span>Shipment ID: TB58KJHR12JHBG</span></p>
                 </div>
                 <div class="right-items">
-                    <button class="light_bg_btn btn_link"><a href="open-shipment-box.html">Submit for Approval</a></button>
+                    <button class="light_bg_btn btn_link"><a href="#">Submit for Approval</a></button>
                     <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -238,7 +238,7 @@
                                 <td><span class="light_font">-</span></td>
                                 <td><span class="danger">Unopened</span></td>
                                 <td><a href="#" class="open_data" data-bs-toggle="modal"
-                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        data-bs-target="#palletModal"><span class="success_font">Open Box</span>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -246,7 +246,7 @@
                                                 stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
                                                 stroke-linecap="round" stroke-linejoin="round" />
                                         </svg></a>
-                                  
+
 
                                 </td>
 
@@ -678,174 +678,175 @@
                     </table>
                 </div>
             </div>
+
         </div>
         <!-- right bar end -->
-        <div class="modal fade successfully_modal pallet_open_modal" id="palletModal"
-        tabindex="-1" aria-labelledby="palletModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal_title fs-5" id="palletModalLabel">Open pallet</h2>
-                    <button type="button" class="btn_close" data-bs-dismiss="modal"
-                        aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></button>
-                </div>
-                <form action="">
-                <div class="modal-body">
-                    <div class="top_items">
-                    <div class="data_items">
-                        <ul>
-                            <li>
-                                <p class="light_font">Pallet ID</p>
-                                <p class="dark_font">TB58KJHR12JHBG-P01</p>
-                            </li>
-                            <li>
-                                <p class="light_font">Pallet Weight</p>
-                                <p class="dark_font">102 LBS</p>
-                            </li>
-                            <li>
-                                <p class="light_font">Sub Brand</p>
-                                <p class="dark_font">Weekday</p>
-                            </li>
-                        </ul>
+        <div class="modal fade successfully_modal pallet_open_modal" id="palletModal" tabindex="-1"
+            aria-labelledby="palletModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal_title fs-5" id="palletModalLabel">Open Box 1</h2>
+                        <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
                     </div>
-                    <div class="type_fields">
-                        <div class="form_check">
-                            <label  class="field_label">Box quantity in Pallet</label>
-                            <input type="text" disabled placeholder="12">
-                        </div>
-                           
-                    </div>
-                </div>
-                    <div class="pallet_items">
-                        <div class="header_items">
-                            <div class="heading">
-                                <h3 class="section_heading">Pallet Packaging Material</h3>
-                            </div>
-                            <div class="add_new_material">
-                                <a href="#">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.5 6H10.5" stroke="#3B5A71" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 10.5V1.5" stroke="#3B5A71" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                         <span>Add New Material</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="select_items row">
-                            <div class="col-md-7">
-                                <div class="type_fields">
-                                    <div class="form_check mb_20">
-                                        <label for="exampleInputEmail1" class="field_label">Material Type</label>
-                                        <select name="H & M" id="">
-                                            <option value="">Plastic</option>
-                                            <option value="">Plastic</option>
-                                            <option value="">Plastic</option>
-                                        </select>
-                                    </div>
-                                    <div class="form_check mb_20">
-                                        <select name="H & M" id="">
-                                            <option value="">Leather</option>
-                                            <option value="">Leather</option>
-                                            <option value="">Leather</option>
-                                        </select>
-                                    </div>
-                                    <div class="form_check mb_20">
-                                        <select name="H & M" id="">
-                                            <option value="">PU</option>
-                                            <option value="">PU</option>
-                                            <option value="">PU</option>
-                                        </select>
-                                    </div>
-                                    <div class="form_check">
-                                        <select name="H & M" id="">
-                                            <option value="">Metal</option>
-                                            <option value="">Metal</option>
-                                            <option value="">Metal</option>
-                                        </select>
-                                    </div>
-                                   
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="top_items">
+                                <div class="data_items">
+                                    <ul>
+                                        <li>
+                                            <p class="light_font">Pallet ID</p>
+                                            <p class="dark_font">TB58KJHR12JHBG-P01</p>
+                                        </li>
+                                        <li>
+                                            <p class="light_font">Pallet Weight</p>
+                                            <p class="dark_font">102 LBS</p>
+                                        </li>
+                                        <li>
+                                            <p class="light_font">Sub Brand</p>
+                                            <p class="dark_font">Weekday</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="type_fields weight_field">
-                                    <div class="form_check mb_20">
-                                        <label  class="field_label">Weight (lbs)</label>
-                                        <div class="field_item">
-                                        <input type="text" disabled placeholder="2.48">
-                                       <a href="#" class="cancel_icon">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                            <div class="pallet_items">
+                                <div class="header_items">
+                                    <div class="heading">
+                                        <h3 class="section_heading">Box Packaging Material</h3>
+                                    </div>
+                                    <div class="add_new_material">
+                                        <a href="#">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 6H10.5" stroke="#3B5A71" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 10.5V1.5" stroke="#3B5A71" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
-                                       </a>
-                                    </div>
-                                    </div>
-                                    <div class="form_check mb_20">
-                                        <div class="field_item">
-                                            <input type="text" disabled placeholder="2.48">
-                                           <a href="#" class="cancel_icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                           </a>
-                                        </div>
-                                    </div>
-                                    <div class="form_check mb_20">
-                                        <div class="field_item">
-                                            <input type="text" disabled placeholder="2.48">
-                                           <a href="#" class="cancel_icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                           </a>
-                                        </div>
-                                    </div>
-                                    <div class="form_check">
-                                        <div class="field_item">
-                                            <input type="text" disabled placeholder="2.48">
-                                           <a href="#" class="cancel_icon">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                           </a>
-                                        </div>
+                                            <span>Add New Material</span>
+                                        </a>
                                     </div>
                                 </div>
-                               
+                                <div class="select_items row">
+                                    <div class="col-md-7">
+                                        <div class="type_fields">
+                                            <div class="form_check mb_12">
+                                                <label for="exampleInputEmail1" class="field_label">Material
+                                                    Type</label>
+                                                <select name="H & M" id="">
+                                                    <option value="">Plastic</option>
+                                                    <option value="">Plastic</option>
+                                                    <option value="">Plastic</option>
+                                                </select>
+                                            </div>
+                                            <div class="form_check mb_12">
+                                                <select name="H & M" id="">
+                                                    <option value="">Leather</option>
+                                                    <option value="">Leather</option>
+                                                    <option value="">Leather</option>
+                                                </select>
+                                            </div>
+                                            <div class="form_check mb_12">
+                                                <select name="H & M" id="">
+                                                    <option value="">PU</option>
+                                                    <option value="">PU</option>
+                                                    <option value="">PU</option>
+                                                </select>
+                                            </div>
+                                            <div class="form_check">
+                                                <select name="H & M" id="">
+                                                    <option value="">Metal</option>
+                                                    <option value="">Metal</option>
+                                                    <option value="">Metal</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="type_fields weight_field">
+                                            <div class="form_check mb_12">
+                                                <label class="field_label">Weight (lbs)</label>
+                                                <div class="field_item">
+                                                    <input type="text" disabled placeholder="2.48">
+                                                    <a href="#" class="cancel_icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="form_check mb_12">
+                                                <div class="field_item">
+                                                    <input type="text" disabled placeholder="2.48">
+                                                    <a href="#" class="cancel_icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="form_check mb_12">
+                                                <div class="field_item">
+                                                    <input type="text" disabled placeholder="2.48">
+                                                    <a href="#" class="cancel_icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="form_check">
+                                                <div class="field_item">
+                                                    <input type="text" disabled placeholder="2.48">
+                                                    <a href="#" class="cancel_icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
-                           
                         </div>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn_link cancel_btn" aria-label="Close"
+                                data-bs-dismiss="modal"><a href="#">Cancel</a></button>
+                            <button type="button" class="btn_link next_btn" aria-label="Close"
+                                data-bs-dismiss="modal"><a href="#">Save & Continue</a></button>
+                        </div>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn_link cancel_btn" aria-label="Close"
-                        data-bs-dismiss="modal"><a href="#">Cancel</a></button>
-                        <button type="button" class="btn_link next_btn" aria-label="Close"
-                        data-bs-dismiss="modal"><a href="#">Save</a></button>
-                        <button type="button" class="btn_link next_btn" aria-label="Close"
-                        data-bs-dismiss="modal"><a href="#">Save & Open Box<svg width="20" height="20"
-                            viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.0247 4.94165L17.0831 9.99998L12.0247 15.0583" stroke="white"
-                                stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M2.91666 10H16.9417" stroke="white" stroke-width="1.25"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></a></button>
-                </div>
-            
+                </form>
             </div>
-        </form>
         </div>
-    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
