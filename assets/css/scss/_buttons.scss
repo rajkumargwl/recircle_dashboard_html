@@ -5,6 +5,7 @@
     border-radius: 8px;
     border: none;
     margin: 0px;
+
     a {
         color: $colorwhite;
         font-family: 'Mont';
@@ -18,8 +19,8 @@
 
 .cancel_btn {
     background: $color444547;
-    margin-right: 10px;
-    &:hover{
+
+    &:hover {
         background-color: $color7E8992;
     }
 }
@@ -30,16 +31,81 @@
     svg {
         margin-left: 5px;
     }
-    &:hover{
+
+    &:hover {
         background-color: $color7C987C;
     }
 }
 
-.light_bg_btn{
+.light_bg_btn {
     background-color: $color444547;
     opacity: 0.5;
-    a{
+
+    a {
         font-weight: 500;
         font-size: 14px;
+        padding: 12px;
+    }
+}
+.header_btn{
+    margin-right: 0px;
+    a {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+.add_new_material {
+    a {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        span {
+            color: $color3B5A71;
+            font-family: 'Mont';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+a.add_new_item {
+    padding: 0px 12px;
+    height: 36px;
+    background: $color597559;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    max-width: 150px;
+    justify-content: center;
+
+    span {
+        color: $colorwhite;
+        font-family: 'Mont';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        border-radius: 6px;
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.links {
+    a {
+        color: $color3B5A71;
+        font-family: 'Mont';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
     }
 }

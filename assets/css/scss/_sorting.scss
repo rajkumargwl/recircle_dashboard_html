@@ -32,16 +32,46 @@
 }
 
 .details_bar {
-    margin-bottom: 12px;
-    .details_heading {
-        h2 {
-            color: var(--Grey-Grey-Dark, #232D35);
-            font-family: 'Mont';
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px;
-            margin-bottom: 0px;
+    padding-bottom: 12px;
+
+    &.sort {
+        .form_check {
+            display: flex;
+            flex-direction: column;
+            input{
+                height: 36px;
+                max-width: 150px;
+                min-width: 150px;
+            }
+            select{
+                height: 36px;
+                max-width: 150px;
+                min-width: 150px;
+            }
+        }
+        ul{
+            li {
+                min-width: 150px;
+                max-width: 150px;
+                &.first_field {
+                    min-width: 283px;
+                    max-width: 283px;
+                   input{
+                    min-width: 283px;
+                    max-width: 283px;
+                   }
+                   select{
+                    min-width: 283px;
+                    max-width: 283px;
+                   }
+                }
+    
+                &.checbox_field {
+                    margin-bottom: 35px;
+                    min-width: 175px;
+                    max-width: 175px;
+                }
+            }
         }
     }
 
@@ -49,23 +79,54 @@
         padding-left: 0px;
         display: flex;
         margin-bottom: 0px;
-        flex-wrap: wrap;
+        gap: 12px;
+        align-items: flex-end;
+        @media (max-width: 1400px) {
+            flex-wrap: wrap;
+        }
         li {
             max-width: 185.33px;
             margin-top: 10px;
             min-width: 185.33px;
+
             p {
                 margin-bottom: 0px;
                 letter-spacing: inherit;
+
                 &.light_font {
                     margin-bottom: 12px;
                     color: $color7E8992;
                     line-height: 18px;
                 }
+
                 &.dark_font {
                     line-height: 14px;
+                    font-weight: 500;
                 }
             }
         }
+    }
+}
+
+.box_shipment{
+    .card_footer{
+        max-width: 100%;
+        gap: 12px;
+        .btn_link {
+            margin-right: 0px;
+        }
+    }
+}
+
+.details_header{
+    display: flex;
+    justify-content: space-between;
+    .links{
+        a{
+            &:first-child{
+                padding-right: 24px;
+            }
+        }
+        
     }
 }

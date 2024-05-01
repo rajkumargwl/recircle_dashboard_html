@@ -10,7 +10,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        .mobile_logo{
+            display: none;
+            @media (max-width: 767px) {
+                display: block;
+                padding-left: 40px;
+            }
+        }
         @media (max-width: 950px) {
             flex-direction: column;
             justify-content: flex-start;
@@ -30,7 +36,8 @@
                 margin-bottom: 0px;
             }
             @media (max-width: 767px) {
-                padding-left: 46px;
+                padding-left: 0px;
+                margin-top: 10px;
             }
         }
        
@@ -202,12 +209,11 @@
                 a.add_new_item {
                     padding: 0px 12px;
                     height: 36px;
-                    display: block;
                     background: $color597559;
                     display: flex;
                     align-items: center;
                     border-radius: 6px;
-
+                    justify-content: center;
                     span {
                         color: $colorwhite;
                         font-family: 'Mont';
@@ -216,6 +222,9 @@
                         font-weight: 500;
                         line-height: 16px;
                         border-radius: 6px;
+                    }
+                    svg{
+                        margin-right: 2px;
                     }
                 }
             }

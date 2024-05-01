@@ -119,6 +119,9 @@ h1 {
 .mt_22 {
     margin-top: 22px;
 }
+.mt_12 {
+    margin-top: 12px;
+}
 .mt_16 {
     margin-top: 16px;
 }
@@ -148,7 +151,7 @@ h1 {
         line-height: 16px;
         letter-spacing: -0.14px;
         height: 48px;
-
+        padding: 12px;
         &::placeholder {
             color: $color232D35;
             font-family: 'Mont';
@@ -251,3 +254,66 @@ h1 {
         }
     }
 }
+
+.section_heading{
+    color: $color232D35;
+    font-family: 'Mont';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.custom_checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #eee;
+      }
+      &:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      input:checked ~ .checkmark {
+        content: '';
+        background-image: url(../images/checkmark.svg);
+        position: absolute;
+        background-size: 22px;
+      }
+      .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+  }
+
