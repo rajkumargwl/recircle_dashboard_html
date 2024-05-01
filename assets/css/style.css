@@ -359,7 +359,7 @@ h1 {
   cursor: pointer;
 }
 .slide_check input:checked[type=checkbox] {
-  background: #EFEFEE;
+  background: #5D666C;
 }
 .slide_check input[type=checkbox]:before {
   content: "";
@@ -1539,13 +1539,11 @@ h1 {
   padding: 20px;
 }
 .successfully_modal.pallet_open_modal .modal-dialog .modal-footer .btn_link {
-  margin-right: 0px;
-}
-.successfully_modal.pallet_open_modal .modal-dialog .modal-footer .btn_link a {
   padding: 12px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  margin-right: 0px;
 }
 
 .btn_link {
@@ -1564,10 +1562,10 @@ h1 {
   padding: 16px 24px;
 }
 
-.cancel_btn {
+.secondary_btn {
   background: #444547;
 }
-.cancel_btn:hover {
+.secondary_btn:hover {
   background-color: #7E8992;
 }
 
