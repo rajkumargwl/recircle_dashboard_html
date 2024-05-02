@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recircled</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <link rel="stylesheet" href="/assets/css/datatables.min.css">
+    
 </head>
 
 <body>
@@ -158,7 +160,7 @@
                     </a>
                 </div>
                 <div class="process_name">
-                    <h1 class="main_title"> <a href="recycle.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <h1 class="main_title"> <a href="recycle-shipment-push.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="#232D35" stroke-width="1.5"
                                     stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -226,7 +228,7 @@
                     </ul>
                 </div>
                 <div class="data_table">
-                    <table cellspacing="0" cellpadding="10" id="dash-table" class="table  table-striped dataTable">
+                    <table cellspacing="0" cellpadding="10" id="dashTable" class="table  table-striped dataTable">
                         <thead>
                             <tr>
                                 <th>Products</th>
@@ -237,29 +239,83 @@
                                     Material / weight (LBS)</th>
                                 <th></th>
                                 <th></th>
-                                <th></th>
                             </tr>
 
                         </thead>
                         <tbody>
+                            <tr class="dt-hasChild">
+                                <td ><span class="dark_font">Shirts</span></td>
+                                <td><span class="light_font">2000</span></td>
+                                <td><span class="light_font">50</span></td>
+                                <td><span class="success">Fully Disassembled</span></td>
+                                <td><span class="light_font">2/50</span></td>
+                                <td></td>
+
+                                <td class="add_plus dt-control" >
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
+                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
                             <tr>
-                                <td><span class="dark_font">Shirts</span></td>
+                                <td ><span class="dark_font">Shirts</span></td>
                                 <td><span class="light_font">2000</span></td>
                                 <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
+                                <td><span class="light_font">2/50</span></td>
+                                <td><a href="recycle-shipment-details-pull.html" class="open_data"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
+                                    <a href="recycle-shipment-details-pull.html">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
+                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td ><span class="dark_font">Shirts</span></td>
+                                <td><span class="light_font">2000</span></td>
+                                <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
+                                <td><span class="light_font">2/50</span></td>
+                                    
                                 <td><a href="#" class="open_data" data-bs-toggle="modal"
-                                        data-bs-target="#pullModal"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
+                                    data-bs-target="#pullModal"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
                                     <a href="#">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -276,22 +332,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">T-Shirts</span></td>
+                                <td ><span class="dark_font">Shirts</span></td>
                                 <td><span class="light_font">2000</span></td>
                                 <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
+                                <td><span class="light_font">2/50</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                    data-bs-target="#pullModal"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
                                     <a href="#">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -308,22 +364,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">Outerwear</span></td>
+                                <td ><span class="dark_font">Shirts</span></td>
                                 <td><span class="light_font">2000</span></td>
                                 <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
+                                <td><span class="light_font">2/50</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                    data-bs-target="#pullModal"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
                                     <a href="#">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -340,22 +396,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">Jackets</span></td>
+                                <td ><span class="dark_font">Shirts</span></td>
                                 <td><span class="light_font">2000</span></td>
                                 <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
+                                <td><span class="light_font">2/50</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                    data-bs-target="#pullModal"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
                                     <a href="#">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -372,22 +428,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">Jackets</span></td>
+                                <td ><span class="dark_font">Shirts</span></td>
                                 <td><span class="light_font">2000</span></td>
                                 <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
+                                <td><span class="light_font">2/50</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                    data-bs-target="#pullModal"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
                                     <a href="#">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -404,182 +460,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">Knitwear</span></td>
+                                <td ><span class="dark_font">Shirts</span></td>
                                 <td><span class="light_font">2000</span></td>
                                 <td><span class="light_font">50</span></td>
                                 <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
-                                    <a href="#">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
-                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span class="dark_font">Tops</span></td>
-                                <td><span class="light_font">2000</span></td>
-                                <td><span class="light_font">50</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
-                                    <a href="#">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
-                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span class="dark_font">Pants</span></td>
-                                <td><span class="light_font">2000</span></td>
-                                <td><span class="light_font">50</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
-                                    <a href="#">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
-                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span class="dark_font">Activewear</span></td>
-                                <td><span class="light_font">2000</span></td>
-                                <td><span class="light_font">50</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
-                                    <a href="#">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
-                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span class="dark_font">Formalwear</span></td>
-                                <td><span class="light_font">2000</span></td>
-                                <td><span class="light_font">50</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
-                                    <a href="#">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.0001 18.3332C14.5834 18.3332 18.3334 14.5832 18.3334 9.99984C18.3334 5.4165 14.5834 1.6665 10.0001 1.6665C5.41675 1.6665 1.66675 5.4165 1.66675 9.99984C1.66675 14.5832 5.41675 18.3332 10.0001 18.3332Z"
-                                                stroke="#3B5A71" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M6.66675 10H13.3334" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10 13.3332V6.6665" stroke="#3B5A71" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span class="dark_font">Denim</span></td>
-                                <td><span class="light_font">2000</span></td>
-                                <td><span class="light_font">50</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span class="light_font">-</span></td>
-                                <td><span>-</span></td>
-                                <td><a href="#" class="open_data"><span class="success_font">Pull</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
-                                <td class="add_plus">
+                                <td><span class="light_font">2/50</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                    data-bs-target="#pullModal"><span class="success_font">Pull</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                                <td class="add_plus" >
                                     <a href="#">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -601,94 +497,9 @@
             </div>
         </section>
         <!-- right bar end -->
-        <!-- modal start -->
-        <div class="modal fade modal_main modal_fields" id="pullModal" tabindex="-1" aria-labelledby="pullModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <form action="">
-                <div class="modal-content pull_content">
-                    <div class="modal-header">
-                        <h2 class="modal_title fs-5" id="pullModalLabel">Pull Products</h2>
-                        <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg></button>
-                    </div>
-                        <div class="modal-body">
-                            <div class="top_items">
-                                <div class="data_items">
-                                    <ul>
-                                        <li>
-                                            <p class="light_font">Product</p>
-                                            <p class="dark_font">Shirts</p>
-                                        </li>
-                                        <li>
-                                            <p class="light_font">Quantity</p>
-                                            <p class="dark_font">2,000</p>
-                                        </li>
-                                        <li>
-                                            <p class="light_font">Weight</p>
-                                            <p class="dark_font">56 LBS</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                                <div class="bottom_items">
-                                    <h4 class="field_label">Pickup Date & time</h4>
-                                    <div class="check_fileds row">
-                                        <div class="col-md-5">
-                                            <div class="form_check">
-                                                <input class="form-check-input" type="radio" name="field">
-                                                <label class="light_field_label">
-                                                    Current
-                                                </label>
-                                                <span class="date_time">1/08/24,03:30:25 PM</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <div class="form_check">
-                                                <input class="form-check-input" type="radio" name="field">
-                                                <label class="light_field_label">
-                                                    other
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="type_fields mt_22">
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Shipment Origin
-                                                Zipcode</label>
-                                            <select name="H &amp; M" id="">
-                                                <option value="">H &amp; M</option>
-                                                <option value="">H &amp; M</option>
-                                                <option value="">H &amp; M</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="modal-footer">
-                            <a class="btn_link secondary_btn" aria-label="Close" data-bs-dismiss="modal"
-                                href="#">Cancel</a>
-                            <a class="btn_link primary-btn" href="recycle-shipment-push.html">Pull<svg width="20"
-                                    height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4248 16.5999L12.8581 11.1666C13.4998 10.5249 13.4998 9.4749 12.8581 8.83324L7.4248 3.3999"
-                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg></a>
-                        </div>
+        <!-- accordian -->
 
-                </div>
-                </form>
-            </div>
-        </div>
-        <!-- modal end -->
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>

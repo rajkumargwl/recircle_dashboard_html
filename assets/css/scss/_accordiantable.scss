@@ -1,0 +1,48 @@
+.data_table{
+    .add_plus{
+        &:before{
+            display: none !important;
+        }
+        
+    }
+    .accoridan_section{
+        padding: 10px 0px;
+        td{
+            padding: 20px;
+        }
+        .section_heading{
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+        .data_table{
+            padding-bottom: 0px;
+        }
+        .accordian_list{
+            padding-bottom: 15px;
+        }
+    }
+    dl,dd,dt{
+        margin-bottom: 0px;
+    }
+    .dt-hasChild{
+        // td{
+        //     border-top: 2px solid $color597559 !important;
+        //     &:first-child{
+        //         border-left: 2px solid $color597559 !important;
+        //     }
+        //     &:last-child{
+        //         border-right: 2px solid $color597559 !important;
+        //     }
+        // }
+        
+    }
+    [data-dt-row="0"]{
+        border: 2px solid $color597559 !important;
+        td{
+            background-color: transparent !important;
+        }
+    }
+}

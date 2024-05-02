@@ -1,5 +1,3 @@
-
-
 .secondary_btn {
     background: $color444547;
     display: flex;
@@ -15,6 +13,7 @@
     font-weight: 700;
     line-height: 16px;
     padding: 16px 24px;
+
     &:hover {
         background-color: $color7E8992;
     }
@@ -35,6 +34,7 @@
     font-weight: 700;
     line-height: 16px;
     padding: 16px 24px;
+
     svg {
         margin-left: 5px;
     }
@@ -55,12 +55,14 @@
     border: none;
     line-height: 16px;
 }
-.header_btn{
+
+.header_btn {
     margin-right: 0px;
     font-weight: 500;
     font-size: 14px;
     padding: 12px;
 }
+
 .add_new_material {
     a {
         display: flex;
@@ -114,4 +116,18 @@ a.add_new_item {
         line-height: 16px;
         text-transform: uppercase;
     }
+}
+
+.success_number {
+    background-color: $colorF2F5F1;
+    color: $color597559;
+    font-family: 'Mont';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: -0.12px;
+    padding: 6px 4px;
+    border-radius: 8px;
+    margin-left: 4px;
 }

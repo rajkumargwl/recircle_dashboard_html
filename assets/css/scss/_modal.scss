@@ -173,13 +173,6 @@
                                 padding-right: 0px;
                             }
                         }
-
-                        .form_check {
-                            .light_field_label {
-                                padding-left: 6px;
-                            }
-                        }
-
                         .date_time {
                             color: $color7E8992;
                             font-family: 'Mont';
@@ -200,16 +193,243 @@
                 &.push_content{
                     max-width: 812px;
                     min-width: 812px;
+                    .top_items{
+                        padding-bottom: 3px;
+                    }
+                    select{
+                        height: 36px;
+                    }
+                    .type_fields{
+                        input{
+                            height: 36px;
+                        }
+                    }
 
+                    
                     @media (max-width: 767px) {
                         min-width: inherit;
+                    }
+                    .modal-footer {
+                        padding-top: 0px;
+                    }
+                    .form_check{
+                        padding: 0px;
+                    }
+                    .check_fileds{
+                        .col-md-6{
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                        }
+                        .col-md-6{
+                           
+                            padding: 0px;
+                            &.custom_col{
+                                width: 43%;
+                            }
+                            &.first{
+                                width: 57%;
+                                padding-right: 11px;
+                            }
+                            
+                        }
+                    }
+                    .field_item{
+                        display: flex;
+                        gap: 12px;
+                    }
+                    .date_time {
+                        color: $color7E8992;
+                        font-family: 'Mont';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 14px;
+                        padding-left: 32px;
+                        white-space: nowrap;
+                    }
+                    .custom_col {
+                        padding: 0px;
+                        padding-right: 12px;
+                        &.col-md-6{
+                            width: 55%;
+                            padding-right: 12px;
+                        }
+                        &.col-md-3{
+                            width: 21%;
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                            input{
+                                max-width: 150px;
+                            }
+                            select{
+                                max-width: 150px;
+                            }
+                        }
+                        &.col-md-4{
+                            width: 28%;
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                            input{
+                                max-width: 202px;
+                            }
+                            select{
+                                max-width: 202px;
+                            }
+                        }
+                        &.col-md-2{
+                            width: 21%;
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                            input{
+                                max-width: 150px;
+                            }
+                            select{
+                                max-width: 150px;
+                            }
+                        }
+                        select{
+                            min-width: 150px;
+                        }
+                    }
+                    .select_items {
+                        padding-top: 15px;
+                        padding-bottom: 24px;
+                        border-bottom: 1px solid $colorEFEFEE;
+                        .type_fields{
+                            padding-top: 0px;
+                        }
+                        .mb_20{
+                            margin-bottom: 20px;
+                        }
+                        &.vendor_fields{
+
+                        }
+                    }
+                }
+                &.open_box_content{
+                    max-width: 528px;
+                    min-width: 528px;
+                    select{
+                        height: 36px;
+                    }
+                    .type_fields{
+                        input{
+                            height: 36px;
+                        }
+                    }
+
+                    
+                    @media (max-width: 767px) {
+                        min-width: inherit;
+                    }
+                    .modal-footer {
+                        padding-top: 0px;
+                    }
+                    .form_check{
+                        padding: 0px;
+                    }
+                    .check_fileds{
+                        .col-md-6{
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                        }
+                        .col-md-6{
+                           
+                            padding: 0px;
+                            &.custom_col{
+                                width: 43%;
+                            }
+                            &.first{
+                                width: 57%;
+                                padding-right: 11px;
+                            }
+                            
+                        }
+                    }
+                    .field_item{
+                        display: flex;
+                        gap: 12px;
+                    }
+                    .date_time {
+                        color: $color7E8992;
+                        font-family: 'Mont';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 14px;
+                        padding-left: 32px;
+                        white-space: nowrap;
+                    }
+                    .custom_col {
+                        padding: 0px;
+                        padding-right: 12px;
+                        &.col-md-6{
+                            max-width: 55%;
+                            padding-right: 12px;
+                        }
+                        &.col-md-3{
+                            max-width: 21%;
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                            input{
+                                max-width: 150px;
+                            }
+                            select{
+                                max-width: 150px;
+                            }
+                        }
+                        &.col-md-4{
+                            max-width: 28%;
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                            input{
+                                max-width: 150px;
+                            }
+                            select{
+                                max-width: 150px;
+                            }
+                        }
+                        &.col-md-2{
+                            max-width: 21%;
+                            &:last-child{
+                                padding-right: 0px;
+                            }
+                            input{
+                                max-width: 150px;
+                            }
+                            select{
+                                max-width: 150px;
+                            }
+                        }
+                        &.col-md-8 {
+                            max-width: 63%;
+                        }
+                        select{
+                            min-width: 150px;
+                        }
+                    }
+                    .select_items {
+                        padding-top: 15px;
+                        .type_fields{
+                            padding-top: 0px;
+                        }
+                        .mb_20{
+                            margin-bottom: 20px;
+                        }
                     }
                 }
             }
 
             .type_fields {
                 padding-top: 24px;
-
+                position: relative;
                 .form_check {
                     display: flex;
                     flex-direction: column;
@@ -223,20 +443,15 @@
                         height: 36px;
                     }
                 }
-
+                .cancel_icon {
+                    position: absolute;
+                    right: 0px;
+                    top: 5px;
+                }
                 &.weight_field {
                     input {
                         max-width: 150px;
                     }
-
-                    .form_check {
-                        .cancel_icon {
-                            position: absolute;
-                            right: 0px;
-                            top: 3px;
-                        }
-                    }
-
                     .field_item {
                         position: relative;
                     }
@@ -244,7 +459,7 @@
             }
 
             .bottom_items {
-                padding-top: 24px;
+                padding-top: 20px;
 
                 .header_items {
                     display: flex;
@@ -278,6 +493,7 @@
                     font-weight: 500;
                     line-height: 16px;
                     margin-right: 0px;
+                    height: 40px;
                 }
             }
 

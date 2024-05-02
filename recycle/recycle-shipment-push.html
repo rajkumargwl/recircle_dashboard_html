@@ -160,7 +160,7 @@
                     </a>
                 </div>
                 <div class="process_name">
-                    <h1 class="main_title"> <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <h1 class="main_title"> <a href="recycle-shipment-pull.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="#232D35" stroke-width="1.5"
                                     stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -170,7 +170,7 @@
                     <p>Sorting / <span>Shipment ID: TB58KJHR12JHBG</span></p>
                 </div>
                 <div class="right-items">
-                    <a class="light_bg_btn btn_link" href="#">Submit for Approval</a>
+                    <a class="light_bg_btn btn_link" href="#">Submit Shipment for Approval</a>
                     <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -252,7 +252,7 @@
                                 <td><span class="light_font">-</span></td>
                                 <td><span class="process">Under Process</span></td>
                                 <td><a href="#" class="open_data" data-bs-toggle="modal"
-                                    data-bs-target="#pushModal"><span class="success_font">Push</span>
+                                        data-bs-target="#pushModal"><span class="success_font">Push</span>
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -303,64 +303,286 @@
                         <div class="modal-body">
                             <div class="top_items">
                                 <div class="check_fileds row">
-                                    <div class="col-md-5">
+                                    <div class="col-md-6 first custom_col">
                                         <h4 class="field_label">Disassembled type</h4>
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field">
-                                            <label class="light_field_label">
-                                                Current
-                                            </label>
+                                        <div class="row">
+                                            <div class="form_check col-md-6">
+                                                <input class="form-check-input" type="radio" name="field">
+                                                <label class="light_field_label">
+                                                    Partially Disassembled
+                                                </label>
+                                            </div>
+                                            <div class="form_check col-md-6">
+                                                <input class="form-check-input" type="radio" name="field">
+                                                <label class="light_field_label">
+                                                    Fully Disassembled
+                                                </label>
+                                            </div>
                                         </div>
+
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-6 custom_col">
                                         <h4 class="field_label">Push Date & time</h4>
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field">
-                                            <label class="light_field_label">
-                                                other
-                                            </label>
+                                        <div class="row">
+                                            <div class="form_check col-md-6">
+                                                <input class="form-check-input" type="radio" name="field">
+                                                <label class="light_field_label">
+                                                    Current
+                                                </label>
+                                                <span class="date_time">1/08/24,03:30:25 PM</span>
+                                            </div>
+                                            <div class="form_check col-md-6">
+                                                <input class="form-check-input" type="radio" name="field">
+                                                <label class="light_field_label">
+                                                    other
+                                                </label>
+
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <div class="bottom_items">
-                                <h4 class="field_label">Pickup Date & time</h4>
-                                <div class="check_fileds row">
-                                    <div class="col-md-5">
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field">
-                                            <label class="light_field_label">
-                                                Current
-                                            </label>
-                                        </div>
+                                <div class="header_items">
+                                    <div class="heading">
+                                        <h3 class="section_heading">Components Found</h3>
                                     </div>
-                                    <div class="col-md-5">
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field">
-                                            <label class="light_field_label">
-                                                other
-                                            </label>
-                                        </div>
+                                    <div class="add_new_material">
+                                        <a href="#">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 6H10.5" stroke="#3B5A71" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M6 10.5V1.5" stroke="#3B5A71" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <span>Add New Material</span>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="type_fields mt_22">
-                                    <div class="form_check mb_12">
-                                        <label for="exampleInputEmail1" class="field_label">Shipment Origin
-                                            Zipcode</label>
-                                        <select name="H &amp; M" id="">
-                                            <option value="">H &amp; M</option>
-                                            <option value="">H &amp; M</option>
-                                            <option value="">H &amp; M</option>
-                                        </select>
+
+                                <div class="select_items mb_20">
+                                    <div class="field_labels row">
+                                        <div class="col-md-6 custom_col">
+                                            <label class="field_label">Material
+                                                Type</label>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <label class="field_label">sub category</label>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <label class="field_label">Weight (lbs)</label>
+                                        </div>
                                     </div>
+                                    <div class="type_fields row mb_20">
+                                        <div class="col-md-6 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Cotton</option>
+                                                    <option value="">Cotton</option>
+                                                    <option value="">Cotton</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Grade 1</option>
+                                                    <option value="">Grade 1</option>
+                                                    <option value="">Grade 1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="40">
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="type_fields row">
+                                        <div class="col-md-6 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Plastic</option>
+                                                    <option value="">Plastic</option>
+                                                    <option value="">Plastic</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">LDPE</option>
+                                                    <option value="">LDPE</option>
+                                                    <option value="">LDPE</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="3">
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="header_items">
+                                    <div class="heading">
+                                        <h3 class="section_heading">Sent to Vendor</h3>
+                                    </div>
+                                    <div class="add_new_material">
+                                        <a href="#">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 6H10.5" stroke="#3B5A71" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M6 10.5V1.5" stroke="#3B5A71" stroke-width="1.25"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <span>Add New Material</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="select_items mb_20 vendor_fields">
+                                    <div class="field_labels row">
+                                        <div class="col-md-4 custom_col">
+                                            <label class="field_label">Vendor</label>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <label class="field_label">Material Type</label>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <label class="field_label">sub category</label>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <label class="field_label">Weight (lbs)</label>
+                                        </div>
+                                    </div>
+                                    <div class="type_fields row mb_20">
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">JLN Steels</option>
+                                                    <option value="">JLN Steels</option>
+                                                    <option value="">JLN Steels</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Metal</option>
+                                                    <option value="">Metal</option>
+                                                    <option value="">Metal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="Grade 1">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="40">
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="type_fields row">
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">DeeBee Fashion</option>
+                                                    <option value="">DeeBee Fashion</option>
+                                                    <option value="">DeeBee Fashion</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Leather</option>
+                                                    <option value="">Leather</option>
+                                                    <option value="">Leather</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="LDPE">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="3">
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <a class="btn_link secondary_btn" aria-label="Close" data-bs-dismiss="modal"
                                 href="#">Cancel</a>
-                            <a class="btn_link primary-btn" href="recycle-shipment-push.html">Pull<svg width="20"
+                            <a class="btn_link primary-btn" href="recycle-shipment_details.html">Push<svg width="20"
                                     height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M7.4248 16.5999L12.8581 11.1666C13.4998 10.5249 13.4998 9.4749 12.8581 8.83324L7.4248 3.3999"
@@ -368,12 +590,16 @@
                                         stroke-linejoin="round" />
                                 </svg></a>
                         </div>
-
                     </div>
-                </form>
+
             </div>
+
+
         </div>
-        <!-- modal end -->
+        </form>
+    </div>
+    </div>
+    <!-- modal end -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>

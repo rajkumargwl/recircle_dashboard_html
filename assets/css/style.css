@@ -347,7 +347,7 @@ h1 {
   width: 22px;
   height: 22px;
   cursor: pointer;
-  margin-top: 0px;
+  margin-top: 2px;
 }
 .check_fileds input[type=radio]:focus {
   box-shadow: none;
@@ -728,7 +728,7 @@ h1 {
   background-color: #DBDDDD;
 }
 .data_table table thead th {
-  padding: 10px 0px 10px 20px;
+  padding: 10px 0px 10px 20px !important;
   color: #232D35;
   font-family: "Mont";
   font-size: 12px;
@@ -1553,6 +1553,20 @@ a.add_new_item svg {
   text-transform: uppercase;
 }
 
+.success_number {
+  background-color: #F2F5F1;
+  color: #597559;
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: -0.12px;
+  padding: 6px 4px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
 .open_shipment .process_name .main_title svg {
   margin-right: 8px;
 }
@@ -1863,9 +1877,6 @@ a.add_new_item svg {
   padding-left: 20px;
   padding-right: 0px;
 }
-.modal_main.modal_fields .modal-dialog .modal-content.pull_content .bottom_items .form_check .light_field_label {
-  padding-left: 6px;
-}
 .modal_main.modal_fields .modal-dialog .modal-content.pull_content .bottom_items .date_time {
   color: #7E8992;
   font-family: "Mont";
@@ -1883,13 +1894,221 @@ a.add_new_item svg {
   max-width: 812px;
   min-width: 812px;
 }
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .top_items {
+  padding-bottom: 3px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content select {
+  height: 36px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .type_fields input {
+  height: 36px;
+}
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content {
     min-width: inherit;
   }
 }
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .modal-footer {
+  padding-top: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .form_check {
+  padding: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6 {
+  padding: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6.custom_col {
+  width: 43%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6.first {
+  width: 57%;
+  padding-right: 11px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .field_item {
+  display: flex;
+  gap: 12px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .date_time {
+  color: #7E8992;
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  padding-left: 32px;
+  white-space: nowrap;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col {
+  padding: 0px;
+  padding-right: 12px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-6 {
+  width: 55%;
+  padding-right: 12px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 {
+  width: 21%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 input {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 select {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 {
+  width: 28%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 input {
+  max-width: 202px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 select {
+  max-width: 202px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 {
+  width: 21%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 input {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 select {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col select {
+  min-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .select_items {
+  padding-top: 15px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #EFEFEE;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .select_items .type_fields {
+  padding-top: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .select_items .mb_20 {
+  margin-bottom: 20px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content {
+  max-width: 528px;
+  min-width: 528px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content select {
+  height: 36px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .type_fields input {
+  height: 36px;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.open_box_content {
+    min-width: inherit;
+  }
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .modal-footer {
+  padding-top: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .form_check {
+  padding: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .check_fileds .col-md-6:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .check_fileds .col-md-6 {
+  padding: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .check_fileds .col-md-6.custom_col {
+  width: 43%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .check_fileds .col-md-6.first {
+  width: 57%;
+  padding-right: 11px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .field_item {
+  display: flex;
+  gap: 12px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .date_time {
+  color: #7E8992;
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  padding-left: 32px;
+  white-space: nowrap;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col {
+  padding: 0px;
+  padding-right: 12px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-6 {
+  max-width: 55%;
+  padding-right: 12px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3 {
+  max-width: 21%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3 input {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3 select {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-4 {
+  max-width: 28%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-4:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-4 input {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-4 select {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-2 {
+  max-width: 21%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-2:last-child {
+  padding-right: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-2 input {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-2 select {
+  max-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-8 {
+  max-width: 63%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col select {
+  min-width: 150px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .select_items {
+  padding-top: 15px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .select_items .type_fields {
+  padding-top: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .select_items .mb_20 {
+  margin-bottom: 20px;
+}
 .modal_main.modal_fields .modal-dialog .type_fields {
   padding-top: 24px;
+  position: relative;
 }
 .modal_main.modal_fields .modal-dialog .type_fields .form_check {
   display: flex;
@@ -1902,19 +2121,19 @@ a.add_new_item svg {
 .modal_main.modal_fields .modal-dialog .type_fields .form_check select {
   height: 36px;
 }
-.modal_main.modal_fields .modal-dialog .type_fields.weight_field input {
-  max-width: 150px;
-}
-.modal_main.modal_fields .modal-dialog .type_fields.weight_field .form_check .cancel_icon {
+.modal_main.modal_fields .modal-dialog .type_fields .cancel_icon {
   position: absolute;
   right: 0px;
-  top: 3px;
+  top: 5px;
+}
+.modal_main.modal_fields .modal-dialog .type_fields.weight_field input {
+  max-width: 150px;
 }
 .modal_main.modal_fields .modal-dialog .type_fields.weight_field .field_item {
   position: relative;
 }
 .modal_main.modal_fields .modal-dialog .bottom_items {
-  padding-top: 24px;
+  padding-top: 20px;
 }
 .modal_main.modal_fields .modal-dialog .bottom_items .header_items {
   display: flex;
@@ -1943,6 +2162,7 @@ a.add_new_item svg {
   font-weight: 500;
   line-height: 16px;
   margin-right: 0px;
+  height: 40px;
 }
 
 .login-block .row {
@@ -2091,4 +2311,36 @@ a.add_new_item svg {
   display: block;
   text-align: center;
   padding-top: 4px;
+}
+
+.data_table .add_plus:before {
+  display: none !important;
+}
+.data_table .accoridan_section {
+  padding: 10px 0px;
+}
+.data_table .accoridan_section td {
+  padding: 20px;
+}
+.data_table .accoridan_section .section_heading {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.data_table .accoridan_section p {
+  margin-bottom: 0px;
+}
+.data_table .accoridan_section .data_table {
+  padding-bottom: 0px;
+}
+.data_table .accoridan_section .accordian_list {
+  padding-bottom: 15px;
+}
+.data_table dl, .data_table dd, .data_table dt {
+  margin-bottom: 0px;
+}
+.data_table [data-dt-row="0"] {
+  border: 2px solid #597559 !important;
+}
+.data_table [data-dt-row="0"] td {
+  background-color: transparent !important;
 }/*# sourceMappingURL=style.css.map */

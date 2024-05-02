@@ -711,7 +711,7 @@
         <div class="modal fade modal_main modal_fields" id="openBoxModal" tabindex="-1"
             aria-labelledby="openBoxModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+                <div class="modal-content open_box_content">
                     <div class="modal-header">
                         <h2 class="modal_title fs-5" id="openBoxModalLabel">Open Box 42</h2>
                         <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
@@ -768,105 +768,128 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="select_items row">
-                                    <div class="col-md-7">
-                                        <div class="type_fields">
-                                            <div class="form_check mb_20">
-                                                <label for="exampleInputEmail1" class="field_label">Material
-                                                    Type</label>
-                                                <select name="H & M" id="">
-                                                    <option value="">Plastic</option>
-                                                    <option value="">Plastic</option>
-                                                    <option value="">Plastic</option>
-                                                </select>
-                                            </div>
-                                            <div class="form_check mb_20">
-                                                <select name="H & M" id="">
-                                                    <option value="">Leather</option>
-                                                    <option value="">Leather</option>
-                                                    <option value="">Leather</option>
-                                                </select>
-                                            </div>
-                                            <div class="form_check mb_20">
-                                                <select name="H & M" id="">
-                                                    <option value="">PU</option>
-                                                    <option value="">PU</option>
-                                                    <option value="">PU</option>
-                                                </select>
-                                            </div>
-                                            <div class="form_check">
-                                                <select name="H & M" id="">
-                                                    <option value="">Metal</option>
-                                                    <option value="">Metal</option>
-                                                    <option value="">Metal</option>
-                                                </select>
-                                            </div>
-
+                                <div class="select_items mb_20">
+                                    <div class="field_labels row">
+                                        <div class="col-md-8 custom_col">
+                                            <label class="field_label">Material
+                                                Type</label>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <label class="field_label">Weight (lbs)</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
-                                        <div class="type_fields weight_field">
-                                            <div class="form_check mb_20">
-                                                <label class="field_label">Weight (lbs)</label>
-                                                <div class="field_item">
-                                                    <input type="text" disabled placeholder="2.48">
-                                                    <a href="#" class="cancel_icon">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="form_check mb_20">
-                                                <div class="field_item">
-                                                    <input type="text" disabled placeholder="2.48">
-                                                    <a href="#" class="cancel_icon">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="form_check mb_20">
-                                                <div class="field_item">
-                                                    <input type="text" disabled placeholder="2.48">
-                                                    <a href="#" class="cancel_icon">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="form_check">
-                                                <div class="field_item">
-                                                    <input type="text" disabled placeholder="2.48">
-                                                    <a href="#" class="cancel_icon">
-                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
+                                    <div class="type_fields row mb_20">
+                                        <div class="col-md-8 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Plastic</option>
+                                                    <option value="">Plastic</option>
+                                                    <option value="">Plastic</option>
+                                                </select>
                                             </div>
                                         </div>
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="2.40">
+                                                </div>
 
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
+                                    <div class="type_fields row mb_20">
+                                        <div class="col-md-8 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Leather</option>
+                                                    <option value="">Leather</option>
+                                                    <option value="">Leather</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="2.48">
+                                                </div>
 
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="type_fields row mb_20">
+                                        <div class="col-md-8 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">PU</option>
+                                                    <option value="">PU</option>
+                                                    <option value="">PU</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="2.48">
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="type_fields row">
+                                        <div class="col-md-8 custom_col">
+                                            <div class="form-floating">
+                                                <select name="H &amp; M" id="">
+                                                    <option value="">Metal</option>
+                                                    <option value="">Metal</option>
+                                                    <option value="">Metal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 custom_col">
+                                            <div class="form-floating">
+                                                <div class="field">
+                                                    <input type="text" disabled="" placeholder="2.48">
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="cancel_icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15 5L5 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M5 5L15 15" stroke="#232D35" stroke-width="1.25"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
