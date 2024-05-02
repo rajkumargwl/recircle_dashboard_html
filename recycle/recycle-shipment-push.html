@@ -288,9 +288,9 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <form action="">
-                    <div class="modal-content pull_content">
+                    <div class="modal-content push_content">
                         <div class="modal-header">
-                            <h2 class="modal_title fs-5" id="pushModalLabel">Pull Products</h2>
+                            <h2 class="modal_title fs-5" id="pushModalLabel">Push Products</h2>
                             <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -302,21 +302,25 @@
                         </div>
                         <div class="modal-body">
                             <div class="top_items">
-                                <div class="data_items">
-                                    <ul>
-                                        <li>
-                                            <p class="light_font">Product</p>
-                                            <p class="dark_font">Shirts</p>
-                                        </li>
-                                        <li>
-                                            <p class="light_font">Quantity</p>
-                                            <p class="dark_font">2,000</p>
-                                        </li>
-                                        <li>
-                                            <p class="light_font">Weight</p>
-                                            <p class="dark_font">56 LBS</p>
-                                        </li>
-                                    </ul>
+                                <div class="check_fileds row">
+                                    <div class="col-md-5">
+                                        <h4 class="field_label">Disassembled type</h4>
+                                        <div class="form_check">
+                                            <input class="form-check-input" type="radio" name="field">
+                                            <label class="light_field_label">
+                                                Current
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="field_label">Push Date & time</h4>
+                                        <div class="form_check">
+                                            <input class="form-check-input" type="radio" name="field">
+                                            <label class="light_field_label">
+                                                other
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 

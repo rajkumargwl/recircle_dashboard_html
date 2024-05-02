@@ -197,6 +197,14 @@
 
                     }
                 }
+                &.push_content{
+                    max-width: 812px;
+                    min-width: 812px;
+
+                    @media (max-width: 767px) {
+                        min-width: inherit;
+                    }
+                }
             }
 
             .type_fields {

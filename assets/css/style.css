@@ -354,6 +354,7 @@ h1 {
 }
 .check_fileds label {
   margin-top: 6px;
+  margin-left: 5px;
 }
 
 .slide_check label {
@@ -1877,6 +1878,15 @@ a.add_new_item svg {
 }
 .modal_main.modal_fields .modal-dialog .modal-content.pull_content .bottom_items .type_fields {
   padding-top: 0px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content {
+  max-width: 812px;
+  min-width: 812px;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content {
+    min-width: inherit;
+  }
 }
 .modal_main.modal_fields .modal-dialog .type_fields {
   padding-top: 24px;

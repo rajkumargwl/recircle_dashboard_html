@@ -213,7 +213,6 @@ h1 {
 
 .check_fileds {
     margin-top: 6px;
-
     input[type=radio] {
         accent-color: $color3B5A71;
         appearance: auto;
@@ -230,6 +229,7 @@ h1 {
 
     label {
         margin-top: 6px;
+        margin-left: 5px;
     }
 }
 
