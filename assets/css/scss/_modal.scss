@@ -1,5 +1,8 @@
 .modal_main {
     .modal-dialog {
+        display: flex;
+        justify-content: center;
+
         .modal-content {
             border-radius: 8px;
             background: $colorwhite;
@@ -60,19 +63,21 @@
                         line-height: 150%;
                         margin-bottom: 0px;
                     }
+
+                    h4 {
+                        margin-bottom: 0px;
+                        margin-top: 14px;
+                        color: $color365236;
+                        text-align: center;
+                        font-family: "DM Serif Text";
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                    }
                 }
 
-                h4 {
-                    margin-bottom: 0px;
-                    margin-top: 14px;
-                    color: $color365236;
-                    text-align: center;
-                    font-family: "DM Serif Text";
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 32px;
-                }
+
             }
 
             .modal-footer {
@@ -85,16 +90,18 @@
 
     &.modal_fields {
         .modal-dialog {
-
             .modal-content {
                 max-width: 528px;
                 min-width: 528px;
+
                 @media (max-width: 767px) {
                     min-width: inherit;
                 }
+
                 .top_items {
                     padding-bottom: 24px;
                     padding-top: 4px;
+                    border-bottom: 1px solid $colorEFEFEE;
                 }
 
                 .section_heading {
@@ -107,9 +114,11 @@
                         display: flex;
                         margin-bottom: 0px;
                         flex-wrap: wrap;
+
                         li {
                             max-width: 33.33%;
                             width: 100%;
+
                             p {
                                 margin-bottom: 0px;
                                 letter-spacing: inherit;
@@ -128,11 +137,64 @@
                         }
                     }
                 }
-                &.pull_content{
+
+                &.pull_content {
                     max-width: 408px;
                     min-width: 408px;
+
                     @media (max-width: 767px) {
                         min-width: inherit;
+                    }
+
+                    .modal-footer {
+                        a {
+                            svg {
+                                margin-left: 12px;
+                            }
+
+                        }
+                    }
+
+                    .bottom_items {
+                        h5 {
+                            padding-left: 0px;
+                        }
+
+                        .col-md-5 {
+                            padding: 0px;
+
+                            &:first-child {
+                                padding-left: 0px;
+                                padding-right: 20px;
+                            }
+
+                            &:last-child {
+                                padding-left: 20px;
+                                padding-right: 0px;
+                            }
+                        }
+
+                        .form_check {
+                            .light_field_label {
+                                padding-left: 6px;
+                            }
+                        }
+
+                        .date_time {
+                            color: $color7E8992;
+                            font-family: 'Mont';
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 14px;
+                            padding-left: 32px;
+                            white-space: nowrap;
+                        }
+
+                        .type_fields {
+                            padding-top: 0px;
+                        }
+
                     }
                 }
             }
@@ -173,9 +235,8 @@
                 }
             }
 
-            .pallet_items {
+            .bottom_items {
                 padding-top: 24px;
-                border-top: 1px solid $colorEFEFEE;
 
                 .header_items {
                     display: flex;
@@ -204,11 +265,11 @@
                 padding: 20px;
 
                 .btn_link {
-                        padding: 12px;
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 16px;
-                        margin-right: 0px;
+                    padding: 12px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    margin-right: 0px;
                 }
             }
 

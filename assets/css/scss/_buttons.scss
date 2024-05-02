@@ -1,4 +1,7 @@
-.btn_link {
+
+
+.secondary_btn {
+    background: $color444547;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,11 +15,6 @@
     font-weight: 700;
     line-height: 16px;
     padding: 16px 24px;
-}
-
-.secondary_btn {
-    background: $color444547;
-
     &:hover {
         background-color: $color7E8992;
     }
@@ -24,7 +22,19 @@
 
 .primary-btn {
     background: $color597559;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    margin: 0px;
+    color: $colorwhite;
+    font-family: 'Mont';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 16px 24px;
     svg {
         margin-left: 5px;
     }
@@ -40,14 +50,16 @@
     font-weight: 500;
     font-size: 14px;
     padding: 12px;
+    border-radius: 8px;
+    color: $colorwhite;
+    border: none;
+    line-height: 16px;
 }
 .header_btn{
     margin-right: 0px;
-    a {
-        font-weight: 500;
-        font-size: 14px;
-        padding: 12px;
-    }
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px;
 }
 .add_new_material {
     a {
