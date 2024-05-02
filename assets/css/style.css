@@ -2038,16 +2038,6 @@ a.add_new_item svg {
 .login-block .type_fields input::placeholder {
   color: #7E8992;
 }
-.login-block .type_fields input:focus {
-  box-shadow: none;
-  border: none;
-  outline: none;
-}
-.login-block .type_fields input:focus-visible {
-  box-shadow: none;
-  border: none;
-  outline: none;
-}
 .login-block .type_fields .input-group .input-group-text {
   border: 1px solid #efefee;
   background-color: transparent;
