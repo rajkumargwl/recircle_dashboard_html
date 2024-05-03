@@ -1,0 +1,184 @@
+.tabs_section {
+    .tabs_number {
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 15px;
+            width: 1px;
+            height: 100%;
+            background-color: $colorEFEFEE;
+            z-index: 2;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 9;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &.active {
+                a {
+                    color: $color232D35;
+                    border: 1px solid $color232D35;
+                    background-color: $colorE3F0FA;
+                }
+
+                span {
+                    color: $color232D35;
+                    font-weight: 700;
+                }
+            }
+
+            span {
+                color: $color7E8992;
+                font-family: 'Mont';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px;
+                padding-left: 12px;
+            }
+
+            a {
+                border: 1px solid $color7E8992;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color7E8992;
+                text-align: center;
+                font-family: 'Mont';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 10px;
+                letter-spacing: -0.28px;
+                background-color: $colorwhite;
+            }
+        }
+
+    }
+
+    .custom_col {
+        max-width: 270px;
+    }
+
+    .shipment_items {
+        border-radius: 8px;
+        border: 1px solid $colorEFEFEE;
+        background: $colorwhite;
+        padding: 20px;
+        &.opload_photo{
+            .item-main{
+                .right_items{
+                    .target_block{
+
+                        .check_fileds{
+                            display: flex;
+                            margin-top: 0px;
+                            .form_check{
+                                flex-direction: inherit;
+                                align-items: center;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                }
+            } 
+            
+        }
+        .item-main {
+            display: flex;
+            gap: 20px;
+
+            .right_items {
+                p {
+                    color: $color10191F;
+                    font-family: 'Mont';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                    opacity: 0.6;
+                    margin-bottom: 4px;
+                }
+                .completed_boxes{
+                    display: flex;
+                    gap: 12px;
+                }
+                .checbox_field {
+                    &.completed_box{
+                        border-radius: 8px;
+                        border: 1px solid $colorEFEFEE;
+                        background: $colorwhite;
+                        padding: 8px;
+                        margin-top: 16px;
+                        .custom_checkbox {
+                            .checkmark {
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                background-size: 16px;
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                    .check_title {
+                        padding-left: 20px;
+                        overflow: hidden;
+                        color: $color232D35;
+                        text-overflow: ellipsis;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: -0.14px;
+                        &.upload_check{
+                            padding-left: 28px;
+                        }
+                    }
+                }
+
+                .target_block {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    margin-top: 16px;
+                    .link_not_required {
+                        color: $color3B5A71;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                    }
+                    .form_check{
+                        display: flex;
+                        flex-direction: column;
+                        select{
+                            height: 36px;
+                            min-width: 260px;
+                        }
+                    }
+                    .primary-btn {
+                        height: 36px;
+                        &.mt_20{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

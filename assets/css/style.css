@@ -1262,6 +1262,9 @@ h1 {
   letter-spacing: -0.14px;
 }
 
+.shipment_details .card_footer .primary-btn svg {
+  margin-left: 10px;
+}
 .shipment_details .col-md-6 {
   padding: 0px 10px;
 }
@@ -1281,7 +1284,7 @@ h1 {
 }
 .shipment_details .takeback_card .check_fileds {
   display: flex;
-  gap: 8px;
+  gap: 20px;
 }
 .shipment_details .right-items {
   margin: 0px auto 0px 220px;
@@ -1308,41 +1311,59 @@ h1 {
 .shipment_details .right-items .stepper_items .item {
   min-width: 165px;
 }
-.shipment_details .right-items .stepper_items a {
-  position: relative;
-  color: #444547;
+.shipment_details .right-items .stepper_items .stpe_box {
+  display: flex;
+  align-items: baseline;
+}
+.shipment_details .right-items .stepper_items .stpe_box .steps_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #7E8992;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+}
+.shipment_details .right-items .stepper_items .stpe_box .steps_circle .number {
+  font-family: "Mont";
+  font-size: 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: -0.28px;
+  color: #7E8992;
+  margin-top: 3px;
+}
+.shipment_details .right-items .stepper_items .stpe_box .step_name {
   font-family: "Mont";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
+  color: #7E8992;
+  margin-left: 12px;
 }
-@media (max-width: 950px) {
-  .shipment_details .right-items .stepper_items a {
-    font-size: 14px;
-  }
+.shipment_details .right-items .stepper_items .stpe_box.active .steps_circle {
+  background-color: #E3F0FA;
+  border: 1px solid #232D35;
 }
-.shipment_details .right-items .stepper_items a span {
-  position: absolute;
-  left: 12px;
-  top: 2px;
+.shipment_details .right-items .stepper_items .stpe_box.active .steps_circle .number {
+  color: #232D35;
 }
-@media (max-width: 767px) {
-  .shipment_details .right-items .stepper_items a span {
-    top: 0px;
-  }
-}
-.shipment_details .right-items .stepper_items a svg {
-  margin-right: 12px;
-}
-.shipment_details .right-items .stepper_items a.active {
+.shipment_details .right-items .stepper_items .stpe_box.active .step_name {
   color: #232D35;
   font-weight: 700;
 }
-.shipment_details .right-items .stepper_items a.active svg circle {
+.shipment_details .right-items .stepper_items .a.active {
+  color: #232D35;
+  font-weight: 700;
+}
+.shipment_details .right-items .stepper_items .a.active svg circle {
   fill: #E3F0FA;
 }
-.shipment_details .right-items .stepper_items a.active svg path {
+.shipment_details .right-items .stepper_items .a.active svg path {
   display: none;
 }
 .shipment_details .right-items .stepper_items .center_icon a svg {
@@ -1551,6 +1572,13 @@ a.add_new_item svg {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.small-btn {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .success_number {
@@ -2543,4 +2571,160 @@ a.add_new_item svg {
 }
 .data_table [data-dt-row="0"] td {
   background-color: transparent !important;
+}
+
+.tabs_section .tabs_number {
+  position: relative;
+}
+.tabs_section .tabs_number::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 1px;
+  height: 100%;
+  background-color: #EFEFEE;
+  z-index: 2;
+}
+.tabs_section .tabs_number li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 9;
+}
+.tabs_section .tabs_number li:last-child {
+  margin-bottom: 0px;
+}
+.tabs_section .tabs_number li.active a {
+  color: #232D35;
+  border: 1px solid #232D35;
+  background-color: #E3F0FA;
+}
+.tabs_section .tabs_number li.active span {
+  color: #232D35;
+  font-weight: 700;
+}
+.tabs_section .tabs_number li span {
+  color: #7E8992;
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  padding-left: 12px;
+}
+.tabs_section .tabs_number li a {
+  border: 1px solid #7E8992;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7E8992;
+  text-align: center;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: -0.28px;
+  background-color: #fff;
+}
+.tabs_section .custom_col {
+  max-width: 270px;
+}
+.tabs_section .shipment_items {
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
+  padding: 20px;
+}
+.tabs_section .shipment_items.opload_photo .item-main .right_items .target_block .check_fileds {
+  display: flex;
+  margin-top: 0px;
+}
+.tabs_section .shipment_items.opload_photo .item-main .right_items .target_block .check_fileds .form_check {
+  flex-direction: inherit;
+  align-items: center;
+  margin-right: 12px;
+}
+.tabs_section .shipment_items .item-main {
+  display: flex;
+  gap: 20px;
+}
+.tabs_section .shipment_items .item-main .right_items p {
+  color: #10191F;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0px;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+.tabs_section .shipment_items .item-main .right_items .completed_boxes {
+  display: flex;
+  gap: 12px;
+}
+.tabs_section .shipment_items .item-main .right_items .checbox_field.completed_box {
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
+  padding: 8px;
+  margin-top: 16px;
+}
+.tabs_section .shipment_items .item-main .right_items .checbox_field.completed_box .custom_checkbox .checkmark {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-size: 16px;
+  margin-top: 4px;
+}
+.tabs_section .shipment_items .item-main .right_items .checbox_field .check_title {
+  padding-left: 20px;
+  overflow: hidden;
+  color: #232D35;
+  text-overflow: ellipsis;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+}
+.tabs_section .shipment_items .item-main .right_items .checbox_field .check_title.upload_check {
+  padding-left: 28px;
+}
+.tabs_section .shipment_items .item-main .right_items .target_block {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+.tabs_section .shipment_items .item-main .right_items .target_block .link_not_required {
+  color: #3B5A71;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.tabs_section .shipment_items .item-main .right_items .target_block .form_check {
+  display: flex;
+  flex-direction: column;
+}
+.tabs_section .shipment_items .item-main .right_items .target_block .form_check select {
+  height: 36px;
+  min-width: 260px;
+}
+.tabs_section .shipment_items .item-main .right_items .target_block .primary-btn {
+  height: 36px;
+}
+.tabs_section .shipment_items .item-main .right_items .target_block .primary-btn.mt_20 {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

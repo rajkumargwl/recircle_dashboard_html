@@ -1,4 +1,9 @@
 .shipment_details {
+    .card_footer{
+        .primary-btn svg {
+            margin-left: 10px;
+        }
+    }
     .col-md-6 {
         padding: 0px 10px;
         &:nth-child(2){
@@ -22,7 +27,7 @@
 
         .check_fileds {
             display: flex;
-            gap: 8px;
+            gap: 20px;
         }
     }
 
@@ -62,7 +67,7 @@
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 700;
-                        line-height: 10px; /* 71.429% */
+                        line-height: 10px;
                         letter-spacing: -0.28px;
                         color: $color7E8992;
                         margin-top: 3px;
@@ -70,7 +75,7 @@
                     }
                 }
                 .step_name {
-                    font-family: Mont;
+                    font-family: 'Mont';
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;

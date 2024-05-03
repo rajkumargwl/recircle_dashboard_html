@@ -117,7 +117,12 @@ a.add_new_item {
         text-transform: uppercase;
     }
 }
-
+.small-btn{
+    padding: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
 .success_number {
     background-color: $colorF2F5F1;
     color: $color597559;
