@@ -7,7 +7,11 @@
             border-radius: 8px;
             background: $colorwhite;
             max-width: 440px;
-
+            .form_check {
+                @media (max-width: 767px) {
+                    margin-bottom: 12px;
+                }
+            }
             .modal-header {
                 padding: 16px 20px;
                 border: 1px solid $colorEFEFEE;
@@ -118,6 +122,10 @@
                         li {
                             max-width: 33.33%;
                             width: 100%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
 
                             p {
                                 margin-bottom: 0px;
@@ -225,11 +233,19 @@
                            
                             padding: 0px;
                             &.custom_col{
-                                width: 43%;
+                                max-width: 43%;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                             &.first{
-                                width: 57%;
+                                max-width: 57%;
                                 padding-right: 11px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                             
                         }
@@ -251,12 +267,23 @@
                     .custom_col {
                         padding: 0px;
                         padding-right: 12px;
+                        @media (max-width: 767px) {
+                           margin-top: 10px;
+                        }
                         &.col-md-6{
-                            width: 55%;
+                            max-width: 55%;
                             padding-right: 12px;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                         }
                         &.col-md-3{
-                            width: 21%;
+                            max-width: 21%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                             &:last-child{
                                 padding-right: 0px;
                             }
@@ -268,7 +295,11 @@
                             }
                         }
                         &.col-md-4{
-                            width: 28%;
+                            max-width: 28%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                             &:last-child{
                                 padding-right: 0px;
                             }
@@ -280,7 +311,11 @@
                             }
                         }
                         &.col-md-2{
-                            width: 21%;
+                            max-width: 21%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                             &:last-child{
                                 padding-right: 0px;
                             }
@@ -342,11 +377,19 @@
                            
                             padding: 0px;
                             &.custom_col{
-                                width: 43%;
+                                max-width: 43%;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                             &.first{
-                                width: 57%;
+                                max-width: 57%;
                                 padding-right: 11px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                             
                         }
@@ -371,9 +414,17 @@
                         &.col-md-6{
                             max-width: 55%;
                             padding-right: 12px;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                         }
                         &.col-md-3{
                             max-width: 21%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                             &:last-child{
                                 padding-right: 0px;
                             }
@@ -386,6 +437,10 @@
                         }
                         &.col-md-4{
                             max-width: 28%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                             &:last-child{
                                 padding-right: 0px;
                             }
@@ -398,6 +453,10 @@
                         }
                         &.col-md-2{
                             max-width: 21%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                             &:last-child{
                                 padding-right: 0px;
                             }
@@ -410,6 +469,10 @@
                         }
                         &.col-md-8 {
                             max-width: 63%;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                         }
                         select{
                             min-width: 150px;
@@ -433,7 +496,9 @@
                 .form_check {
                     display: flex;
                     flex-direction: column;
-
+                    @media (max-width: 767px) {
+                        margin-bottom: 10px;
+                    }
                     input {
                         max-width: 294px;
                         height: 36px;
@@ -474,12 +539,20 @@
 
             .col-md-7 {
                 padding: 0px 6px 0px 0px;
-                width: 60.8%;
+                max-width: 60.8%;
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
             }
 
             .col-md-5 {
                 padding: 0px 0px 0px 6px;
-                width: 39.2%;
+                max-width: 39.2%;
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
             }
 
             .modal-footer {
