@@ -84,6 +84,9 @@
                     margin-left: 12px;
                     
                 }
+                .check{
+                    display: none;
+                }
                 &.active {
                     .steps_circle {
                         background-color: $colorE3F0FA;
@@ -99,7 +102,15 @@
                     
 
                 }
-                
+
+                &.process_done{
+                    .number{
+                        display: none;
+                    }
+                    .check{
+                        display: block;
+                    }
+                }
             }
             .a {
                 

@@ -1345,6 +1345,9 @@ h1 {
   color: #7E8992;
   margin-left: 12px;
 }
+.shipment_details .right-items .stepper_items .stpe_box .check {
+  display: none;
+}
 .shipment_details .right-items .stepper_items .stpe_box.active .steps_circle {
   background-color: #E3F0FA;
   border: 1px solid #232D35;
@@ -1355,6 +1358,12 @@ h1 {
 .shipment_details .right-items .stepper_items .stpe_box.active .step_name {
   color: #232D35;
   font-weight: 700;
+}
+.shipment_details .right-items .stepper_items .stpe_box.process_done .number {
+  display: none;
+}
+.shipment_details .right-items .stepper_items .stpe_box.process_done .check {
+  display: block;
 }
 .shipment_details .right-items .stepper_items .a.active {
   color: #232D35;
@@ -2642,11 +2651,28 @@ a.add_new_item svg {
   background: #fff;
   padding: 20px;
 }
-.tabs_section .shipment_items.opload_photo .item-main .right_items .target_block .check_fileds {
+.tabs_section .shipment_items .completed_boxes {
+  display: flex;
+  gap: 12px;
+  display: none;
+}
+.tabs_section .shipment_items.show {
+  border: 1px solid #597559;
+}
+.tabs_section .shipment_items.show .completed_boxes {
+  display: flex;
+}
+.tabs_section .shipment_items.show .target_block {
+  display: none !important;
+}
+.tabs_section .shipment_items.show .item_img svg path {
+  stroke: #365236;
+}
+.tabs_section .shipment_items.upload_photo_process .item-main .right_items .target_block .check_fileds {
   display: flex;
   margin-top: 0px;
 }
-.tabs_section .shipment_items.opload_photo .item-main .right_items .target_block .check_fileds .form_check {
+.tabs_section .shipment_items.upload_photo_process .item-main .right_items .target_block .check_fileds .form_check {
   flex-direction: inherit;
   align-items: center;
   margin-right: 12px;
@@ -2665,10 +2691,6 @@ a.add_new_item svg {
   margin-bottom: 0px;
   opacity: 0.6;
   margin-bottom: 4px;
-}
-.tabs_section .shipment_items .item-main .right_items .completed_boxes {
-  display: flex;
-  gap: 12px;
 }
 .tabs_section .shipment_items .item-main .right_items .checbox_field.completed_box {
   border-radius: 8px;

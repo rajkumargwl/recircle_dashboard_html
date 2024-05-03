@@ -20,7 +20,6 @@
             &:last-child {
                 margin-bottom: 0px;
             }
-
             &.active {
                 a {
                     color: $color232D35;
@@ -33,7 +32,6 @@
                     font-weight: 700;
                 }
             }
-
             span {
                 color: $color7E8992;
                 font-family: 'Mont';
@@ -76,7 +74,30 @@
         border: 1px solid $colorEFEFEE;
         background: $colorwhite;
         padding: 20px;
-        &.opload_photo{
+        .completed_boxes{
+            display: flex;
+            gap: 12px;
+            display: none;
+        }
+        &.show{
+            border: 1px solid $color597559;
+            .completed_boxes{
+                display: flex;
+
+            }
+            .target_block{
+                display: none !important;
+            }
+            .item_img{
+                svg{
+                    path{
+                        stroke: $color365236;
+                    }
+                    
+                }
+            }
+        }
+        &.upload_photo_process{
             .item-main{
                 .right_items{
                     .target_block{
@@ -110,10 +131,6 @@
                     margin-bottom: 0px;
                     opacity: 0.6;
                     margin-bottom: 4px;
-                }
-                .completed_boxes{
-                    display: flex;
-                    gap: 12px;
                 }
                 .checbox_field {
                     &.completed_box{
