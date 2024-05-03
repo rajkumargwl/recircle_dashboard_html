@@ -844,19 +844,31 @@ h1 {
   box-shadow: none;
   margin-right: 8px;
 }
+.data_table .bottom ul.pagination li .previous {
+  background-color: #597559;
+}
 .data_table .bottom ul.pagination li .previous:after {
   content: "";
   position: absolute;
   width: 32px;
   height: 32px;
-  background-image: url(../images/left_arrow_up.svg);
+  background-image: url(../images/Chevron-left.svg);
+  left: 7px;
+  top: 7px;
+  background-repeat: no-repeat;
+}
+.data_table .bottom ul.pagination li .next {
+  background-color: #597559;
 }
 .data_table .bottom ul.pagination li .next:before {
   content: "";
   position: absolute;
   width: 32px;
   height: 32px;
-  background-image: url(../images/right_arrow_up.svg);
+  background-image: url(../images/Chevron-right.svg);
+  background-repeat: no-repeat;
+  left: 7px;
+  top: 7px;
 }
 .data_table .bottom ul.pagination li a {
   border-radius: 100px;
@@ -1038,7 +1050,7 @@ h1 {
   }
 }
 .right_bar .right_header .process_name .breadcrumb {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 38px;
 }
@@ -1679,6 +1691,9 @@ a.add_new_item svg {
 .details_bar {
   padding-bottom: 12px;
 }
+.details_bar.sort .details .col {
+  margin-top: 13px;
+}
 .details_bar.sort .form_check {
   display: flex;
   flex-direction: column;
@@ -1890,7 +1905,7 @@ a.add_new_item svg {
 }
 .modal_main .modal-dialog .modal-content .modal-body .main_content h4 {
   margin-bottom: 0px;
-  margin-top: 14px;
+  margin-top: 17px;
   color: #365236;
   text-align: center;
   font-family: "DM Serif Text";
@@ -1944,6 +1959,9 @@ a.add_new_item svg {
 .modal_main.modal_fields .modal-dialog .modal-content.pull_content {
   max-width: 408px;
   min-width: 408px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.pull_content label {
+  margin-left: 3px;
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.pull_content {

@@ -74,7 +74,7 @@
 
                     h4 {
                         margin-bottom: 0px;
-                        margin-top: 14px;
+                        margin-top: 17px;
                         color: $color365236;
                         text-align: center;
                         font-family: "DM Serif Text";
@@ -148,7 +148,9 @@
                 &.pull_content {
                     max-width: 408px;
                     min-width: 408px;
-
+                    label{
+                        margin-left: 3px;
+                    }
                     @media (max-width: 767px) {
                         min-width: inherit;
                     }

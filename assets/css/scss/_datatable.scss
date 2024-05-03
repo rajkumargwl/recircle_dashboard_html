@@ -155,23 +155,32 @@
                 margin-right: 8px;
 
                 .previous {
+                    background-color: $color597559;
                     &:after {
                         content: '';
                         position: absolute;
                         width: 32px;
                         height: 32px;
-                        background-image: url(../images/left_arrow_up.svg);
+                        background-image: url(../images/Chevron-left.svg);
+                        left: 7px;
+                        top: 7px;
+                        background-repeat: no-repeat;
                     }
 
                 }
 
                 .next {
+                    background-color: $color597559;
+
                     &:before {
                         content: '';
                         position: absolute;
                         width: 32px;
                         height: 32px;
-                        background-image: url(../images/right_arrow_up.svg);
+                        background-image: url(../images/Chevron-right.svg);
+                        background-repeat: no-repeat;
+                        left: 7px;
+                        top: 7px;
                     }
 
                 }

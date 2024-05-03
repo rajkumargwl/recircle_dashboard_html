@@ -12,42 +12,56 @@
     padding-bottom: 12px;
 
     &.sort {
+        .details {
+            .col {
+                margin-top: 13px;
+            }
+        }
+
         .form_check {
             display: flex;
             flex-direction: column;
-            input{
+
+            input {
                 height: 36px;
                 max-width: 150px;
                 min-width: 150px;
             }
-            select{
+
+            select {
                 height: 36px;
                 max-width: 150px;
                 min-width: 150px;
             }
         }
-        .custom_checkbox{
+
+        .custom_checkbox {
             margin-bottom: -8px;
-            input{
+
+            input {
                 min-width: inherit;
                 position: relative;
             }
         }
-        .details{
+
+        .details {
             .col {
                 min-width: 150px;
+
                 &.first_field {
                     min-width: 283px;
-                   input{
-                    min-width: 283px;
-                    max-width: 283px;
-                   }
-                   select{
-                    min-width: 283px;
-                    max-width: 283px;
-                   }
+
+                    input {
+                        min-width: 283px;
+                        max-width: 283px;
+                    }
+
+                    select {
+                        min-width: 283px;
+                        max-width: 283px;
+                    }
                 }
-    
+
                 &.checbox_field {
                     min-width: 175px;
                     max-width: 175px;
@@ -62,9 +76,11 @@
         margin-bottom: 0px;
         gap: 12px;
         align-items: flex-end;
+
         @media (max-width: 1400px) {
             flex-wrap: wrap;
         }
+
         .col {
             margin-top: 10px;
             min-width: 185.33px;
@@ -88,25 +104,27 @@
     }
 }
 
-.box_shipment{
-    .card_footer{
+.box_shipment {
+    .card_footer {
         max-width: 100%;
         gap: 12px;
+
         .btn_link {
             margin-right: 0px;
         }
     }
 }
 
-.details_header{
+.details_header {
     display: flex;
     justify-content: space-between;
-    .links{
-        a{
-            &:first-child{
+
+    .links {
+        a {
+            &:first-child {
                 padding-right: 24px;
             }
         }
-        
+
     }
 }
