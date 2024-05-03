@@ -7,11 +7,13 @@
             border-radius: 8px;
             background: $colorwhite;
             max-width: 440px;
+
             .form_check {
                 @media (max-width: 767px) {
                     margin-bottom: 12px;
                 }
             }
+
             .modal-header {
                 padding: 16px 20px;
                 border: 1px solid $colorEFEFEE;
@@ -122,6 +124,7 @@
                         li {
                             max-width: 33.33%;
                             width: 100%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
@@ -181,6 +184,7 @@
                                 padding-right: 0px;
                             }
                         }
+
                         .date_time {
                             color: $color7E8992;
                             font-family: 'Mont';
@@ -198,62 +202,76 @@
 
                     }
                 }
-                &.push_content{
+
+                &.push_content {
                     max-width: 812px;
                     min-width: 812px;
-                    .top_items{
+
+                    .top_items {
                         padding-bottom: 3px;
                     }
-                    select{
+
+                    select {
                         height: 36px;
                     }
-                    .type_fields{
-                        input{
+
+                    .type_fields {
+                        input {
                             height: 36px;
                         }
                     }
 
-                    
+
                     @media (max-width: 767px) {
                         min-width: inherit;
                     }
+
                     .modal-footer {
                         padding-top: 0px;
                     }
-                    .form_check{
+
+                    .form_check {
                         padding: 0px;
                     }
-                    .check_fileds{
-                        .col-md-6{
-                            &:last-child{
+
+                    .check_fileds {
+                        .col-md-6 {
+                            &:last-child {
                                 padding-right: 0px;
                             }
                         }
-                        .col-md-6{
-                           
+
+                        .col-md-6 {
+
                             padding: 0px;
-                            &.custom_col{
-                                max-width: 43%;
+
+                            &.custom_col {
+                                width: 43%;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
                                 }
                             }
-                            &.first{
+
+                            &.first {
                                 max-width: 57%;
                                 padding-right: 11px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
                                 }
                             }
-                            
+
                         }
                     }
-                    .field_item{
+
+                    .field_item {
                         display: flex;
                         gap: 12px;
                     }
+
                     .date_time {
                         color: $color7E8992;
                         font-family: 'Mont';
@@ -264,140 +282,198 @@
                         padding-left: 32px;
                         white-space: nowrap;
                     }
+
                     .custom_col {
                         padding: 0px;
                         padding-right: 12px;
+
                         @media (max-width: 767px) {
-                           margin-top: 10px;
+                            margin-top: 10px;
                         }
-                        &.col-md-6{
-                            max-width: 55%;
+
+                        &.col-md-6 {
+                            width: 55%;
                             padding-right: 12px;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
                         }
-                        &.col-md-3{
-                            max-width: 21%;
+
+                        &.col-md-3 {
+                            width: 21%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 padding-right: 0px;
                             }
-                            input{
+
+                            input {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
-                            select{
+
+                            select {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                         }
-                        &.col-md-4{
-                            max-width: 28%;
+
+                        &.col-md-4 {
+                            width: 28%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 padding-right: 0px;
                             }
-                            input{
+
+                            input {
                                 max-width: 202px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
-                            select{
+
+                            select {
                                 max-width: 202px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                         }
-                        &.col-md-2{
-                            max-width: 21%;
+
+                        &.col-md-2 {
+                            width: 21%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 padding-right: 0px;
                             }
-                            input{
+
+                            input {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                }
                             }
-                            select{
+
+                            select {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                         }
-                        select{
+
+                        select {
                             min-width: 150px;
                         }
                     }
+
                     .select_items {
                         padding-top: 15px;
                         padding-bottom: 24px;
                         border-bottom: 1px solid $colorEFEFEE;
-                        .type_fields{
+
+                        .type_fields {
                             padding-top: 0px;
                         }
-                        .mb_20{
+
+                        .mb_20 {
                             margin-bottom: 20px;
                         }
-                        &.vendor_fields{
 
-                        }
+                        &.vendor_fields {}
                     }
                 }
-                &.open_box_content{
+
+                &.open_box_content {
                     max-width: 528px;
                     min-width: 528px;
-                    select{
+
+                    select {
                         height: 36px;
                     }
-                    .type_fields{
-                        input{
+
+                    .type_fields {
+                        input {
                             height: 36px;
                         }
                     }
 
-                    
+
                     @media (max-width: 767px) {
                         min-width: inherit;
                     }
+
                     .modal-footer {
                         padding-top: 0px;
                     }
-                    .form_check{
+
+                    .form_check {
                         padding: 0px;
                     }
-                    .check_fileds{
-                        .col-md-6{
-                            &:last-child{
+
+                    .check_fileds {
+                        .col-md-6 {
+                            &:last-child {
                                 padding-right: 0px;
                             }
                         }
-                        .col-md-6{
-                           
+
+                        .col-md-6 {
+
                             padding: 0px;
-                            &.custom_col{
+
+                            &.custom_col {
                                 max-width: 43%;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
                                 }
                             }
-                            &.first{
+
+                            &.first {
                                 max-width: 57%;
                                 padding-right: 11px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
                                 }
                             }
-                            
+
                         }
                     }
-                    .field_item{
+
+                    .field_item {
                         display: flex;
                         gap: 12px;
                     }
+
                     .date_time {
                         color: $color7E8992;
                         font-family: 'Mont';
@@ -408,82 +484,134 @@
                         padding-left: 32px;
                         white-space: nowrap;
                     }
+
                     .custom_col {
                         padding: 0px;
                         padding-right: 12px;
-                        &.col-md-6{
-                            max-width: 55%;
+
+                        &.col-md-6 {
+                            width: 55%;
                             padding-right: 12px;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
                         }
-                        &.col-md-3{
-                            max-width: 21%;
+
+                        &.col-md-3 {
+                            width: 21%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 padding-right: 0px;
                             }
-                            input{
+
+                            input {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
-                            select{
+
+                            select {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                         }
-                        &.col-md-4{
-                            max-width: 28%;
+
+                        &.col-md-4 {
+                            width: 28%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 padding-right: 0px;
                             }
-                            input{
+
+                            input {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
-                            select{
+
+                            select {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                         }
-                        &.col-md-2{
-                            max-width: 21%;
+
+                        &.col-md-2 {
+                            width: 21%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 padding-right: 0px;
                             }
-                            input{
+
+                            input {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
-                            select{
+
+                            select {
                                 max-width: 150px;
+                                @media (max-width: 767px) {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
                             }
                         }
+
                         &.col-md-8 {
-                            max-width: 63%;
+                            width: 63%;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
                             }
                         }
-                        select{
+
+                        select {
                             min-width: 150px;
+                            @media (max-width: 767px) {
+                                max-width: 100%;
+                                width: 100%;
+                            }
                         }
                     }
+
                     .select_items {
                         padding-top: 15px;
-                        .type_fields{
+
+                        .type_fields {
                             padding-top: 0px;
                         }
-                        .mb_20{
+
+                        .mb_20 {
                             margin-bottom: 20px;
                         }
                     }
@@ -493,12 +621,15 @@
             .type_fields {
                 padding-top: 24px;
                 position: relative;
+
                 .form_check {
                     display: flex;
                     flex-direction: column;
+
                     @media (max-width: 767px) {
                         margin-bottom: 10px;
                     }
+
                     input {
                         max-width: 294px;
                         height: 36px;
@@ -508,15 +639,26 @@
                         height: 36px;
                     }
                 }
+
                 .cancel_icon {
                     position: absolute;
                     right: 0px;
                     top: 5px;
+
+                    @media (max-width: 767px) {
+                        right: -14px;
+                        top: 13px;
+                    }
                 }
+
                 &.weight_field {
                     input {
                         max-width: 150px;
+                        @media (max-width: 767px) {
+                            max-width: 100%;
+                        }
                     }
+
                     .field_item {
                         position: relative;
                     }
@@ -539,7 +681,8 @@
 
             .col-md-7 {
                 padding: 0px 6px 0px 0px;
-                max-width: 60.8%;
+                width: 60.8%;
+
                 @media (max-width: 767px) {
                     max-width: 100%;
                     width: 100%;
@@ -548,7 +691,8 @@
 
             .col-md-5 {
                 padding: 0px 0px 0px 6px;
-                max-width: 39.2%;
+                width: 39.2%;
+
                 @media (max-width: 767px) {
                     max-width: 100%;
                     width: 100%;
