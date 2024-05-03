@@ -39,6 +39,39 @@
                 padding-left: 0px;
                 margin-top: 10px;
             }
+            .breadcrumb {
+                margin-top: 5px;
+                margin-bottom: 0px;
+                margin-left: 38px;
+                li{
+                    a{
+                        color: $color7E8992;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 18px;
+                        letter-spacing: -0.14px;
+                    }
+                    &:after{
+                        color: $color7E8992;
+                        padding-right: 8px;
+                    }
+                    span {
+                        color: $color232D35;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 18px;
+                        letter-spacing: -0.14px;
+                    }
+                }
+               
+               
+    
+                
+            }
         }
        
 

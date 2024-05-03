@@ -205,7 +205,7 @@ h1 {
         background-image: url(../images/Polygon.svg);
         background-repeat: no-repeat;
         background-position: calc(100% - 12px);
-        background-size: 10px;
+        background-size: 9px;
         appearance: none;
     }
 }
@@ -238,6 +238,7 @@ h1 {
         align-items: center;
         gap: 8px;
         margin-top: 0px;
+        margin-left: 0px;
     }
 
     input[type="checkbox"] {

@@ -20,7 +20,7 @@
 
                 .modal_title {
                     font-family: 'Mont';
-                    font-size: 22px;
+                    font-size: 22px !important;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 28px;
@@ -67,7 +67,9 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: 150%;
-                        margin-bottom: 0px;
+                        margin: 0 auto;
+                        max-width: 336px;
+
                     }
 
                     h4 {
@@ -120,15 +122,8 @@
                         display: flex;
                         margin-bottom: 0px;
                         flex-wrap: wrap;
-
+                        justify-content: space-between;
                         li {
-                            max-width: 33.33%;
-                            width: 100%;
-
-                            @media (max-width: 767px) {
-                                max-width: 100%;
-                                width: 100%;
-                            }
 
                             p {
                                 margin-bottom: 0px;

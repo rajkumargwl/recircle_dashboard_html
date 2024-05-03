@@ -65,15 +65,35 @@
 
     }
 
-    .custom_col {
-        max-width: 270px;
+    .col-md-2{
+        max-width: 20%;
+        min-width: 270px;
+        width: 100%;
+        @media (max-width: 1400px) {
+            max-width: 100%;
+            min-width: inherit;
+        }
     }
-
+    .col-md-10{
+        max-width: 80%;
+        width: 100%;
+        @media (max-width: 1440px) {
+            max-width: 867px;
+        }
+        @media (max-width: 1400px) {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+    }
     .shipment_items {
         border-radius: 8px;
         border: 1px solid $colorEFEFEE;
         background: $colorwhite;
         padding: 20px;
+       
+        @media (max-width: 767px) {
+            padding: 10px;
+        }
         .completed_boxes{
             display: flex;
             gap: 12px;
@@ -119,7 +139,10 @@
         .item-main {
             display: flex;
             gap: 20px;
-
+            @media (max-width: 767px) {
+                gap: 10px;
+                flex-direction: column;
+            }
             .right_items {
                 p {
                     color: $color10191F;
@@ -171,6 +194,10 @@
                     gap: 12px;
                     align-items: center;
                     margin-top: 16px;
+                    flex-wrap: wrap;
+                    @media (max-width: 767px) {
+                        padding: 10px;
+                    }
                     .link_not_required {
                         color: $color3B5A71;
                         font-family: 'Mont';
@@ -179,6 +206,9 @@
                         font-weight: 700;
                         line-height: 16px;
                         text-transform: uppercase;
+                        @media (max-width: 767px) {
+                            font-size: 12px;
+                        }
                     }
                     .form_check{
                         display: flex;
@@ -192,6 +222,9 @@
                         height: 36px;
                         &.mt_20{
                             margin-top: 20px;
+                            @media (max-width: 767px) {
+                                margin-top: 10px;
+                            }
                         }
                     }
                 }

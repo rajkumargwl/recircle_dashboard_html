@@ -168,8 +168,13 @@
                                 <path d="M20.5 12H3.67004" stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg></a>Pallet Details</h1>
-                    <p>Sorting / Shipment Detail / <span>Pallet: TB58KJHR12JHBG-P01</span>
-                    </p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Sorting</a></li>
+                          <li class="breadcrumb-item"><a href="#">Shipment Detail</a></li>
+                          <li class="breadcrumb-item"><a href="#"><span>Pallet: TB58KJHR12JHBG-P01</span></a></li>
+                        </ol>
+                      </nav>
                 </div>
                 <div class="right-items">
                 <a class="secondary_btn  header_btn" href="sorting.html">Submit Shipment for
@@ -191,33 +196,33 @@
                     <div class="takeback_card">
                         <div class="details_heading">
                             <h2 class="section_heading">Pallet Details</h2>
-                            <ul class="details">
-                                <li>
+                            <div class="details">
+                                <div class="col">
                                     <p class="light_font">Parent Brand</p>
                                     <p class="dark_font">H & M</p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
                                     <p class="light_font">Takeback Type</p>
                                     <p class="dark_font">Warehouse Bulk</p>
-                                </li>
-                                <li>
-                                    <p class="light_font">Sub Brand</p>
-                                    <p class="dark_font">Weekday</p>
-                                </li>
-                                <li>
-                                    <p class="light_font">Box Weight</p>
-                                    <p class="dark_font">32 LBS</p>
-                                </li>
-                                <li>
-                                    <p class="light_font">Box Packaging Weight</p>
-                                    <p class="dark_font">2.4 LBS</p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Pallet Quantity</p>
+                                    <p class="dark_font">52</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Opened Pallet</p>
+                                    <p class="dark_font">0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Total Weight</p>
+                                    <p class="dark_font">6240 LBS</p>
+                                </div>
+                                <div class="col">
                                     <p class="light_font">Date & Time</p>
                                     <p class="dark_font">1/08/24,03:30:25 PM</p>
-                                </li>
+                                </div>
 
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,25 +279,25 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <ul class="details">
-                                        <li>
+                                    <div class="details">
+                                        <div class="col">
                                             <p class="light_font">Box ID</p>
                                             <p class="dark_font">TB58KJHR12JHBG-P01-B01</p>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="col">
                                             <p class="light_font">Box Weight</p>
                                             <p class="dark_font">5.8 LBS</p>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="col">
                                             <p class="light_font">Product Category</p>
                                             <p class="dark_font">Apparels</p>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="col">
                                             <p class="light_font">Pre Consumer</p>
                                             <p class="dark_font">Yes</p>
-                                        </li>
+                                        </div>
 
-                                    </ul>
+                                    </div>
 
                                 </div>
                             </div>
@@ -348,25 +353,25 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <ul class="details">
-                                        <li>
+                                    <div class="details">
+                                        <div class="col">
                                             <p class="light_font">Box ID</p>
                                             <p class="dark_font">TB58KJHR12JHBG-P01-B01</p>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="col">
                                             <p class="light_font">Box Weight</p>
                                             <p class="dark_font">5.8 LBS</p>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="col">
                                             <p class="light_font">Product Category</p>
                                             <p class="dark_font">Apparels</p>
-                                        </li>
-                                        <li>
+                                        </div>
+                                        <div class="col">
                                             <p class="light_font">Pre Consumer</p>
                                             <p class="dark_font">Yes</p>
-                                        </li>
+                                        </div>
 
-                                    </ul>
+                                    </div>
 
                                 </div>
                             </div>
@@ -694,7 +699,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal_title fs-5" id="palletModalLabel">Edit Box Details</h2>
+                        <h2 class="modal_title" id="palletModalLabel">Edit Box Details</h2>
                         <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
@@ -860,7 +865,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal_title fs-5" id="deleteModalLabel">Delete Box 2</h2>
+                        <h2 class="modal_title" id="deleteModalLabel">Delete Box 2</h2>
                         <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">

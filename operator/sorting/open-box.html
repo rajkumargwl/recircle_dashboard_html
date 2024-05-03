@@ -167,8 +167,16 @@
                                 <path d="M20.5 12H3.67004" stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg></a> Open Box</h1>
-                    <p>Sorting / Shipment ID: TB58KJHR12JHBG / Pallet ID: P01 / <span>Box ID: B42</span>
-                    </p>
+                    
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Sorting</a></li>
+                             
+                              <li class="breadcrumb-item"><a href="#">Pallet ID: P01</a></li>
+                              <li class="breadcrumb-item"><a href="#">Box ID: B42</a></li>
+                              <li class="breadcrumb-item"><a href=""><span>Shipment ID: TB58KJHR12JHBG</span></a></li>
+                            </ol>
+                          </nav>
                 </div>
             </div>
             <div class="middle_bar">
@@ -176,33 +184,33 @@
                     <div class="takeback_card">
                         <div class="details_heading">
                             <h2 class="section_heading">Box 01 Details</h2>
-                            <ul class="details">
-                                <li>
+                            <div class="details sort">
+                                <div class="col">
                                     <p class="light_font">Parent Brand</p>
                                     <p class="dark_font">H & M</p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
                                     <p class="light_font">Takeback Type</p>
                                     <p class="dark_font">Warehouse Bulk</p>
-                                </li>
-                                <li>
-                                    <p class="light_font">Sub Brand</p>
-                                    <p class="dark_font">Weekday</p>
-                                </li>
-                                <li>
-                                    <p class="light_font">Box Weight</p>
-                                    <p class="dark_font">32 LBS</p>
-                                </li>
-                                <li>
-                                    <p class="light_font">Box Packaging Weight</p>
-                                    <p class="dark_font">2.4 LBS</p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Pallet Quantity</p>
+                                    <p class="dark_font">52</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Opened Pallet</p>
+                                    <p class="dark_font">0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Total Weight</p>
+                                    <p class="dark_font">6240 LBS</p>
+                                </div>
+                                <div class="col">
                                     <p class="light_font">Date & Time</p>
                                     <p class="dark_font">1/08/24,03:30:25 PM</p>
-                                </li>
+                                </div>
 
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,8 +218,8 @@
                     <div class="takeback_card">
                         <div class="details_heading">
                             <h2 class="section_heading">Sort and Add Product Details</h2>
-                            <ul class="details type_fields">
-                                <li class="first_field">
+                            <div class="details type_fields">
+                                <div class="col first_field">
 
                                     <div class="form_check">
                                         <label for="" class="field_label">Product</label>
@@ -221,8 +229,8 @@
                                             <option value="">Plastic</option>
                                         </select>
                                     </div>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
 
                                     <div class="form_check">
                                         <label for="" class="field_label">Tier</label>
@@ -232,20 +240,20 @@
                                             <option value="">Tier 3</option>
                                         </select>
                                     </div>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
                                     <div class="form_check">
                                         <label for="" class="field_label">Quantity</label>
                                         <input type="text" disabled placeholder="1">
                                     </div>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
                                     <div class="form_check">
                                         <label for="" class="field_label">Weight (Lbs)</label>
                                         <input type="text" disabled placeholder="1.28">
                                     </div>
-                                </li>
-                                <li class="checbox_field">
+                                </div>
+                                <div class="checbox_field col">
                                     <div class="form_check">
                                         <label for="" class="field_label">Good Resale Condition</label>
                                         <label class="custom_checkbox">
@@ -253,8 +261,8 @@
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="col">
                                     <a href="sorting/shipment-details.html" class="add_new_item"><svg width="16" height="16"
                                             viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 8H14" stroke="white" stroke-width="1.25" stroke-linecap="round"
@@ -262,7 +270,7 @@
                                             <path d="M8 14V2" stroke="white" stroke-width="1.25" stroke-linecap="round"
                                                 stroke-linejoin="round"></path>
                                         </svg><span>Add Product</span></a>
-                                </li>
+                                    </div>
 
                             </ul>
                         </div>
@@ -713,7 +721,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content open_box_content">
                     <div class="modal-header">
-                        <h2 class="modal_title fs-5" id="openBoxModalLabel">Open Box 42</h2>
+                        <h2 class="modal_title" id="openBoxModalLabel">Open Box 42</h2>
                         <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
@@ -741,13 +749,6 @@
                                             <p class="dark_font">Weekday</p>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="type_fields">
-                                    <div class="form_check">
-                                        <label class="field_label">Box quantity in Pallet</label>
-                                        <input type="text" disabled placeholder="12">
-                                    </div>
-
                                 </div>
                             </div>
                             <div class="bottom_items">
@@ -896,17 +897,8 @@
                         <div class="modal-footer">
                               <a class="btn_link secondary_btn" aria-label="Close"
                                 data-bs-dismiss="modal"  href="#">Cancel</a>
-                            <a class="btn_link primary-btn" aria-label="Close"
-                                 href="open-box-one.html">Save</a>
                             <a  class="btn_link primary-btn" aria-label="Close"
-                                 href="open-box-one.html">Save & Open Box<svg width="20"
-                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.0247 4.94165L17.0831 9.99998L12.0247 15.0583" stroke="white"
-                                            stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M2.91666 10H16.9417" stroke="white" stroke-width="1.25"
-                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg></a>
+                                 href="open-box-one.html">Save & Continue</a>
                         </div>
 
                 </div>

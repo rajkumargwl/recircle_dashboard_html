@@ -17,6 +17,10 @@
     &:hover {
         background-color: $color7E8992;
     }
+    @media (max-width: 767px) {
+        font-size: 12px;
+        padding: 12px;
+    }
 }
 
 .primary-btn {
@@ -34,7 +38,10 @@
     font-weight: 700;
     line-height: 16px;
     padding: 16px 24px;
-
+    @media (max-width: 767px) {
+        font-size: 12px;
+        padding: 12px;
+    }
     svg {
         margin-left: 5px;
     }
@@ -50,10 +57,13 @@
     font-weight: 500;
     font-size: 14px;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: 6px;
     color: $colorwhite;
     border: none;
     line-height: 16px;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 
 .header_btn {
@@ -61,6 +71,10 @@
     font-weight: 500;
     font-size: 14px;
     padding: 12px;
+    border-radius: 6px;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 
 .add_new_material {
@@ -77,6 +91,9 @@
             font-weight: 700;
             line-height: 16px;
             text-transform: uppercase;
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
         }
     }
 }
@@ -122,6 +139,9 @@ a.add_new_item {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 .success_number {
     background-color: $colorF2F5F1;

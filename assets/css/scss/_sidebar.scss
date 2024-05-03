@@ -113,7 +113,8 @@
                     &.user_name {
                         height: 75px;
                         margin-top: 24px;
-
+                        border-top: 1px solid $colorEFEFEE;
+                        padding: 0px;
                         a {
                             padding: 20px;
                         }

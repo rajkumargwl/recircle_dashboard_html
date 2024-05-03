@@ -99,3 +99,46 @@ $(document).ready(function () {
 });
 
 
+// tabs
+function tabsSteps() {
+    const menuBtn = document.querySelectorAll('.tabs_section .shipment_items .primary-btn');
+    // const topBar = document.querySelector('.tabs_section');
+    // const leftbar = document.querySelectorAll('.tabs_section .shipment_items');
+    menuBtn.forEach((toggle) => {
+        toggle.addEventListener('click', function(event) {
+        
+            const shipmentElement = toggle.closest('.tabs_section .shipment_items');
+            const topBar = toggle.querySelector('.tabs_section');
+            if (shipmentElement) {
+                // Toggle the 'open' class on the .shipment element as well
+                shipmentElement.classList.toggle('show');
+            }
+            if (topBar) {
+                // Toggle the 'open' class on the .shipment element as well
+                topBar.classList.toggle('active-in');
+            }
+        });
+    });
+    // if (menuBtn && leftbar) {
+    //     menuBtn.addEventListener("click", function () {
+    //         topBar.classList.toggle('is-active');
+    //         leftbar.classList.toggle('show');
+    //     });
+    // }
+}
+tabsSteps();
+
+
+
+
+// // Select all elements with the class .menu__child-toggle
+// const childToggles = document.querySelectorAll('.menu__child-toggle');
+
+// // Iterate over each child toggle element
+// childToggles.forEach(function(toggle) {
+//     // Add click event listener to each toggle
+//     toggle.addEventListener('click', function(event) {
+//         // Toggle the 'open' class on the parent element
+//         toggle.parentElement.classList.toggle('open');
+//     });
+// });

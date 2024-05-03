@@ -5,29 +5,6 @@
                 margin-right: 8px;
             }
         }
-
-        p {
-            color: $color7E8992;
-            font-family: 'Mont';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: -0.14px;
-            margin-top: 5px;
-            margin-bottom: 0px;
-            margin-left: 38px;
-
-            span {
-                color: $color232D35;
-                font-family: 'Mont';
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 18px;
-                letter-spacing: -0.14px;
-            }
-        }
     }
 }
 
@@ -49,13 +26,18 @@
                 min-width: 150px;
             }
         }
-        ul{
-            li {
+        .custom_checkbox{
+            margin-bottom: -8px;
+            input{
+                min-width: inherit;
+                position: relative;
+            }
+        }
+        .details{
+            .col {
                 min-width: 150px;
-                max-width: 150px;
                 &.first_field {
                     min-width: 283px;
-                    max-width: 283px;
                    input{
                     min-width: 283px;
                     max-width: 283px;
@@ -67,7 +49,6 @@
                 }
     
                 &.checbox_field {
-                    margin-bottom: 35px;
                     min-width: 175px;
                     max-width: 175px;
                 }
@@ -75,7 +56,7 @@
         }
     }
 
-    ul {
+    .details {
         padding-left: 0px;
         display: flex;
         margin-bottom: 0px;
@@ -84,8 +65,7 @@
         @media (max-width: 1400px) {
             flex-wrap: wrap;
         }
-        li {
-            max-width: 185.33px;
+        .col {
             margin-top: 10px;
             min-width: 185.33px;
 

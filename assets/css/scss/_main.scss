@@ -4,13 +4,11 @@
 }
 
 .middle_bar {
-    margin: 24px 24px 24px 24px;
-
+    margin: 24px;
     @media (max-width: 950px) {
-        margin: 12px 12px 12px 12px;
+        margin: 12px;
     }
 }
-
 .dahboard_footer {
     display: flex;
     padding-top: 24px;
