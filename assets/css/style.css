@@ -1650,6 +1650,7 @@ a.add_new_item svg {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  border-radius: 6px;
 }
 @media (max-width: 767px) {
   .small-btn {
@@ -1984,7 +1985,7 @@ a.add_new_item svg {
   min-width: 812px;
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .top_items {
-  padding-bottom: 3px;
+  padding-bottom: 24px;
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content select {
   height: 36px;
@@ -2003,6 +2004,35 @@ a.add_new_item svg {
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .form_check {
   padding: 0px;
 }
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row {
+  display: flex;
+  align-items: center;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check {
+  position: relative;
+  width: 50%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check .date_time {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row {
+  display: flex;
+  align-items: center;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.first {
+  width: 55%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.first .form_check:last-child {
+  padding-left: 2px;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second {
+  width: 45%;
+}
+.modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second .form_check:last-child {
+  padding-left: 40px;
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6:last-child {
   padding-right: 0px;
 }
@@ -2020,7 +2050,8 @@ a.add_new_item svg {
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6.first {
   max-width: 57%;
-  padding-right: 11px;
+  padding: 0px;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6.first {
@@ -2355,6 +2386,10 @@ a.add_new_item svg {
 .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .select_items .mb_20 {
   margin-bottom: 20px;
 }
+.modal_main.modal_fields .modal-dialog .modal-content.delete_box .top_items {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
 .modal_main.modal_fields .modal-dialog .type_fields {
   padding-top: 24px;
   position: relative;
@@ -2398,7 +2433,7 @@ a.add_new_item svg {
   position: relative;
 }
 .modal_main.modal_fields .modal-dialog .bottom_items {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 .modal_main.modal_fields .modal-dialog .bottom_items .header_items {
   display: flex;
@@ -2683,28 +2718,30 @@ a.add_new_item svg {
   letter-spacing: -0.28px;
   background-color: #fff;
 }
-.tabs_section .col-md-2 {
+.tabs_section .custom_col.number {
   max-width: 20%;
   min-width: 270px;
   width: 100%;
+  padding-right: 12px;
 }
 @media (max-width: 1400px) {
-  .tabs_section .col-md-2 {
+  .tabs_section .custom_col.number {
     max-width: 100%;
     min-width: inherit;
   }
 }
-.tabs_section .col-md-10 {
+.tabs_section .col-md-10.process_fields {
   max-width: 80%;
   width: 100%;
+  padding-left: 12px;
 }
-@media (max-width: 1440px) {
-  .tabs_section .col-md-10 {
+@media (max-width: 1600px) {
+  .tabs_section .col-md-10.process_fields {
     max-width: 867px;
   }
 }
 @media (max-width: 1400px) {
-  .tabs_section .col-md-10 {
+  .tabs_section .col-md-10.process_fields {
     max-width: 100%;
     margin-top: 10px;
   }
@@ -2733,6 +2770,9 @@ a.add_new_item svg {
 }
 .tabs_section .shipment_items.show .target_block {
   display: none !important;
+}
+.tabs_section .shipment_items.show .target_check {
+  display: none;
 }
 .tabs_section .shipment_items.show .item_img svg path {
   stroke: #365236;

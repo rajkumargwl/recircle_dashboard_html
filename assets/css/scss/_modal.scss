@@ -123,6 +123,7 @@
                         margin-bottom: 0px;
                         flex-wrap: wrap;
                         justify-content: space-between;
+
                         li {
 
                             p {
@@ -203,7 +204,7 @@
                     min-width: 812px;
 
                     .top_items {
-                        padding-bottom: 3px;
+                        padding-bottom: 24px;
                     }
 
                     select {
@@ -230,6 +231,42 @@
                     }
 
                     .check_fileds {
+                        .custom_row {
+                            display: flex;
+                            align-items: center;
+                            .form_check {
+                                position: relative;
+                                width: 50%;
+                                .date_time {
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 30px;
+                                }
+                            }
+                           
+                        }
+                        &.custom_row{
+                            display: flex;
+                            align-items: center;
+                            .custom_col{
+                                &.first{
+                                    width: 55%;
+                                    .form_check{
+                                        &:last-child{
+                                            padding-left: 2px;
+                                        }
+                                    }
+                                }
+                                &.second{
+                                    width: 45%;
+                                    .form_check{
+                                        &:last-child{
+                                            padding-left: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         .col-md-6 {
                             &:last-child {
                                 padding-right: 0px;
@@ -251,7 +288,8 @@
 
                             &.first {
                                 max-width: 57%;
-                                padding-right: 11px;
+                                padding: 0px;
+                                width: 100%;
 
                                 @media (max-width: 767px) {
                                     max-width: 100%;
@@ -310,6 +348,7 @@
 
                             input {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -318,6 +357,7 @@
 
                             select {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -339,6 +379,7 @@
 
                             input {
                                 max-width: 202px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -347,6 +388,7 @@
 
                             select {
                                 max-width: 202px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -368,6 +410,7 @@
 
                             input {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                 }
@@ -375,6 +418,7 @@
 
                             select {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -508,6 +552,7 @@
 
                             input {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -516,6 +561,7 @@
 
                             select {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -537,6 +583,7 @@
 
                             input {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -545,6 +592,7 @@
 
                             select {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -566,6 +614,7 @@
 
                             input {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -574,6 +623,7 @@
 
                             select {
                                 max-width: 150px;
+
                                 @media (max-width: 767px) {
                                     max-width: 100%;
                                     width: 100%;
@@ -592,6 +642,7 @@
 
                         select {
                             min-width: 150px;
+
                             @media (max-width: 767px) {
                                 max-width: 100%;
                                 width: 100%;
@@ -609,6 +660,13 @@
                         .mb_20 {
                             margin-bottom: 20px;
                         }
+                    }
+                }
+
+                &.delete_box {
+                    .top_items {
+                        border-bottom: none;
+                        padding-bottom: 0px;
                     }
                 }
             }
@@ -649,6 +707,7 @@
                 &.weight_field {
                     input {
                         max-width: 150px;
+
                         @media (max-width: 767px) {
                             max-width: 100%;
                         }
@@ -661,7 +720,7 @@
             }
 
             .bottom_items {
-                padding-top: 20px;
+                padding-top: 24px;
 
                 .header_items {
                     display: flex;
