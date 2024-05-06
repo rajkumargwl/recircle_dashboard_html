@@ -231,7 +231,13 @@ h1 {
         margin-left: 5px;
     }
 }
-
+.process_name {
+    .main_title {
+        svg {
+            margin-right: 12px;
+        }
+    }
+}
 .slide_check {
     label {
         display: flex;

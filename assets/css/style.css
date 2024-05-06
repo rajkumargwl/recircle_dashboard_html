@@ -357,6 +357,10 @@ h1 {
   margin-left: 5px;
 }
 
+.process_name .main_title svg {
+  margin-right: 12px;
+}
+
 .slide_check label {
   display: flex;
   align-items: center;
@@ -1693,7 +1697,7 @@ a.add_new_item svg {
 }
 
 .open_shipment .process_name .main_title svg {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .details_bar {
