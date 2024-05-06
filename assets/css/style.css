@@ -2053,7 +2053,7 @@ a.add_new_item svg {
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .type_fields input {
     width: 100%;
-    max-width: 97.5%;
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -2215,7 +2215,7 @@ a.add_new_item svg {
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 input {
     width: 100%;
-    max-width: 97.5%;
+    max-width: 100%;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 select {
@@ -2245,7 +2245,7 @@ a.add_new_item svg {
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 input {
     width: 100%;
-    max-width: 97.5%;
+    max-width: 100%;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 select {
@@ -2275,7 +2275,7 @@ a.add_new_item svg {
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 input {
     width: 100%;
-    max-width: 97.5%;
+    max-width: 100%;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 select {
@@ -2399,7 +2399,7 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3 input {
-    max-width: 97.5%;
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -2429,7 +2429,7 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-4 input {
-    max-width: 97.5%;
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -2459,7 +2459,7 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-2 input {
-    max-width: 97.5%;
+    max-width: 100%;
     width: 100%;
   }
 }
