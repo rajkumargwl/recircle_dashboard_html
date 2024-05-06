@@ -622,6 +622,22 @@ h1 {
   border-top: 1px solid #EFEFEE;
   padding: 0px;
 }
+.left_bar .sidebar .sidebar_menu ul li.user_name .avatar {
+  border-radius: 30px;
+  background: #E3F0FA;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  color: #232D35;
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+}
 .left_bar .sidebar .sidebar_menu ul li.user_name a {
   padding: 20px;
 }
