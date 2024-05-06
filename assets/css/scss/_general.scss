@@ -159,6 +159,12 @@ h1 {
     margin-bottom: 16px;
 }
 
+.form-control{
+    &:focus {
+        box-shadow: 0 0 0 gray;
+        border-color: #efefee
+    }
+}
 //common input field
 .type_fields {
     input {

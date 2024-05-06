@@ -105,6 +105,14 @@
     .login_btn {
         max-width: 480px;
         width: 100%;
+        &:active{
+            background-color: $color597559;
+            color: $colorwhite;
+        }
+        &:focus-visible{
+            background-color: $color597559;
+            color: $colorwhite;
+        }
     }
     .reset-text {
         text-align: center;

@@ -279,6 +279,11 @@ h1 {
   margin-bottom: 16px;
 }
 
+.form-control:focus {
+  box-shadow: 0 0 0 gray;
+  border-color: #efefee;
+}
+
 .type_fields input {
   border-radius: 8px;
   border: 1px solid #EFEFEE;
@@ -1829,6 +1834,7 @@ a.add_new_item svg {
 }
 .tabs_filter .tabs {
   display: flex;
+  overflow-x: auto;
 }
 .tabs_filter .tabs li {
   padding-right: 20px;
@@ -1945,6 +1951,11 @@ a.add_new_item svg {
   padding-top: 4px;
   border-bottom: 1px solid #EFEFEE;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content .top_items {
+    padding-bottom: 12px;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content .section_heading {
   font-weight: 500;
 }
@@ -1954,6 +1965,11 @@ a.add_new_item svg {
   margin-bottom: 0px;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content .data_items ul li {
+    margin-top: 10px;
+  }
 }
 .modal_main.modal_fields .modal-dialog .modal-content .data_items ul li p {
   margin-bottom: 0px;
@@ -2014,14 +2030,31 @@ a.add_new_item svg {
   max-width: 812px;
   min-width: 812px;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .cancel_icon {
+    top: -24px;
+    right: 0px;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .top_items {
   padding-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .top_items {
+    padding-bottom: 12px;
+  }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content select {
   height: 36px;
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .type_fields input {
   height: 36px;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .type_fields input {
+    width: 100%;
+    max-width: 97.5%;
+  }
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content {
@@ -2038,6 +2071,11 @@ a.add_new_item svg {
   display: flex;
   align-items: center;
 }
+@media (max-width: 580px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row {
+    flex-direction: column;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check {
   position: relative;
   width: 50%;
@@ -2047,14 +2085,29 @@ a.add_new_item svg {
     width: 100%;
   }
 }
+@media (max-width: 580px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check {
+    margin-bottom: 15px;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check .date_time {
   position: absolute;
   left: 0px;
   top: 30px;
 }
+@media (max-width: 580px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check .date_time {
+    top: 24px;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row {
   display: flex;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row {
+    flex-direction: column;
+  }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.first {
   width: 55%;
@@ -2077,6 +2130,11 @@ a.add_new_item svg {
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second .form_check:last-child {
   padding-left: 40px;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second .form_check:last-child {
+    padding-left: 0px;
+  }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .col-md-6:last-child {
   padding-right: 0px;
@@ -2124,7 +2182,8 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col {
-    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 0px;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-6 {
@@ -2135,6 +2194,7 @@ a.add_new_item svg {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-6 {
     max-width: 100%;
     width: 100%;
+    padding-right: 0px;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 {
@@ -2154,8 +2214,8 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 input {
-    max-width: 100%;
     width: 100%;
+    max-width: 97.5%;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-3 select {
@@ -2184,8 +2244,8 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 input {
-    max-width: 100%;
     width: 100%;
+    max-width: 97.5%;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-4 select {
@@ -2214,7 +2274,8 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 input {
-    max-width: 100%;
+    width: 100%;
+    max-width: 97.5%;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .custom_col.col-md-2 select {
@@ -2304,6 +2365,12 @@ a.add_new_item svg {
   padding: 0px;
   padding-right: 12px;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col {
+    margin-bottom: 10px;
+    padding-right: 0px;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-6 {
   width: 55%;
   padding-right: 12px;
@@ -2312,6 +2379,7 @@ a.add_new_item svg {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-6 {
     max-width: 100%;
     width: 100%;
+    padding-right: 0px;
   }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3 {
@@ -2331,7 +2399,7 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-3 input {
-    max-width: 100%;
+    max-width: 97.5%;
     width: 100%;
   }
 }
@@ -2361,7 +2429,7 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-4 input {
-    max-width: 100%;
+    max-width: 97.5%;
     width: 100%;
   }
 }
@@ -2391,7 +2459,7 @@ a.add_new_item svg {
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .custom_col.col-md-2 input {
-    max-width: 100%;
+    max-width: 97.5%;
     width: 100%;
   }
 }
@@ -2431,6 +2499,11 @@ a.add_new_item svg {
 .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .select_items .mb_20 {
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.open_box_content .select_items .mb_20 {
+    margin-bottom: 10px;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.delete_box .top_items {
   border-bottom: none;
   padding-bottom: 0px;
@@ -2452,18 +2525,23 @@ a.add_new_item svg {
   max-width: 294px;
   height: 36px;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .type_fields .form_check input {
+    max-width: 100%;
+  }
+}
 .modal_main.modal_fields .modal-dialog .type_fields .form_check select {
   height: 36px;
 }
 .modal_main.modal_fields .modal-dialog .type_fields .cancel_icon {
   position: absolute;
   right: 0px;
-  top: 5px;
+  top: 4px;
 }
 @media (max-width: 767px) {
   .modal_main.modal_fields .modal-dialog .type_fields .cancel_icon {
-    right: -14px;
-    top: 13px;
+    top: -24px;
+    right: 0px;
   }
 }
 .modal_main.modal_fields .modal-dialog .type_fields.weight_field input {
@@ -2635,6 +2713,14 @@ a.add_new_item svg {
 .login-block .login_btn {
   max-width: 480px;
   width: 100%;
+}
+.login-block .login_btn:active {
+  background-color: #597559;
+  color: #fff;
+}
+.login-block .login_btn:focus-visible {
+  background-color: #597559;
+  color: #fff;
 }
 .login-block .reset-text {
   text-align: center;
