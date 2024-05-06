@@ -101,14 +101,13 @@ $(document).ready(function () {
 
 // tabs
 function tabsSteps() {
-    const menuBtn = document.querySelectorAll('.tabs_section .shipment_items .primary-btn');
-    // const topBar = document.querySelector('.tabs_section');
-    // const leftbar = document.querySelectorAll('.tabs_section .shipment_items');
+    const menuBtn = document.querySelectorAll('.tabs_section .shipment_items');
     menuBtn.forEach((toggle) => {
         toggle.addEventListener('click', function(event) {
         
             const shipmentElement = toggle.closest('.tabs_section .shipment_items');
-            const topBar = toggle.querySelector('.tabs_section');
+            const topBar = toggle.closest('.tabs_section');
+            const number_bar = toggle.querySelector('.tabs_section .tabs_number li');
             if (shipmentElement) {
                 // Toggle the 'open' class on the .shipment element as well
                 shipmentElement.classList.toggle('show');
@@ -117,28 +116,25 @@ function tabsSteps() {
                 // Toggle the 'open' class on the .shipment element as well
                 topBar.classList.toggle('active-in');
             }
+            if (number_bar) {
+                // Toggle the 'open' class on the .shipment element as well
+                topBar.classList.toggle('active');
+            }
         });
     });
-    // if (menuBtn && leftbar) {
-    //     menuBtn.addEventListener("click", function () {
-    //         topBar.classList.toggle('is-active');
-    //         leftbar.classList.toggle('show');
-    //     });
-    // }
 }
 tabsSteps();
 
-
-
-
-// // Select all elements with the class .menu__child-toggle
-// const childToggles = document.querySelectorAll('.menu__child-toggle');
-
-// // Iterate over each child toggle element
-// childToggles.forEach(function(toggle) {
-//     // Add click event listener to each toggle
-//     toggle.addEventListener('click', function(event) {
-//         // Toggle the 'open' class on the parent element
-//         toggle.parentElement.classList.toggle('open');
-//     });
-// });
+function tableAccordian() {
+    const menuBtn = document.querySelectorAll('.dt-hasChild .add_plus');
+    menuBtn.forEach((toggle) => {
+        toggle.addEventListener('click', function(event) {
+            const shipmentElement = toggle.closest('.dt-hasChild');
+            if (shipmentElement) {
+                // Toggle the 'open' class on the .shipment element as well
+                shipmentElement.classList.toggle('show');
+            }
+        });
+    });
+}
+tableAccordian();

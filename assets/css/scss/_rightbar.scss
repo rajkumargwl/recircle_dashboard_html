@@ -82,12 +82,8 @@
 
             @media (max-width: 950px) {
                 margin: 10px 0px;
-            }
-
-            @media (max-width: 767px) {
                 flex-wrap: wrap;
             }
-
             .header_item {
                 position: relative;
                 &.filter{

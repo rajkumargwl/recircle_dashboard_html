@@ -757,6 +757,15 @@ h1 {
 .data_table table tbody tr:nth-child(even) td {
   background-color: #FAFAFA;
 }
+.data_table table tbody tr .minus {
+  display: none;
+}
+.data_table table tbody tr.dt-hasChild td .minus {
+  display: block;
+}
+.data_table table tbody tr.dt-hasChild td .plus {
+  display: none;
+}
 .data_table table tbody tr td {
   padding: 10px 20px 10px 20px;
   height: 64px;
@@ -764,6 +773,9 @@ h1 {
   text-align: left !important;
   box-shadow: none !important;
   border: none !important;
+}
+.data_table table tbody tr td.add_plus {
+  text-align: right !important;
 }
 .data_table table tbody tr td.edit_view a:first-child {
   margin-right: 6px;
@@ -1084,10 +1096,6 @@ h1 {
 @media (max-width: 950px) {
   .right_bar .right_header .right-items {
     margin: 10px 0px;
-  }
-}
-@media (max-width: 767px) {
-  .right_bar .right_header .right-items {
     flex-wrap: wrap;
   }
 }
@@ -2030,6 +2038,11 @@ a.add_new_item svg {
   position: relative;
   width: 50%;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check {
+    width: 100%;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds .custom_row .form_check .date_time {
   position: absolute;
   left: 0px;
@@ -2042,11 +2055,21 @@ a.add_new_item svg {
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.first {
   width: 55%;
 }
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.first {
+    width: 100%;
+  }
+}
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.first .form_check:last-child {
   padding-left: 2px;
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second {
   width: 45%;
+}
+@media (max-width: 767px) {
+  .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second {
+    width: 100%;
+  }
 }
 .modal_main.modal_fields .modal-dialog .modal-content.push_content .check_fileds.custom_row .custom_col.second .form_check:last-child {
   padding-left: 40px;
@@ -2676,6 +2699,17 @@ a.add_new_item svg {
   background-color: transparent !important;
 }
 
+.tabs_section.active-in .tabs_number li.active a {
+  color: #232D35;
+  border: 1px solid #597559;
+  background-color: #fff;
+}
+.tabs_section.active-in .tabs_number li.active a .number {
+  display: none;
+}
+.tabs_section.active-in .tabs_number li.active a .check {
+  display: block;
+}
 .tabs_section .tabs_number {
   position: relative;
 }
@@ -2726,8 +2760,10 @@ a.add_new_item svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7E8992;
   text-align: center;
+}
+.tabs_section .tabs_number li .number {
+  color: #7E8992;
   font-family: "Mont";
   font-size: 14px;
   font-style: normal;
@@ -2735,6 +2771,12 @@ a.add_new_item svg {
   line-height: 10px;
   letter-spacing: -0.28px;
   background-color: #fff;
+  padding-left: 0px;
+  padding-top: 2px;
+}
+.tabs_section .tabs_number li .check {
+  display: none;
+  padding-left: 0px;
 }
 .tabs_section .custom_col.number {
   max-width: 20%;
@@ -2744,8 +2786,13 @@ a.add_new_item svg {
 }
 @media (max-width: 1400px) {
   .tabs_section .custom_col.number {
-    max-width: 100%;
+    max-width: 30%;
     min-width: inherit;
+  }
+}
+@media (max-width: 991px) {
+  .tabs_section .custom_col.number {
+    max-width: 100%;
   }
 }
 .tabs_section .col-md-10.process_fields {
@@ -2759,6 +2806,11 @@ a.add_new_item svg {
   }
 }
 @media (max-width: 1400px) {
+  .tabs_section .col-md-10.process_fields {
+    max-width: 70%;
+  }
+}
+@media (max-width: 991px) {
   .tabs_section .col-md-10.process_fields {
     max-width: 100%;
     margin-top: 10px;

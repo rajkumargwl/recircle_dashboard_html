@@ -239,6 +239,9 @@
                             .form_check {
                                 position: relative;
                                 width: 50%;
+                                 @media (max-width: 767px) {
+                                    width: 100%;
+                                 }
                                 .date_time {
                                     position: absolute;
                                     left: 0px;
@@ -253,6 +256,9 @@
                             .custom_col{
                                 &.first{
                                     width: 55%;
+                                    @media (max-width: 767px) {
+                                        width: 100%;
+                                     }
                                     .form_check{
                                         &:last-child{
                                             padding-left: 2px;
@@ -261,6 +267,9 @@
                                 }
                                 &.second{
                                     width: 45%;
+                                    @media (max-width: 767px) {
+                                        width: 100%;
+                                     }
                                     .form_check{
                                         &:last-child{
                                             padding-left: 40px;

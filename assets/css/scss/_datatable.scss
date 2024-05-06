@@ -52,7 +52,21 @@
                         background-color: $colorFAFAFA;
                     }
                 }
-
+                .minus{
+                    display: none;
+                }
+                    &.dt-hasChild{
+                        
+                        td{
+                            .minus{
+                                display: block;
+                            }
+                            .plus{
+                                display: none;
+                            }
+                        }
+                    }
+                    
                 td {
                     padding: 10px 20px 10px 20px;
                     height: 64px;
@@ -60,7 +74,9 @@
                     text-align: left !important;
                     box-shadow: none !important;
                     border: none !important;
-
+                    &.add_plus{
+                        text-align: right !important;
+                    }
                     &.edit_view {
                         a {
                             &:first-child {
