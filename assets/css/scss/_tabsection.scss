@@ -1,4 +1,10 @@
 .tabs_section {
+    .row {
+        --bs-gutter-x: 0;
+        @media (max-width: 991px) {
+            --bs-gutter-x: 1.5rem;
+        }
+    }
     &.active-in {
         .tabs_number {
             li {
@@ -36,7 +42,7 @@
         li {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 32px;
             position: relative;
             z-index: 9;
 
@@ -76,6 +82,7 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                background-color: white;
             }
             .number {
                
@@ -141,41 +148,71 @@
         border: 1px solid $colorEFEFEE;
         background: $colorwhite;
         padding: 20px;
+        &.photography_process {
+            .item-main {
+                .right_items {
+                    .target_block {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.upload_photo_process {
+            .item-main {
+                .right_items {
+                    .target_block {
+                        display: none;
+                    }
+                    .target_check {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.Warehouse_process {
+            .item-main {
+                .right_items {
+                    .target_block {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.pack_process{
+            .item-main {
+                .right_items {
+                    .target_block {
+                        display: none;
+                    }
+                }
+            }
+        }
 
         @media (max-width: 767px) {
             padding: 10px;
         }
 
         .completed_boxes {
-            display: flex;
             gap: 12px;
             display: none;
+            &.upload_check_boxes-flex {
+                display: none;
+            }
+        }
+
+
+        .item_img {
+            svg {
+                path {
+                    stroke: $color365236;
+                }
+
+            }
         }
 
         &.show {
             border: 1px solid $color597559;
 
-            .completed_boxes {
-                display: flex;
-
-            }
-
-            .target_block {
-                display: none !important;
-            }
-
-            .target_check {
-                display: none;
-            }
-
-            .item_img {
-                svg {
-                    path {
-                        stroke: $color365236;
-                    }
-
-                }
-            }
         }
 
         &.upload_photo_process {
@@ -186,11 +223,18 @@
                         .check_fileds {
                             display: flex;
                             margin-top: 0px;
+                            @media (max-width: 991px) {
+                                flex-direction: column;
+                            }
 
                             .form_check {
                                 flex-direction: inherit;
                                 align-items: center;
                                 margin-right: 12px;
+                                @media (max-width: 991px) {
+                                    align-items: flex-start;
+                                    flex-direction: row;
+                                }
                             }
                         }
                     }
@@ -219,6 +263,10 @@
                     margin-bottom: 0px;
                     opacity: 0.6;
                     margin-bottom: 4px;
+                    &.tabs_desc {
+                        margin-top: 8px;
+                        margin-bottom: 0;
+                    }
                 }
 
                 .checbox_field {
@@ -226,8 +274,11 @@
                         border-radius: 8px;
                         border: 1px solid $colorEFEFEE;
                         background: $colorwhite;
-                        padding: 8px;
-                        margin-top: 16px;
+                        padding: 3px 8px;
+                        margin-top: 24px;
+                        // max-width: 256px;
+                        border-radius: 20px;
+                        width: max-content;
 
                         .custom_checkbox {
                             .checkmark {
@@ -241,7 +292,7 @@
                     }
 
                     .check_title {
-                        padding-left: 20px;
+                        padding-left: 22px;
                         overflow: hidden;
                         color: $color232D35;
                         text-overflow: ellipsis;
@@ -251,19 +302,39 @@
                         font-weight: 400;
                         line-height: 150%;
                         letter-spacing: -0.14px;
+                        @media (max-width: 767px) {
+                            max-width: 250px;
+                            display: block;
+
+                        }
 
                         &.upload_check {
                             padding-left: 28px;
+                            font-family: 'Mont';
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 12px; /* 100% */
+                            letter-spacing: 0.6px;
+                            text-transform: uppercase;
                         }
                     }
                 }
 
                 .target_block {
                     display: flex;
-                    gap: 12px;
+                    gap: 24px;
                     align-items: center;
-                    margin-top: 16px;
+                    margin-top: 24px;
                     flex-wrap: wrap;
+                    .light_field_label {
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                    &.photo_block {
+                        gap: 12px;
+                    }
 
                     @media (max-width: 767px) {
                         padding: 10px;

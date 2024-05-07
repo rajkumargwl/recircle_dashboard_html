@@ -59,10 +59,20 @@
                         
                         td{
                             .minus{
-                                display: block;
+                                display: none;
                             }
                             .plus{
-                                display: none;
+                                
+                                display: block
+                            }
+                        }
+                        &.show  {
+                            .plus{
+                                
+                                display: none
+                            }
+                            .minus{
+                                display: block;
                             }
                         }
                     }
