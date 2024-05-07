@@ -1,0 +1,203 @@
+.brands_page{
+    .sub_brands_items{
+        .check_fields_head{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+            .checbox_field{
+                margin-top: 0px;
+            }
+            .field_label{
+                margin-bottom: 0px;
+                padding-top: 10px;
+            }
+        }
+        .checbox_field{
+            margin-top: 22px;
+        }
+    }
+    .right-items{
+        margin: 0px 320px 0px auto;
+        @media (max-width: 1400px) {
+            margin: 0px auto 0px auto;
+        }
+        @media (max-width: 1024px) {
+            margin: 10px 0px;
+        }
+    }
+    .card_footer {
+        max-width: 100%;
+        .primary-btn {
+            gap: 10px;
+            svg{
+                margin-left: 0px;
+            }
+        }
+        &.three_btns{
+            justify-content: space-between;
+            .right_btns{
+                display: flex;
+                gap: 12px;
+            }
+        }
+    }
+    .select_items{
+        margin-bottom: 40px;
+    }
+    .checbox_field{
+        margin-top: 40px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .custom_checkbox{
+            padding-left: 32px;
+            color: $color444547;
+            font-family: 'Mont';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            padding-top: 7px;
+        }
+        .fields{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            @media (max-width: 950px) {
+                gap: 20px;
+            }
+        }
+      }
+      .fields{
+        margin-top: 0px;
+        &.contact_field{
+            .row{
+                max-width: 99%;
+                position: relative;
+                .cancel_col{
+                    max-width: 0%;
+                    position: absolute;
+                    top: 28px;
+                    right: 0px;
+                    &.first_icon{
+                        top: 55px;
+                    }
+                    @media (max-width: 950px) {
+                        right: 10px;
+                    }
+                }
+                &.heading_row{
+                    .col{
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+      }
+      .bottom_items{
+        .header_items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+      }
+     .row{
+        margin: 0px;
+        .col{
+            padding: 0px 20px 0px 0px;
+            &:last-child{
+                padding-right: 0px;
+            }
+            @media (max-width: 950px) {
+                flex: 100%;
+            }
+        }
+       
+     }
+     .takeback_card{
+        &.inner_card{
+            border-radius: 8px;
+            border: 1px solid $colorEFEFEE;
+            background: $colorwhite;
+            box-shadow: none;
+            margin-bottom: 20px;
+            padding: 14px 20px 24px 20px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            .header_items{
+                align-items: baseline;
+                .form_check{
+                    input{
+                        min-width: 320px;
+                    }
+                }
+            }
+        }
+     } 
+}
+.takeback_card{
+    &.brand_card{
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+.brand_details_bar{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    .brand_logo{
+        display: flex;
+        margin-top: -38px;
+        a{
+            border-radius: 8px;
+            border: 1px solid $colorEFEFEE;
+            background: $colorwhite;
+            padding: 20px;
+            display: block;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .details_section{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+        .brand_details{
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            width: 317px;
+            @media (max-width: 1439px) {
+                width: 30%;
+            }
+            @media (max-width: 1300px) {
+                width: 40%;
+            }
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+            .avatar{
+                width: 40px;
+                height: 40px;
+                
+            }
+            p{
+                &.light_grey{
+                    margin-bottom: 12px;
+                }
+                &.dark_font{
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+    
+}

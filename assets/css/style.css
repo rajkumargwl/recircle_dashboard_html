@@ -139,6 +139,10 @@ ul {
   margin-bottom: 0px;
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 select {
   background-image: url(../images/Polygon.svg);
   background-repeat: no-repeat;
@@ -231,6 +235,15 @@ h1 {
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.14px;
+}
+
+.light_grey {
+  color: #7E8992;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .success_font {
@@ -432,12 +445,14 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  height: 22px;
-  width: 22px;
-  background-color: #eee;
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
 }
 .custom_checkbox:hover input ~ .checkmark {
-  background-color: #ccc;
+  background: #fff;
 }
 .custom_checkbox input:checked ~ .checkmark {
   content: "";
@@ -1308,11 +1323,11 @@ h1 {
 }
 
 .middle_bar {
-  margin: 24px;
+  padding: 24px;
 }
 @media (max-width: 950px) {
   .middle_bar {
-    margin: 12px;
+    padding: 12px;
   }
 }
 
@@ -3428,26 +3443,202 @@ a.add_new_item svg {
   padding-top: 10px;
 }
 
-.checbox_field {
+.brands_page .sub_brands_items .check_fields_head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.brands_page .sub_brands_items .check_fields_head .checbox_field {
+  margin-top: 0px;
+}
+.brands_page .sub_brands_items .check_fields_head .field_label {
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.brands_page .sub_brands_items .checbox_field {
+  margin-top: 22px;
+}
+.brands_page .right-items {
+  margin: 0px 320px 0px auto;
+}
+@media (max-width: 1400px) {
+  .brands_page .right-items {
+    margin: 0px auto 0px auto;
+  }
+}
+@media (max-width: 1024px) {
+  .brands_page .right-items {
+    margin: 10px 0px;
+  }
+}
+.brands_page .card_footer {
+  max-width: 100%;
+}
+.brands_page .card_footer .primary-btn {
+  gap: 10px;
+}
+.brands_page .card_footer .primary-btn svg {
+  margin-left: 0px;
+}
+.brands_page .card_footer.three_btns {
+  justify-content: space-between;
+}
+.brands_page .card_footer.three_btns .right_btns {
+  display: flex;
+  gap: 12px;
+}
+.brands_page .select_items {
+  margin-bottom: 40px;
+}
+.brands_page .checbox_field {
   margin-top: 40px;
   display: flex;
   gap: 40px;
   align-items: center;
 }
-.checbox_field .custom_checkbox {
+.brands_page .checbox_field .custom_checkbox {
   padding-left: 32px;
+  color: #444547;
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding-top: 7px;
 }
-.checbox_field .fields {
+.brands_page .checbox_field .fields {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 @media (max-width: 950px) {
-  .checbox_field .fields {
+  .brands_page .checbox_field .fields {
     gap: 20px;
   }
 }
+.brands_page .fields {
+  margin-top: 0px;
+}
+.brands_page .fields.contact_field .row {
+  max-width: 99%;
+  position: relative;
+}
+.brands_page .fields.contact_field .row .cancel_col {
+  max-width: 0%;
+  position: absolute;
+  top: 28px;
+  right: 0px;
+}
+.brands_page .fields.contact_field .row .cancel_col.first_icon {
+  top: 55px;
+}
+@media (max-width: 950px) {
+  .brands_page .fields.contact_field .row .cancel_col {
+    right: 10px;
+  }
+}
+.brands_page .fields.contact_field .row.heading_row .col {
+  padding: 0px;
+}
+.brands_page .bottom_items .header_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brands_page .row {
+  margin: 0px;
+}
+.brands_page .row .col {
+  padding: 0px 20px 0px 0px;
+}
+.brands_page .row .col:last-child {
+  padding-right: 0px;
+}
+@media (max-width: 950px) {
+  .brands_page .row .col {
+    flex: 100%;
+  }
+}
+.brands_page .takeback_card.inner_card {
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
+  box-shadow: none;
+  margin-bottom: 20px;
+  padding: 14px 20px 24px 20px;
+}
+.brands_page .takeback_card.inner_card:last-child {
+  margin-bottom: 0px;
+}
+.brands_page .takeback_card.inner_card .header_items {
+  align-items: baseline;
+}
+.brands_page .takeback_card.inner_card .header_items .form_check input {
+  min-width: 320px;
+}
 
-.fields {
-  margin-top: 10px;
+.takeback_card.brand_card {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.brand_details_bar {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+.brand_details_bar .brand_logo {
+  display: flex;
+  margin-top: -38px;
+}
+.brand_details_bar .brand_logo a {
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
+  padding: 20px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand_details_bar .details_section {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+.brand_details_bar .details_section .brand_details {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 317px;
+}
+@media (max-width: 1439px) {
+  .brand_details_bar .details_section .brand_details {
+    width: 30%;
+  }
+}
+@media (max-width: 1300px) {
+  .brand_details_bar .details_section .brand_details {
+    width: 40%;
+  }
+}
+@media (max-width: 991px) {
+  .brand_details_bar .details_section .brand_details {
+    width: 100%;
+  }
+}
+.brand_details_bar .details_section .brand_details .avatar {
+  width: 40px;
+  height: 40px;
+}
+.brand_details_bar .details_section .brand_details p.light_grey {
+  margin-bottom: 12px;
+}
+.brand_details_bar .details_section .brand_details p.dark_font {
+  line-height: 14px;
 }/*# sourceMappingURL=style.css.map */
