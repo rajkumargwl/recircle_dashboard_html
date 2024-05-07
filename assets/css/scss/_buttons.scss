@@ -157,3 +157,33 @@ a.add_new_item {
     border-radius: 8px;
     margin-left: 4px;
 }
+
+.avatar {
+    border-radius: 30px;
+    background: $colorE3F0FA;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    color: $color232D35;
+    font-family: 'Mont';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+.view_link{
+    color: $color597559;
+    font-family: 'Mont';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    svg{
+        margin-left: 4px;
+    }
+}

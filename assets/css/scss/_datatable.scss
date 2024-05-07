@@ -97,6 +97,15 @@
                             margin-top: 2px;
                         }
                     }
+                    .multi_items{
+                        display: flex;
+                        align-items: center;
+                        .avatar{
+                            margin-right: 12px;
+                            width: 38px;
+                            height: 38px;
+                        }
+                    }
                 }
             }
         }

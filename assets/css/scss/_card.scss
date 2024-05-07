@@ -1,0 +1,247 @@
+.custom_card_row {
+    // display: grid;
+    // grid-template-columns: auto auto auto auto;
+    margin: 0px;
+
+    .col {
+        padding: 0px 6px;
+        margin-bottom: 12px;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+
+        &:last-child {
+            padding-right: 0px;
+        }
+
+        @media (max-width: 991px) {
+            flex: 100%;
+            padding: 0px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 355px;
+            min-height: 355px;
+            height: auto;
+        }
+    }
+}
+
+.card {
+    border: none;
+
+    .card_header {
+        display: flex;
+        justify-content: space-between;
+
+        &.card_header {
+            margin-bottom: 30px;
+        }
+
+        select {
+            padding: 6px 12px;
+            min-width: 115px;
+            height: 28px;
+            color: $color232D35;
+            font-family: 'Mont';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.14px;
+            border-radius: 4px;
+            border: 1px solid $colorEFEFEE;
+            background: $colorwhite;
+            display: block;
+            width: 100%;
+            background-image: url(../images/Polygon.svg);
+            background-repeat: no-repeat;
+            background-position: calc(100% - 12px);
+            background-size: 9px;
+            appearance: none;
+        }
+    }
+
+    .card_items {
+        display: flex;
+        gap: 2px;
+
+        &.first_space_bw {
+            justify-content: space-between;
+        }
+
+        .card-item {
+            margin-top: 13px;
+            margin-bottom: 0px;
+
+            p.light_font {
+                margin-bottom: 12px;
+                color: $color7E8992;
+                line-height: 18px;
+            }
+
+            p.dark_font {
+                line-height: 14px;
+                font-weight: 500;
+                margin-bottom: 0px;
+            }
+
+            .card_inner {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: 1400px) {
+                    flex-direction: column;
+                }
+                &.bottom_fields{
+                    flex-direction: column;
+                    .brand_labels{
+                        flex-direction: row;
+                        gap: 24px;
+                        .brand_ratio {
+                            margin-bottom: 0px;
+                        }
+                    }
+                    img{
+                        min-height: 248px;
+                        &.graf{
+                            min-height: 306px;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .brand_labels {
+                    display: flex;
+                    flex-direction: column;
+
+                    .brand_ratio {
+                        display: flex;
+                        margin-bottom: 16px;
+                        gap: 12px;
+                        align-items: center;
+                        p{
+                            box-shadow: 0px 1px 4px rgba(16, 25, 31, 0.25);
+                            stroke-width: 3px;
+                            stroke: $colorwhite;
+                            width: 20px;
+                            height: 20px;
+                            display: block;
+                            border-radius: 50%;
+                            margin-bottom: 0px;
+                            padding-right: 8px;
+                            .brand_radio {
+                                width: 10px;
+                                height: 10px;
+                                display: block;
+                                left: 4px;
+                                top: 5px;
+                                position: relative;
+                                border-radius: 50%;
+                                background-color: $colorA7BAA6;
+                                &.hundread{
+                                    background-color: $color365236;
+                                }
+                                &.eighty{
+                                    background-color: $color597559;
+                                }
+                                &.seventy{
+                                    background-color: $color7C987C;
+                                }
+                                &.fifty{
+                                    background-color: $colorA7BAA6;
+                                }
+                                &.twenty{
+                                    background-color: $colorD2DDD0;
+                                }
+                            }
+                        }
+                        .brand_details{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            gap: 12px;
+                        }
+                    }
+
+                    
+
+                    .process {
+                        color: $color7E8992;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 18px;
+                    }
+
+                    .data {
+                        color: $color232D35;
+                        font-family: 'Mont';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 14px;
+
+                        padding-top: 2px;
+                    }
+                }
+
+                .check_fileds {
+                    margin-top: 0px;
+
+                    input[type=radio] {
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+                    }
+
+                    label {
+                        margin-left: 10px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 12px;
+
+                        span {
+                            display: flex;
+                        }
+
+                    }
+
+                    .form_check {
+                        margin-bottom: 16px;
+                        display: flex;
+                    }
+                }
+
+                img {
+                    max-height: 200px;
+                    min-height: 200px;
+                    min-width: 200px;
+                    width: 100%;
+                    min-height: inherit;
+                }
+            }
+        }
+
+        .col {
+            padding: 0px;
+        }
+    }
+
+
+    .card-title {
+        margin-bottom: 0px;
+        color: $color232D35;
+        font-family: 'Mont';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
