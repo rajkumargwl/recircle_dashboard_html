@@ -53,6 +53,9 @@
             }
             &.dark_font{
                 padding-top: 10px;
+                span{
+                  color: $color365236;
+                }
             }
         }
     }

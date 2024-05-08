@@ -23,6 +23,15 @@
                     border-bottom: 2px solid $color597559;
                     color: $color597559;
                     font-weight: 700;
+                    .success_number{
+                        background-color: $colorF2F2F4;
+                        font-weight: 700;
+                    }
+                }
+                .success_number{
+                    background-color: $colorF2F2F4;
+                    font-weight: 600;
+                    margin-left: 8px;
                 }
             }
         }
