@@ -244,6 +244,7 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+  margin-bottom: 8px;
 }
 
 .success_font {
@@ -288,8 +289,20 @@ h1 {
   margin-bottom: 20px;
 }
 
+.mt_15 {
+  margin-top: 15px;
+}
+
+.mt_10 {
+  margin-top: 10px;
+}
+
 .mb_16 {
   margin-bottom: 16px;
+}
+
+.pd_0 {
+  padding: 0px !important;
 }
 
 .form-control:focus {
@@ -519,6 +532,27 @@ h1 {
   line-height: 16px;
   /* 100% */
   text-transform: uppercase;
+}
+
+.input-group.input_icon {
+  flex-direction: column;
+}
+.input-group.input_icon .icon {
+  position: absolute;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  top: 14px;
+  display: block;
+  left: 0;
+  padding: 16px 0px 0px 16px;
+}
+.input-group.input_icon input {
+  padding-left: 42px;
 }
 
 .left_bar {
@@ -782,7 +816,7 @@ h1 {
   text-transform: uppercase;
   height: 64px;
   vertical-align: middle;
-  background-color: #dbdddd !important;
+  background-color: #DBDDDD !important;
   text-align: left !important;
   border: none !important;
 }
@@ -837,9 +871,10 @@ h1 {
 .data_table table tbody tr td .open_data {
   display: flex;
   gap: 4px;
+  align-items: center;
 }
 .data_table table tbody tr td .open_data svg {
-  margin-top: 2px;
+  margin-top: -2px;
 }
 .data_table table tbody tr td .multi_items {
   display: flex;
@@ -1070,6 +1105,10 @@ h1 {
   height: 36px;
   display: flex;
   align-items: center;
+}
+
+table.table.dataTable > tbody > tr {
+  background-color: #F2F2F4 !important;
 }
 
 .right_bar {
@@ -1629,6 +1668,8 @@ h1 {
 }
 .primary-btn svg {
   margin-left: 5px;
+  width: 16px;
+  margin-top: -2px;
 }
 .primary-btn:hover {
   background-color: #7C987C;
@@ -1664,12 +1705,12 @@ h1 {
   }
 }
 
-.add_new_material a {
+.add_new_material {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.add_new_material a span {
+.add_new_material span {
   color: #3B5A71;
   font-family: "Mont";
   font-size: 14px;
@@ -1679,7 +1720,7 @@ h1 {
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  .add_new_material a span {
+  .add_new_material span {
     font-size: 12px;
   }
 }
@@ -1928,6 +1969,15 @@ a.add_new_item svg {
   color: #597559;
   font-weight: 700;
 }
+.tabs_filter .tabs li a.active .success_number {
+  background-color: #F2F2F4;
+  font-weight: 700;
+}
+.tabs_filter .tabs li a .success_number {
+  background-color: #F2F2F4;
+  font-weight: 600;
+  margin-left: 8px;
+}
 
 .modal_main .modal-dialog {
   display: flex;
@@ -2071,6 +2121,8 @@ a.add_new_item svg {
 }
 .modal_main.modal_fields .modal-dialog .modal-content.pull_content .modal-footer a svg {
   margin-left: 12px;
+  width: 16px;
+  margin-top: -2px;
 }
 .modal_main.modal_fields .modal-dialog .modal-content.pull_content .bottom_items h5 {
   padding-left: 0px;
@@ -2852,6 +2904,15 @@ a.add_new_item svg {
 .data_table .accoridan_section .accordian_list {
   padding-bottom: 15px;
 }
+.data_table .accoridan_section .accordian_list .light_font {
+  margin-bottom: 12px;
+  color: #7e8992;
+  line-height: 18px;
+}
+.data_table .accoridan_section .accordian_list .dark_font {
+  line-height: 14px;
+  font-weight: 500;
+}
 .data_table dl, .data_table dd, .data_table dt {
   margin-bottom: 0px;
 }
@@ -3454,9 +3515,18 @@ a.add_new_item svg {
 .upload_file .upload_items P.dark_font {
   padding-top: 10px;
 }
+.upload_file .upload_items P.dark_font span {
+  color: #365236;
+}
 
+.brands_page .row {
+  align-items: baseline;
+}
 .brands_page .tabs_filter {
   margin-bottom: 20px;
+}
+.brands_page .tabs_filter.pricing_filter {
+  margin-bottom: 12px;
 }
 .brands_page .sub_brands_items .check_fields_head {
   display: flex;
@@ -3569,6 +3639,9 @@ a.add_new_item svg {
 .brands_page .row .col:last-child {
   padding-right: 0px;
 }
+.brands_page .row .col:first-child {
+  padding-right: 20px;
+}
 @media (max-width: 950px) {
   .brands_page .row .col {
     flex: 100%;
@@ -3582,6 +3655,9 @@ a.add_new_item svg {
   margin-bottom: 20px;
   padding: 14px 20px 24px 20px;
 }
+.brands_page .takeback_card.inner_card.pricing_items {
+  padding: 20px;
+}
 .brands_page .takeback_card.inner_card:last-child {
   margin-bottom: 0px;
 }
@@ -3590,6 +3666,9 @@ a.add_new_item svg {
 }
 .brands_page .takeback_card.inner_card .header_items .form_check input {
   min-width: 320px;
+}
+.brands_page .takeback_card.brand_pricing_card {
+  min-height: 400px;
 }
 
 .takeback_card.brand_card {
@@ -3667,8 +3746,36 @@ a.add_new_item svg {
 
 .table_header {
   padding: 20px;
-  background-color: #fff;
   border-radius: 8px;
   border: 1px solid #EFEFEE;
   background: #fff;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.box_title {
+  color: #232D35;
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.pricing_table td .input_icon .icon {
+  padding: 5px 0px 0px 12px;
+  top: 0px;
+}
+.pricing_table td .input_icon input {
+  height: 36px;
+  padding-left: 28px;
+}
+.pricing_table td .input_icon .delete_icon {
+  position: absolute;
+  right: 12px;
+  top: 4px;
+}
+.pricing_table td .add_new_material a {
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */
