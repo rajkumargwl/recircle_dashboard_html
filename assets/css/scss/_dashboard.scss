@@ -42,7 +42,7 @@
 
         select {
             padding: 6px 12px;
-            min-width: 115px;
+            min-width: 100px;
             height: 28px;
             color: $color232D35;
             font-family: 'Mont';
@@ -58,9 +58,12 @@
             width: 100%;
             background-image: url(../images/Polygon.svg);
             background-repeat: no-repeat;
-            background-position: calc(100% - 12px);
+            background-position: calc(100% - 8px);
             background-size: 9px;
             appearance: none;
+            &.all_utility{
+                min-width: 120px;
+            }
         }
     }
 
@@ -100,7 +103,11 @@
                     flex-direction: column;
                     .brand_labels{
                         flex-direction: row;
+                        flex-wrap: wrap;
                         gap: 24px;
+                        @media (max-width: 1400px) {
+                            gap: 15px;
+                        }
                         .brand_ratio {
                             margin-bottom: 0px;
                         }

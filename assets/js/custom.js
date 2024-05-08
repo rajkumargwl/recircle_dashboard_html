@@ -234,3 +234,14 @@ function readUrl(input) {
     }
   
   }
+
+
+  //date picker
+  $(document).ready(function(){
+  
+    $(function () {
+      $('#startDate').datepicker({
+     format: 'dd/mm/yyyy' 
+    });
+    });
+  });

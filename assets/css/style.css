@@ -823,6 +823,9 @@ h1 {
 .data_table table tbody tr td.add_plus {
   text-align: right !important;
 }
+.data_table table tbody tr td.text_right {
+  text-align: right !important;
+}
 .data_table table tbody tr td.edit_view a:first-child {
   margin-right: 6px;
 }
@@ -3204,7 +3207,7 @@ a.add_new_item svg {
 }
 .card .card_header select {
   padding: 6px 12px;
-  min-width: 115px;
+  min-width: 100px;
   height: 28px;
   color: #232D35;
   font-family: "Mont";
@@ -3220,11 +3223,14 @@ a.add_new_item svg {
   width: 100%;
   background-image: url(../images/Polygon.svg);
   background-repeat: no-repeat;
-  background-position: calc(100% - 12px);
+  background-position: calc(100% - 8px);
   background-size: 9px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+.card .card_header select.all_utility {
+  min-width: 120px;
 }
 .card .card_items {
   display: flex;
@@ -3263,7 +3269,13 @@ a.add_new_item svg {
 }
 .card .card_items .card-item .card_inner.bottom_fields .brand_labels {
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
+}
+@media (max-width: 1400px) {
+  .card .card_items .card-item .card_inner.bottom_fields .brand_labels {
+    gap: 15px;
+  }
 }
 .card .card_items .card-item .card_inner.bottom_fields .brand_labels .brand_ratio {
   margin-bottom: 0px;
@@ -3443,6 +3455,9 @@ a.add_new_item svg {
   padding-top: 10px;
 }
 
+.brands_page .tabs_filter {
+  margin-bottom: 20px;
+}
 .brands_page .sub_brands_items .check_fields_head {
   display: flex;
   align-items: center;
@@ -3487,9 +3502,6 @@ a.add_new_item svg {
 .brands_page .card_footer.three_btns .right_btns {
   display: flex;
   gap: 12px;
-}
-.brands_page .select_items {
-  margin-bottom: 40px;
 }
 .brands_page .checbox_field {
   margin-top: 40px;
@@ -3641,4 +3653,22 @@ a.add_new_item svg {
 }
 .brand_details_bar .details_section .brand_details p.dark_font {
   line-height: 14px;
+  font-weight: 500;
+}
+
+.transparent_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transparent_header .section_heading {
+  font-weight: 500;
+}
+
+.table_header {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
 }/*# sourceMappingURL=style.css.map */
