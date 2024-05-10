@@ -182,6 +182,16 @@ h1 {
   background: #fff;
   box-shadow: 0px 1px 6px -2px rgba(0, 0, 0, 0.1);
 }
+.takeback_card.f-height {
+  min-height: 400px;
+}
+.takeback_card.inner_card {
+  box-shadow: none;
+}
+
+.align_items_center {
+  align-items: center !important;
+}
 
 .field_label {
   color: #232D35;
@@ -244,7 +254,7 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .success_font {
@@ -255,6 +265,25 @@ h1 {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.field_value {
+  color: #232D35;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.16px;
+}
+
+.font_small {
+  color: #232D35;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
 }
 
 .mb_8 {
@@ -293,6 +322,14 @@ h1 {
   margin-top: 15px;
 }
 
+.pt_20 {
+  padding-top: 20px;
+}
+
+.pt_10 {
+  padding-top: 10px;
+}
+
 .mt_10 {
   margin-top: 10px;
 }
@@ -303,6 +340,14 @@ h1 {
 
 .pd_0 {
   padding: 0px !important;
+}
+
+.pr_10 {
+  padding-right: 10px !important;
+}
+
+.pt_8 {
+  padding-top: 8px;
 }
 
 .form-control:focus {
@@ -325,7 +370,7 @@ h1 {
   padding: 12px;
 }
 .type_fields input::-moz-placeholder {
-  color: #232D35;
+  color: #7E8992;
   font-family: "Mont";
   font-size: 14px;
   font-style: normal;
@@ -334,7 +379,7 @@ h1 {
   letter-spacing: -0.14px;
 }
 .type_fields input::placeholder {
-  color: #232D35;
+  color: #7E8992;
   font-family: "Mont";
   font-size: 14px;
   font-style: normal;
@@ -365,6 +410,9 @@ h1 {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+.type_fields .disabled_input {
+  background: #EFEFEE;
 }
 
 .check_fileds {
@@ -447,6 +495,16 @@ h1 {
   position: relative;
   cursor: pointer;
 }
+.custom_checkbox.size_20 {
+  padding-left: 28px !important;
+}
+.custom_checkbox.size_20 .checkmark {
+  width: 20px;
+  height: 20px;
+}
+.custom_checkbox.size_20 input:checked ~ .checkmark {
+  background-size: 18px;
+}
 .custom_checkbox input {
   position: absolute;
   opacity: 0;
@@ -460,8 +518,8 @@ h1 {
   left: 0;
   height: 24px;
   width: 24px;
-  border-radius: 8px;
-  border: 1px solid #EFEFEE;
+  border-radius: 6px;
+  border: 1px solid #444547;
   background: #fff;
 }
 .custom_checkbox:hover input ~ .checkmark {
@@ -472,6 +530,8 @@ h1 {
   background-image: url(../images/checkmark.svg);
   position: absolute;
   background-size: 22px;
+  border: 1px solid transparent;
+  background-repeat: no-repeat;
 }
 .custom_checkbox .checkmark:after {
   left: 9px;
@@ -826,7 +886,7 @@ h1 {
   }
 }
 .data_table table tbody tr:nth-child(even) {
-  background-color: #FAFAFA;
+  background-color: #FAFAFA !important;
 }
 .data_table table tbody tr:nth-child(even) td {
   background-color: #FAFAFA;
@@ -860,7 +920,7 @@ h1 {
 .data_table table tbody tr td.text_right {
   text-align: right !important;
 }
-.data_table table tbody tr td.edit_view a:first-child {
+.data_table table tbody tr td.edit_view a {
   margin-right: 6px;
 }
 @media (max-width: 1400px) {
@@ -884,6 +944,60 @@ h1 {
   margin-right: 12px;
   width: 38px;
   height: 38px;
+}
+.data_table table.pricing_table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.data_table table.pricing_table td {
+  padding-right: 0px;
+}
+.data_table table.pricing_table td:last-child {
+  padding-right: 20px;
+}
+.data_table table.pricing_table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+@media (max-width: 1400px) {
+  .data_table table.pricing_table td {
+    min-width: inherit;
+  }
+}
+.data_table table.pricing_table td input {
+  height: 36px;
+}
+.data_table table.pricing_table td .input_icon .icon {
+  padding: 5px 0px 0px 12px;
+  top: -1px;
+}
+.data_table table.pricing_table td .input_icon input {
+  height: 36px;
+  padding-left: 28px;
+}
+.data_table table.pricing_table td .input_icon .delete_icon {
+  position: absolute;
+  right: 12px;
+  top: 4px;
+}
+.data_table table.pricing_table td .add_new_material a {
+  white-space: nowrap;
+}
+.data_table table.pricing_table .custom_checkbox .checkmark {
+  top: -13px;
+  height: 24px;
+  width: 24px;
+  border-radius: #fff;
+}
+.data_table table.pricing_table .custom_checkbox input:checked ~ .checkmark {
+  background-image: url(../images/checkmark-new.svg);
+  border-radius: inherit;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
 }
 .data_table .success {
   color: #365236;
@@ -1202,6 +1316,19 @@ table.table.dataTable > tbody > tr {
 .right_bar .right_header .right-items .header_item.filter {
   margin: 0px 12px;
 }
+.right_bar .right_header .right-items .header_item.filter a span {
+  color: #365236;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+.right_bar .right_header .right-items .header_item.filter a svg {
+  margin-right: 3px;
+}
 .right_bar .right_header .right-items .header_item .filter_modal .offcanvas {
   max-width: 280px;
 }
@@ -1326,16 +1453,6 @@ table.table.dataTable > tbody > tr {
      -moz-appearance: none;
           appearance: none;
 }
-.right_bar .right_header .right-items .header_item a span {
-  color: #365236;
-  font-family: "Mont";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  margin-left: 5px;
-  margin-right: 0px;
-}
 .right_bar .right_header .right-items .header_item a.add_new_item {
   padding: 0px 12px;
   height: 36px;
@@ -1410,6 +1527,9 @@ table.table.dataTable > tbody > tr {
   letter-spacing: -0.14px;
 }
 
+.shipment_details .card_footer {
+  max-width: 858px;
+}
 .shipment_details .card_footer .primary-btn svg {
   margin-left: 10px;
 }
@@ -1434,16 +1554,16 @@ table.table.dataTable > tbody > tr {
   display: flex;
   gap: 20px;
 }
-.shipment_details .right-items {
+.shipment_details .stepper_section {
   margin: 0px auto 0px 220px;
 }
 @media (max-width: 1200px) {
-  .shipment_details .right-items {
+  .shipment_details .stepper_section {
     margin: 0px auto 0px auto;
   }
 }
 @media (max-width: 950px) {
-  .shipment_details .right-items {
+  .shipment_details .stepper_section {
     margin: 10px 0px;
   }
 }
@@ -1486,6 +1606,11 @@ table.table.dataTable > tbody > tr {
   color: #7E8992;
   margin-left: 12px;
 }
+@media (max-width: 1024px) {
+  .stepper_top_menus .stepper_items .stpe_box .step_name {
+    font-size: 14px;
+  }
+}
 .stepper_top_menus .stepper_items .stpe_box .check {
   display: none;
 }
@@ -1527,7 +1652,6 @@ table.table.dataTable > tbody > tr {
 .card_footer {
   display: flex;
   justify-content: flex-end;
-  max-width: 858px;
   padding-top: 20px;
   gap: 12px;
 }
@@ -1724,6 +1848,17 @@ table.table.dataTable > tbody > tr {
     font-size: 12px;
   }
 }
+.add_new_material.add_product a {
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  .add_new_material.add_product a {
+    margin-top: 0px;
+  }
+}
+.add_new_material.add_product a span {
+  font-size: 16px;
+}
 
 a.add_new_item {
   padding: 0px 12px;
@@ -1813,6 +1948,32 @@ a.add_new_item svg {
 }
 .view_link svg {
   margin-left: 4px;
+}
+
+.add_items {
+  display: flex;
+  gap: 8px;
+  max-width: 600px;
+  padding-left: 0px;
+  flex-wrap: wrap;
+}
+.add_items .selected {
+  border-radius: 100px;
+  border: 1px solid #efefee;
+  color: #232d35;
+  font-family: "Mont";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  height: 36px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.add_items .selected svg {
+  margin-left: 10px;
 }
 
 .open_shipment .process_name .main_title svg {
@@ -1908,6 +2069,9 @@ a.add_new_item svg {
 }
 .details_header .links a:first-child {
   padding-right: 24px;
+}
+.details_header.vendor_header .links svg {
+  margin-right: 2px;
 }
 
 .carousel .slider_controler {
@@ -3522,6 +3686,13 @@ a.add_new_item svg {
 .brands_page .row {
   align-items: baseline;
 }
+.brands_page .row.box_items {
+  align-items: center;
+}
+.brands_page .inner_box {
+  padding: 20px;
+  border-bottom: 1px solid #EFEFEE;
+}
 .brands_page .tabs_filter {
   margin-bottom: 20px;
 }
@@ -3544,16 +3715,16 @@ a.add_new_item svg {
 .brands_page .sub_brands_items .checbox_field {
   margin-top: 22px;
 }
-.brands_page .right-items {
+.brands_page .stepper_section {
   margin: 0px 320px 0px auto;
 }
 @media (max-width: 1400px) {
-  .brands_page .right-items {
+  .brands_page .stepper_section {
     margin: 0px auto 0px auto;
   }
 }
 @media (max-width: 1024px) {
-  .brands_page .right-items {
+  .brands_page .stepper_section {
     margin: 10px 0px;
   }
 }
@@ -3565,6 +3736,7 @@ a.add_new_item svg {
 }
 .brands_page .card_footer .primary-btn svg {
   margin-left: 0px;
+  width: 100%;
 }
 .brands_page .card_footer.three_btns {
   justify-content: space-between;
@@ -3596,7 +3768,7 @@ a.add_new_item svg {
   flex-wrap: wrap;
   gap: 40px;
 }
-@media (max-width: 950px) {
+@media (max-width: 991px) {
   .brands_page .checbox_field .fields {
     gap: 20px;
   }
@@ -3608,18 +3780,33 @@ a.add_new_item svg {
   max-width: 99%;
   position: relative;
 }
+@media (max-width: 991px) {
+  .brands_page .fields.contact_field .row {
+    margin-top: 10px;
+  }
+}
 .brands_page .fields.contact_field .row .cancel_col {
   max-width: 0%;
   position: absolute;
   top: 28px;
-  right: 0px;
+  right: 3px;
+}
+@media (max-width: 991px) {
+  .brands_page .fields.contact_field .row .cancel_col {
+    top: -8px;
+  }
 }
 .brands_page .fields.contact_field .row .cancel_col.first_icon {
-  top: 55px;
+  top: 8px;
 }
-@media (max-width: 950px) {
+@media (max-width: 991px) {
+  .brands_page .fields.contact_field .row .cancel_col.first_icon {
+    top: -8px;
+  }
+}
+@media (max-width: 991px) {
   .brands_page .fields.contact_field .row .cancel_col {
-    right: 10px;
+    right: 25px;
   }
 }
 .brands_page .fields.contact_field .row.heading_row .col {
@@ -3629,23 +3816,6 @@ a.add_new_item svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.brands_page .row {
-  margin: 0px;
-}
-.brands_page .row .col {
-  padding: 0px 20px 0px 0px;
-}
-.brands_page .row .col:last-child {
-  padding-right: 0px;
-}
-.brands_page .row .col:first-child {
-  padding-right: 20px;
-}
-@media (max-width: 950px) {
-  .brands_page .row .col {
-    flex: 100%;
-  }
 }
 .brands_page .takeback_card.inner_card {
   border-radius: 8px;
@@ -3666,9 +3836,6 @@ a.add_new_item svg {
 }
 .brands_page .takeback_card.inner_card .header_items .form_check input {
   min-width: 320px;
-}
-.brands_page .takeback_card.brand_pricing_card {
-  min-height: 400px;
 }
 
 .takeback_card.brand_card {
@@ -3761,21 +3928,205 @@ a.add_new_item svg {
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 0px;
+  padding-left: 0px;
+}
+.box_title.font_w_bold {
+  font-weight: 700;
 }
 
-.pricing_table td .input_icon .icon {
-  padding: 5px 0px 0px 12px;
-  top: 0px;
+.fields .row {
+  margin: 0px;
 }
-.pricing_table td .input_icon input {
-  height: 36px;
-  padding-left: 28px;
+.fields .row .col {
+  padding: 0px 20px 0px 0px;
 }
-.pricing_table td .input_icon .delete_icon {
+@media (max-width: 991px) {
+  .fields .row .col {
+    padding-right: 0px;
+  }
+}
+.fields .row .col:last-child {
+  padding-right: 0px;
+}
+@media (max-width: 991px) {
+  .fields .row .col:last-child {
+    padding-right: 0px;
+  }
+}
+.fields .row .col:first-child {
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .fields .row .col:first-child {
+    padding-right: 0px;
+  }
+}
+.fields .row .col:nth-child(2) {
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .fields .row .col:nth-child(2) {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .fields .row .col {
+    flex: 100%;
+  }
+}
+.fields .row .col.box_left {
+  padding-right: 5px;
+}
+@media (max-width: 991px) {
+  .fields .type_fields {
+    margin-top: 20px;
+  }
+}
+
+.utility_box {
+  padding: 5px 0px 0px 0px;
+  border-top: 1px solid #EFEFEE;
+  margin-top: 20px;
+}
+
+.user_page .row {
+  align-items: baseline;
+}
+.user_page .tabs_filter {
+  margin-bottom: 20px;
+}
+.user_page .tabs_filter.pricing_filter {
+  margin-bottom: 12px;
+}
+.user_page .sub_brands_items .check_fields_head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.user_page .sub_brands_items .check_fields_head .checbox_field {
+  margin-top: 0px;
+}
+.user_page .sub_brands_items .check_fields_head .field_label {
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.user_page .sub_brands_items .checbox_field {
+  margin-top: 22px;
+}
+.user_page .card_footer {
+  max-width: 100%;
+}
+.user_page .card_footer .primary-btn {
+  gap: 10px;
+}
+.user_page .card_footer .primary-btn svg {
+  margin-left: 0px;
+}
+.user_page .card_footer.three_btns {
+  justify-content: space-between;
+}
+.user_page .card_footer.three_btns .right_btns {
+  display: flex;
+  gap: 12px;
+}
+.user_page .checbox_field {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.user_page .checbox_field .custom_checkbox {
+  padding-left: 32px;
+  color: #444547;
+  font-family: "Mont";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+.user_page .checbox_field .fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 950px) {
+  .user_page .checbox_field .fields {
+    gap: 20px;
+  }
+}
+.user_page .fields {
+  margin-top: 0px;
+}
+.user_page .fields .custom_checkbox {
+  padding-left: 32px;
+}
+.user_page .fields.contact_field .row {
+  max-width: 99%;
+  position: relative;
+}
+.user_page .fields.contact_field .row .cancel_col {
+  max-width: 0%;
   position: absolute;
-  right: 12px;
-  top: 4px;
+  top: 28px;
+  right: 0px;
 }
-.pricing_table td .add_new_material a {
-  white-space: nowrap;
+.user_page .fields.contact_field .row .cancel_col.first_icon {
+  top: 55px;
+}
+@media (max-width: 950px) {
+  .user_page .fields.contact_field .row .cancel_col {
+    right: 10px;
+  }
+}
+.user_page .fields.contact_field .row.heading_row .col {
+  padding: 0px;
+}
+.user_page .bottom_items .header_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_page .row {
+  margin: 0px;
+}
+.user_page .row .col {
+  padding: 0px 20px 0px 0px;
+}
+.user_page .row .col:last-child {
+  padding-right: 0px;
+}
+.user_page .row .col:nth-child(2) {
+  padding-right: 20px;
+}
+.user_page .row .col:first-child {
+  padding-right: 20px;
+}
+@media (max-width: 950px) {
+  .user_page .row .col {
+    flex: 100%;
+  }
+}
+.user_page .takeback_card.inner_card {
+  border-radius: 8px;
+  border: 1px solid #EFEFEE;
+  background: #fff;
+  box-shadow: none;
+  margin-bottom: 20px;
+  padding: 14px 20px 24px 20px;
+}
+.user_page .takeback_card.inner_card.pricing_items {
+  padding: 20px;
+}
+.user_page .takeback_card.inner_card:last-child {
+  margin-bottom: 0px;
+}
+.user_page .takeback_card.inner_card .header_items {
+  align-items: baseline;
+}
+.user_page .takeback_card.inner_card .header_items .form_check input {
+  min-width: 320px;
 }/*# sourceMappingURL=style.css.map */

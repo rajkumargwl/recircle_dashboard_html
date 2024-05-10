@@ -1,4 +1,7 @@
 .shipment_details {
+    .card_footer {
+        max-width: 858px;
+    }
     .card_footer{
         .primary-btn svg {
             margin-left: 10px;
@@ -31,7 +34,7 @@
         }
     }
 
-    .right-items {
+    .stepper_section {
         margin: 0px auto 0px 220px;
         @media (max-width: 1200px) {
             margin: 0px auto 0px auto;
@@ -80,7 +83,9 @@
                 line-height: 14px;
                 color: $color7E8992;
                 margin-left: 12px;
-                
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
             }
             .check{
                 display: none;
@@ -169,7 +174,6 @@
 .card_footer {
     display: flex;
     justify-content: flex-end;
-    max-width: 858px;
     padding-top: 20px;
     gap: 12px;
 }

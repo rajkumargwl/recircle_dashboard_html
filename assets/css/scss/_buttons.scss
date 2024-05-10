@@ -17,6 +17,7 @@
     &:hover {
         background-color: $color7E8992;
     }
+
     @media (max-width: 767px) {
         font-size: 12px;
         padding: 12px;
@@ -38,10 +39,12 @@
     font-weight: 700;
     line-height: 16px;
     padding: 16px 24px;
+
     @media (max-width: 767px) {
         font-size: 12px;
         padding: 12px;
     }
+
     svg {
         margin-left: 5px;
         width: 16px;
@@ -63,6 +66,7 @@
     color: $colorwhite;
     border: none;
     line-height: 16px;
+
     @media (max-width: 767px) {
         font-size: 12px;
     }
@@ -74,6 +78,7 @@
     font-size: 14px;
     padding: 12px;
     border-radius: 6px;
+
     @media (max-width: 767px) {
         font-size: 12px;
     }
@@ -81,23 +86,36 @@
 
 
 .add_new_material {
-        display: flex;
-        align-items: center;
-        gap: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 
-        span {
-            color: $color3B5A71;
-            font-family: 'Mont';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 16px;
-            text-transform: uppercase;
-            @media (max-width: 767px) {
-                font-size: 12px;
+    span {
+        color: $color3B5A71;
+        font-family: 'Mont';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+
+    &.add_product {
+        a {
+            margin-top: 30px;
+            @media (max-width: 991px) {
+                margin-top: 0px;
+            }
+            span {
+                font-size: 16px;
             }
         }
     }
+}
 
 a.add_new_item {
     padding: 0px 12px;
@@ -135,16 +153,19 @@ a.add_new_item {
         text-transform: uppercase;
     }
 }
-.small-btn{
+
+.small-btn {
     padding: 12px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
     border-radius: 6px;
+
     @media (max-width: 767px) {
         font-size: 12px;
     }
 }
+
 .success_number {
     background-color: $colorF2F5F1;
     color: $color597559;
@@ -176,7 +197,7 @@ a.add_new_item {
     line-height: 12px;
 }
 
-.view_link{
+.view_link {
     color: $color597559;
     font-family: 'Mont';
     font-size: 14px;
@@ -184,7 +205,33 @@ a.add_new_item {
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
-    svg{
+
+    svg {
         margin-left: 4px;
+    }
+}
+.add_items{
+    display: flex;
+    gap: 8px;
+    max-width: 600px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    .selected {
+        border-radius: 100px;
+        border: 1px solid #efefee;
+        color: #232d35;
+        font-family: "Mont";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px;
+        height: 36px;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        svg{
+            margin-left: 10px;
+        }
     }
 }

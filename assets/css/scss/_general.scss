@@ -18,9 +18,11 @@ ul {
     padding-left: 0px;
     margin-bottom: 0px;
 }
-p{
+
+p {
     margin-bottom: 0px;
 }
+
 select {
     background-image: url(../images/Polygon.svg);
     background-repeat: no-repeat;
@@ -28,6 +30,7 @@ select {
     background-size: 10px;
     appearance: none;
     cursor: pointer;
+
     &:focus {
         outline: none;
         box-shadow: none;
@@ -58,7 +61,19 @@ h1 {
     border: 1px solid $colorEFEFEE;
     background: $colorwhite;
     box-shadow: 0px 1px 6px -2px rgba(0, 0, 0, 0.10);
+
+    &.f-height {
+        min-height: 400px;
+    }
+    &.inner_card{
+        box-shadow: none;
+    }
 }
+
+.align_items_center {
+    align-items: center !important;
+}
+
 .field_label {
     color: $color232D35;
     font-family: 'Mont';
@@ -112,15 +127,17 @@ h1 {
     line-height: 150%;
     letter-spacing: -0.14px;
 }
-.light_grey{
+
+.light_grey {
     color: $color7E8992;
     font-family: 'Mont';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 18px; 
-    margin-bottom: 8px;
+    line-height: 18px;
+    margin-bottom: 12px;
 }
+
 .success_font {
     color: $color3B5A71;
     font-family: 'Mont';
@@ -131,6 +148,24 @@ h1 {
     text-transform: uppercase;
 }
 
+.field_value {
+    color: $color232D35;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+}
+
+.font_small{
+    color: $color232D35;
+    font-family: 'Mont';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+}
 // spacing common
 
 .mb_8 {
@@ -144,6 +179,7 @@ h1 {
 .mt_20 {
     margin-top: 20px;
 }
+
 .mt_22 {
     margin-top: 22px;
 }
@@ -163,25 +199,42 @@ h1 {
 .mb_20 {
     margin-bottom: 20px;
 }
+
 .mt_15 {
     margin-top: 15px;
 }
 
+.pt_20 {
+    padding-top: 20px;
+}
+.pt_10 {
+    padding-top: 10px;
+}
 .mt_10 {
     margin-top: 10px;
 }
+
 .mb_16 {
     margin-bottom: 16px;
 }
-.pd_0{
+
+.pd_0 {
     padding: 0px !important;
 }
-.form-control{
+
+.pr_10 {
+    padding-right: 10px !important;
+}
+.pt_8{
+    padding-top: 8px;
+}
+.form-control {
     &:focus {
         box-shadow: 0 0 0 gray;
         border-color: #efefee
     }
 }
+
 //common input field
 .type_fields {
     input {
@@ -199,7 +252,7 @@ h1 {
         padding: 12px;
 
         &::placeholder {
-            color: $color232D35;
+            color: $color7E8992;
             font-family: 'Mont';
             font-size: 14px;
             font-style: normal;
@@ -231,10 +284,15 @@ h1 {
         background-size: 9px;
         appearance: none;
     }
+
+    .disabled_input {
+        background: $colorEFEFEE;
+    }
 }
 
 .check_fileds {
     margin-top: 6px;
+
     input[type=radio] {
         accent-color: $color3B5A71;
         appearance: auto;
@@ -254,6 +312,7 @@ h1 {
         margin-left: 5px;
     }
 }
+
 .process_name {
     .main_title {
         svg {
@@ -261,6 +320,7 @@ h1 {
         }
     }
 }
+
 .slide_check {
     label {
         display: flex;
@@ -325,7 +385,16 @@ h1 {
     display: block;
     position: relative;
     cursor: pointer;
-
+    &.size_20{
+        padding-left: 28px !important;
+        .checkmark {
+            width: 20px;
+            height: 20px;
+        }
+        input:checked~.checkmark {
+            background-size: 18px;
+        }
+    }
     input {
         position: absolute;
         opacity: 0;
@@ -340,8 +409,8 @@ h1 {
         left: 0;
         height: 24px;
         width: 24px;
-        border-radius: 8px;
-        border: 1px solid $colorEFEFEE;
+        border-radius: 6px;
+        border: 1px solid $color444547;
         background: $colorwhite;
     }
 
@@ -354,6 +423,8 @@ h1 {
         background-image: url(../images/checkmark.svg);
         position: absolute;
         background-size: 22px;
+        border: 1px solid transparent;
+        background-repeat: no-repeat;
     }
 
     .checkmark:after {
@@ -425,9 +496,10 @@ h1 {
 
 
 .input-group {
-    &.input_icon{
+    &.input_icon {
         flex-direction: column;
-        .icon{
+
+        .icon {
             position: absolute;
             background: transparent;
             border: none;
@@ -439,8 +511,9 @@ h1 {
             left: 0;
             padding: 16px 0px 0px 16px;
         }
-        input{
-        padding-left: 42px;
-    }
+
+        input {
+            padding-left: 42px;
+        }
     }
 }
