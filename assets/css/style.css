@@ -3788,7 +3788,7 @@ a.add_new_item svg {
 .brands_page .fields.contact_field .row .cancel_col {
   max-width: 0%;
   position: absolute;
-  top: 28px;
+  top: 23px;
   right: 3px;
 }
 @media (max-width: 991px) {
