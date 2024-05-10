@@ -141,6 +141,28 @@
                     position: sticky;
                     left: 0;
                     z-index: 2;
+                    @media (max-width: 1400px) {
+                        min-width: 43px;
+                        width: 43px;
+                    }
+                }
+                &:nth-child(2){
+                    position: sticky;
+                    left: 43px;
+                    z-index: 1;
+                }
+                .table_heading{
+                    display: flex;
+                    width: 100%;
+                    gap: 20px;
+                    span{
+                        width: 90px;
+                        display: block;
+                    }
+                }
+                @media (max-width: 1400px) {
+                    min-width: 150px;
+                    width: 150px;
                 }
             }
             td {
@@ -152,9 +174,19 @@
                     position: sticky;
                     left: 0;
                     z-index: 2;
+                    @media (max-width: 1400px) {
+                        min-width: 43px;
+                        width: 43px;
+                    }
+                }
+                &:nth-child(2){
+                    position: sticky;
+                    left: 43px;
+                    z-index: 1;
                 }
                 @media (max-width: 1400px) {
-                    min-width: inherit;
+                    min-width: 150px;
+                    width: 150px;
                 }
                 input{
                     height: 36px;
@@ -179,6 +211,111 @@
                 .add_new_material{
                     a{
                         white-space: nowrap;
+                    }
+                }
+                .table_fields{
+                    display: flex;
+                    width: 100%;
+                    gap: 20px;
+                    .input_icon{
+                        width: 90px;
+                        
+                    }
+                }
+            }
+            .custom_checkbox{
+             .checkmark {
+                    top: -13px;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: $colorwhite;
+            }
+            input:checked~.checkmark {
+                background-image: url(../images/checkmark-new.svg);
+                border-radius: inherit;
+                background-size: 24px;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: center;
+            }
+            }
+        }
+        &.clean_repair_table{
+            th{
+                &:first-child{
+                    position: sticky;
+                    left: 0;
+                    z-index: 2;
+                }
+                .table_heading{
+                    display: flex;
+                    width: 100%;
+                    gap: 20px;
+                    span{
+                        width: 130px;
+                        display: block;
+                    }
+                }
+                @media (max-width: 1400px) {
+                    min-width: 150px;
+                    width: 150px;
+                }
+            }
+            td {
+                padding-right: 0px;
+                &:last-child{
+                    padding-right: 20px;
+                }
+                &:first-child{
+                    position: sticky;
+                    left: 0;
+                    z-index: 2;
+                    @media (max-width: 1400px) {
+                        min-width: 43px;
+                        width: 43px;
+                    }
+                }
+                &:nth-child(2){
+                    position: sticky;
+                    left: 43px;
+                    z-index: 1;
+                }
+                @media (max-width: 1400px) {
+                    min-width: 150px;
+                    width: 150px;
+                }
+                input{
+                    height: 36px;
+                }
+                .input_icon {
+                    .icon {
+                        padding: 5px 0px 0px 12px;
+                        top: -1px;
+                    }
+        
+                    input {
+                        height: 36px;
+                        padding-left: 28px;
+                    }
+        
+                    .delete_icon {
+                        position: absolute;
+                        right: 12px;
+                        top: 4px;
+                    }
+                }
+                .add_new_material{
+                    a{
+                        white-space: nowrap;
+                    }
+                }
+                .table_fields{
+                    display: flex;
+                    width: 100%;
+                    gap: 20px;
+                    .input_icon{
+                        width: 130px;
+                        
                     }
                 }
             }

@@ -950,6 +950,32 @@ h1 {
   left: 0;
   z-index: 2;
 }
+@media (max-width: 1400px) {
+  .data_table table.pricing_table th:first-child {
+    min-width: 43px;
+    width: 43px;
+  }
+}
+.data_table table.pricing_table th:nth-child(2) {
+  position: sticky;
+  left: 43px;
+  z-index: 1;
+}
+.data_table table.pricing_table th .table_heading {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.data_table table.pricing_table th .table_heading span {
+  width: 90px;
+  display: block;
+}
+@media (max-width: 1400px) {
+  .data_table table.pricing_table th {
+    min-width: 150px;
+    width: 150px;
+  }
+}
 .data_table table.pricing_table td {
   padding-right: 0px;
 }
@@ -962,8 +988,20 @@ h1 {
   z-index: 2;
 }
 @media (max-width: 1400px) {
+  .data_table table.pricing_table td:first-child {
+    min-width: 43px;
+    width: 43px;
+  }
+}
+.data_table table.pricing_table td:nth-child(2) {
+  position: sticky;
+  left: 43px;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
   .data_table table.pricing_table td {
-    min-width: inherit;
+    min-width: 150px;
+    width: 150px;
   }
 }
 .data_table table.pricing_table td input {
@@ -985,6 +1023,14 @@ h1 {
 .data_table table.pricing_table td .add_new_material a {
   white-space: nowrap;
 }
+.data_table table.pricing_table td .table_fields {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.data_table table.pricing_table td .table_fields .input_icon {
+  width: 90px;
+}
 .data_table table.pricing_table .custom_checkbox .checkmark {
   top: -13px;
   height: 24px;
@@ -992,6 +1038,95 @@ h1 {
   border-radius: #fff;
 }
 .data_table table.pricing_table .custom_checkbox input:checked ~ .checkmark {
+  background-image: url(../images/checkmark-new.svg);
+  border-radius: inherit;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+}
+.data_table table.clean_repair_table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.data_table table.clean_repair_table th .table_heading {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.data_table table.clean_repair_table th .table_heading span {
+  width: 130px;
+  display: block;
+}
+@media (max-width: 1400px) {
+  .data_table table.clean_repair_table th {
+    min-width: 150px;
+    width: 150px;
+  }
+}
+.data_table table.clean_repair_table td {
+  padding-right: 0px;
+}
+.data_table table.clean_repair_table td:last-child {
+  padding-right: 20px;
+}
+.data_table table.clean_repair_table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+@media (max-width: 1400px) {
+  .data_table table.clean_repair_table td:first-child {
+    min-width: 43px;
+    width: 43px;
+  }
+}
+.data_table table.clean_repair_table td:nth-child(2) {
+  position: sticky;
+  left: 43px;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
+  .data_table table.clean_repair_table td {
+    min-width: 150px;
+    width: 150px;
+  }
+}
+.data_table table.clean_repair_table td input {
+  height: 36px;
+}
+.data_table table.clean_repair_table td .input_icon .icon {
+  padding: 5px 0px 0px 12px;
+  top: -1px;
+}
+.data_table table.clean_repair_table td .input_icon input {
+  height: 36px;
+  padding-left: 28px;
+}
+.data_table table.clean_repair_table td .input_icon .delete_icon {
+  position: absolute;
+  right: 12px;
+  top: 4px;
+}
+.data_table table.clean_repair_table td .add_new_material a {
+  white-space: nowrap;
+}
+.data_table table.clean_repair_table td .table_fields {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.data_table table.clean_repair_table td .table_fields .input_icon {
+  width: 130px;
+}
+.data_table table.clean_repair_table .custom_checkbox .checkmark {
+  top: -13px;
+  height: 24px;
+  width: 24px;
+  border-radius: #fff;
+}
+.data_table table.clean_repair_table .custom_checkbox input:checked ~ .checkmark {
   background-image: url(../images/checkmark-new.svg);
   border-radius: inherit;
   background-size: 24px;
