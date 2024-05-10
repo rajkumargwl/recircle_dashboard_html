@@ -614,6 +614,24 @@ h1 {
 .input-group.input_icon input {
   padding-left: 42px;
 }
+.input-group.date_picker input {
+  background-color: transparent;
+  z-index: 2;
+  position: relative;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
 
 .left_bar {
   border: 1px solid #EFEFEE;
@@ -2266,6 +2284,7 @@ a.add_new_item svg {
   letter-spacing: -0.14px;
   padding-bottom: 16px;
   display: block;
+  white-space: nowrap;
 }
 .tabs_filter .tabs li a.active {
   border-bottom: 2px solid #597559;
