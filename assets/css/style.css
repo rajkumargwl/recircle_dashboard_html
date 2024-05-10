@@ -3476,7 +3476,6 @@ a.add_new_item svg {
   margin-top: 4px;
 }
 .tabs_section .shipment_items .item-main .right_items .checbox_field .check_title {
-  padding-left: 22px;
   overflow: hidden;
   color: #232D35;
   text-overflow: ellipsis;
@@ -3486,6 +3485,7 @@ a.add_new_item svg {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -0.14px;
+  margin-left: 4px;
 }
 @media (max-width: 767px) {
   .tabs_section .shipment_items .item-main .right_items .checbox_field .check_title {
