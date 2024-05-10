@@ -60,6 +60,9 @@
                 span {
                     color: $color232D35;
                     font-weight: 700;
+                    &.number {
+                        background-color: $colorE3F0FA;
+                    }
                 }
             }
 
@@ -285,7 +288,7 @@
                                 width: 16px;
                                 height: 16px;
                                 border-radius: 50%;
-                                background-size: 16px;
+                                background-size: 14px;
                                 margin-top: 4px;
                             }
                         }
