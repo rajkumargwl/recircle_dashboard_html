@@ -1225,6 +1225,10 @@ table.table.dataTable > tbody > tr {
   background-color: #F2F2F4 !important;
 }
 
+div.dt-container .dt-paging .dt-paging-button {
+  padding: 0 !important;
+}
+
 .right_bar {
   width: 100%;
   background-color: #F2F2F4;
@@ -3138,6 +3142,9 @@ a.add_new_item svg {
   color: #232D35;
   font-weight: 700;
 }
+.tabs_section .tabs_number li.active span.number {
+  background-color: #E3F0FA;
+}
 .tabs_section .tabs_number li span {
   color: #7E8992;
   font-family: "Mont";
@@ -3311,7 +3318,7 @@ a.add_new_item svg {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-size: 16px;
+  background-size: 14px;
   margin-top: 4px;
 }
 .tabs_section .shipment_items .item-main .right_items .checbox_field .check_title {
