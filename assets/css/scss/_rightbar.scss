@@ -88,6 +88,21 @@
                 position: relative;
                 &.filter{
                     margin: 0px 12px;
+                    a {
+                        span {
+                            color: $color365236;
+                            font-family: 'Mont';
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 16px;
+                            margin-left: 5px;
+                            margin-right: 0px;
+                        }
+                        svg{
+                            margin-right: 3px;
+                        }
+                    }
                 }
                 .filter_modal {
                     .offcanvas {
@@ -223,18 +238,7 @@
                     appearance: none;
                 }
 
-                a {
-                    span {
-                        color: $color365236;
-                        font-family: 'Mont';
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 16px;
-                        margin-left: 5px;
-                        margin-right: 0px;
-                    }
-                }
+               
 
                 a.add_new_item {
                     padding: 0px 12px;

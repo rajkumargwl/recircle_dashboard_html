@@ -38,7 +38,7 @@ $(document).ready(function () {
     
     $('#dash-table').DataTable({
         dom: '<"top">rt<"bottom"pl><"clear">',
-        "lengthMenu": [[2, 4, 8, -1], [2, 4, 12, "All"]],
+        "lengthMenu": [[2, 4, 12, -1], [2, 4, 12, "All"]],
         sort: false,
         
     });
@@ -237,11 +237,6 @@ function readUrl(input) {
 
 
   //date picker
-  $(document).ready(function(){
-  
-    $(function () {
-      $('#startDate').datepicker({
-     format: 'dd/mm/yyyy' 
-    });
-    });
+  $(function(){
+    $('#datepicker').datepicker();
   });
