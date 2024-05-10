@@ -61,35 +61,40 @@
                         //         background-color: $colorFAFAFA;
                         //         overflow: hidden;
                         //     }
-                           
+
                         // }
                     }
                 }
-                .minus{
+
+                .minus {
                     display: none;
                 }
-                    &.dt-hasChild{
-                        
-                        td{
-                            .minus{
-                                display: none;
-                            }
-                            .plus{
-                                
-                                display: block
-                            }
+
+                &.dt-hasChild {
+
+                    td {
+                        .minus {
+                            display: none;
                         }
-                        &.show  {
-                            .plus{
-                                
-                                display: none
-                            }
-                            .minus{
-                                display: block;
-                            }
+
+                        .plus {
+
+                            display: block
                         }
                     }
-                    
+
+                    &.show {
+                        .plus {
+
+                            display: none
+                        }
+
+                        .minus {
+                            display: block;
+                        }
+                    }
+                }
+
                 td {
                     padding: 10px 20px 10px 20px;
                     height: 64px;
@@ -97,16 +102,19 @@
                     text-align: left !important;
                     box-shadow: none !important;
                     border: none !important;
-                    &.add_plus{
+
+                    &.add_plus {
                         text-align: right !important;
                     }
-                    &.text_right{
+
+                    &.text_right {
                         text-align: right !important;
                     }
+
                     &.edit_view {
                         a {
 
-                                margin-right: 6px;
+                            margin-right: 6px;
                         }
                     }
 
@@ -123,10 +131,12 @@
                             margin-top: -2px;
                         }
                     }
-                    .multi_items{
+
+                    .multi_items {
                         display: flex;
                         align-items: center;
-                        .avatar{
+
+                        .avatar {
                             margin-right: 12px;
                             width: 38px;
                             height: 38px;
@@ -135,205 +145,213 @@
                 }
             }
         }
+
         &.pricing_table {
-            th{
-                &:first-child{
+            th {
+                &:first-child {
                     position: sticky;
                     left: 0;
                     z-index: 2;
+
                     @media (max-width: 1400px) {
                         min-width: 43px;
                         width: 43px;
                     }
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     position: sticky;
                     left: 43px;
                     z-index: 1;
                 }
-                .table_heading{
+
+                .table_heading {
                     display: flex;
                     width: 100%;
                     gap: 20px;
-                    span{
+
+                    span {
                         width: 90px;
                         display: block;
                     }
                 }
+
                 @media (max-width: 1400px) {
                     min-width: 150px;
                     width: 150px;
                 }
             }
+
             td {
                 padding-right: 0px;
-                &:last-child{
+
+                &:last-child {
                     padding-right: 20px;
                 }
-                &:first-child{
+
+                &:first-child {
                     position: sticky;
                     left: 0;
                     z-index: 2;
+
                     @media (max-width: 1400px) {
                         min-width: 43px;
                         width: 43px;
                     }
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     position: sticky;
                     left: 43px;
                     z-index: 1;
                 }
+
                 @media (max-width: 1400px) {
                     min-width: 150px;
                     width: 150px;
                 }
-                input{
+
+                input {
                     height: 36px;
                 }
+
                 .input_icon {
                     .icon {
                         padding: 5px 0px 0px 12px;
                         top: -1px;
                     }
-        
+
                     input {
                         height: 36px;
                         padding-left: 28px;
                     }
-        
+
                     .delete_icon {
                         position: absolute;
                         right: 12px;
                         top: 4px;
                     }
                 }
-                .add_new_material{
-                    a{
+
+                .add_new_material {
+                    a {
                         white-space: nowrap;
                     }
                 }
-                .table_fields{
+
+                .table_fields {
                     display: flex;
                     width: 100%;
                     gap: 20px;
-                    .input_icon{
+
+                    .input_icon {
                         width: 90px;
-                        
+
                     }
                 }
             }
-            .custom_checkbox{
-             .checkmark {
+
+            .custom_checkbox {
+                .checkmark {
                     top: -13px;
                     height: 24px;
                     width: 24px;
-                    border-radius: $colorwhite;
-            }
-            input:checked~.checkmark {
-                background-image: url(../images/checkmark-new.svg);
-                border-radius: inherit;
-                background-size: 24px;
-                background-repeat: no-repeat;
-                background-color: transparent;
-                background-position: center;
-            }
+                }
             }
         }
-        &.clean_repair_table{
-            th{
-                &:first-child{
+
+        &.clean_repair_table {
+            th {
+                &:first-child {
                     position: sticky;
                     left: 0;
                     z-index: 2;
                 }
-                .table_heading{
+
+                .table_heading {
                     display: flex;
                     width: 100%;
                     gap: 20px;
-                    span{
+
+                    span {
                         width: 130px;
                         display: block;
                     }
                 }
+
                 @media (max-width: 1400px) {
                     min-width: 150px;
                     width: 150px;
                 }
             }
+
             td {
                 padding-right: 0px;
-                &:last-child{
+
+                &:last-child {
                     padding-right: 20px;
                 }
-                &:first-child{
+
+                &:first-child {
                     position: sticky;
                     left: 0;
                     z-index: 2;
+
                     @media (max-width: 1400px) {
                         min-width: 43px;
                         width: 43px;
                     }
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     position: sticky;
                     left: 43px;
                     z-index: 1;
                 }
+
                 @media (max-width: 1400px) {
                     min-width: 150px;
                     width: 150px;
                 }
-                input{
+
+                input {
                     height: 36px;
                 }
+
                 .input_icon {
                     .icon {
                         padding: 5px 0px 0px 12px;
                         top: -1px;
                     }
-        
+
                     input {
                         height: 36px;
                         padding-left: 28px;
                     }
-        
+
                     .delete_icon {
                         position: absolute;
                         right: 12px;
                         top: 4px;
                     }
                 }
-                .add_new_material{
-                    a{
+
+                .add_new_material {
+                    a {
                         white-space: nowrap;
                     }
                 }
-                .table_fields{
+
+                .table_fields {
                     display: flex;
                     width: 100%;
                     gap: 20px;
-                    .input_icon{
+
+                    .input_icon {
                         width: 130px;
-                        
+
                     }
                 }
-            }
-            .custom_checkbox{
-             .checkmark {
-                    top: -13px;
-                    height: 24px;
-                    width: 24px;
-                    border-radius: $colorwhite;
-            }
-            input:checked~.checkmark {
-                background-image: url(../images/checkmark-new.svg);
-                border-radius: inherit;
-                background-size: 24px;
-                background-repeat: no-repeat;
-                background-color: transparent;
-                background-position: center;
-            }
             }
         }
     }
@@ -407,6 +425,7 @@
 
                 .previous {
                     background-color: $color597559;
+
                     &:after {
                         content: '';
                         position: absolute;
@@ -588,9 +607,11 @@
     display: flex;
     align-items: center;
 }
+
 table.table.dataTable>tbody>tr {
     background-color: #F2F2F4 !important;
 }
+
 div.dt-container .dt-paging .dt-paging-button {
     padding: 0 !important;
 }

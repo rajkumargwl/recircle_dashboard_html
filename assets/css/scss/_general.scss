@@ -228,6 +228,9 @@ h1 {
 .pt_8{
     padding-top: 8px;
 }
+.pt_5{
+    padding-top: 5px;
+}
 .form-control {
     &:focus {
         box-shadow: 0 0 0 gray;
@@ -387,6 +390,7 @@ h1 {
     cursor: pointer;
     &.size_20{
         padding-left: 28px !important;
+        padding-top: 5px !important;
         .checkmark {
             width: 20px;
             height: 20px;
@@ -394,6 +398,7 @@ h1 {
         input:checked~.checkmark {
             background-size: 18px;
         }
+
     }
     input {
         position: absolute;

@@ -1,0 +1,125 @@
+.stepper_top_menus{
+    .stepper_items {
+        display: flex;
+        gap: 16px;
+        .stpe_box {
+            display: flex;
+            align-items: baseline;
+            .steps_circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                border: 1px solid $color7E8992;
+                width: 32px;
+                height: 32px;
+                background-color: white;
+                .number {
+                    font-family: 'Mont';
+                    font-size: 14px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 10px;
+                    letter-spacing: -0.28px;
+                    color: $color7E8992;
+                    margin-top: 3px;
+
+                }
+            }
+            .step_name {
+                font-family: 'Mont';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px;
+                color: $color7E8992;
+                margin-left: 12px;
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+            }
+            .check{
+                display: none;
+            }
+            &.active {
+                .steps_circle {
+                    background-color: $colorE3F0FA;
+                    border: 1px solid $color232D35;
+                    .number {
+                        color: $color232D35;
+                    }
+                }
+                .step_name {
+                    color: $color232D35;
+                    font-weight: 700;
+                }
+                
+
+            }
+
+            &.process_done{
+                .number{
+                    display: none;
+                }
+                .check{
+                    display: block;
+                }
+                .step_name {
+                    color: $color232D35;
+                    font-weight: 700;
+                }
+            }
+        }
+        .a {
+            
+            // position: relative;
+            // color: $color444547;
+            // font-family: 'Mont';
+            // font-size: 16px;
+            // font-style: normal;
+            // font-weight: 500;
+            // line-height: 14px;
+            // @media (max-width: 950px) {
+            //     font-size: 14px;
+            // }
+            // span {
+            //     position: absolute;
+            //     left: 12px;
+            //     top: 2px;
+            //     @media (max-width: 767px) {
+            //         top: 0px;
+            //     }
+            // }
+
+            // svg {
+            //     margin-right: 12px;
+            // }
+
+            &.active {
+                color: $color232D35;
+                font-weight: 700;
+
+                svg {
+                    circle {
+                        // stroke: $color232D35;
+                        fill: #E3F0FA;
+                        
+                    }
+                    path{
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+        .center_icon {
+            a {
+                svg {
+                    margin: 5px 0px 0px 0px;
+                }
+            }
+        }
+    }
+}

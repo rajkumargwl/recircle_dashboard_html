@@ -350,6 +350,10 @@ h1 {
   padding-top: 8px;
 }
 
+.pt_5 {
+  padding-top: 5px;
+}
+
 .form-control:focus {
   box-shadow: 0 0 0 gray;
   border-color: #efefee;
@@ -497,6 +501,7 @@ h1 {
 }
 .custom_checkbox.size_20 {
   padding-left: 28px !important;
+  padding-top: 5px !important;
 }
 .custom_checkbox.size_20 .checkmark {
   width: 20px;
@@ -1053,15 +1058,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   top: -13px;
   height: 24px;
   width: 24px;
-  border-radius: #fff;
-}
-.data_table table.pricing_table .custom_checkbox input:checked ~ .checkmark {
-  background-image: url(../images/checkmark-new.svg);
-  border-radius: inherit;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: center;
 }
 .data_table table.clean_repair_table th:first-child {
   position: sticky;
@@ -1137,20 +1133,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .data_table table.clean_repair_table td .table_fields .input_icon {
   width: 130px;
-}
-.data_table table.clean_repair_table .custom_checkbox .checkmark {
-  top: -13px;
-  height: 24px;
-  width: 24px;
-  border-radius: #fff;
-}
-.data_table table.clean_repair_table .custom_checkbox input:checked ~ .checkmark {
-  background-image: url(../images/checkmark-new.svg);
-  border-radius: inherit;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: center;
 }
 .data_table .success {
   color: #365236;
@@ -1723,87 +1705,6 @@ div.dt-container .dt-paging .dt-paging-button {
   .shipment_details .stepper_section {
     margin: 10px 0px;
   }
-}
-
-.stepper_top_menus .stepper_items {
-  display: flex;
-  gap: 16px;
-}
-.stepper_top_menus .stepper_items .stpe_box {
-  display: flex;
-  align-items: baseline;
-}
-.stepper_top_menus .stepper_items .stpe_box .steps_circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  border: 1px solid #7E8992;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-}
-.stepper_top_menus .stepper_items .stpe_box .steps_circle .number {
-  font-family: "Mont";
-  font-size: 14px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 10px;
-  letter-spacing: -0.28px;
-  color: #7E8992;
-  margin-top: 3px;
-}
-.stepper_top_menus .stepper_items .stpe_box .step_name {
-  font-family: "Mont";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 14px;
-  color: #7E8992;
-  margin-left: 12px;
-}
-@media (max-width: 1024px) {
-  .stepper_top_menus .stepper_items .stpe_box .step_name {
-    font-size: 14px;
-  }
-}
-.stepper_top_menus .stepper_items .stpe_box .check {
-  display: none;
-}
-.stepper_top_menus .stepper_items .stpe_box.active .steps_circle {
-  background-color: #E3F0FA;
-  border: 1px solid #232D35;
-}
-.stepper_top_menus .stepper_items .stpe_box.active .steps_circle .number {
-  color: #232D35;
-}
-.stepper_top_menus .stepper_items .stpe_box.active .step_name {
-  color: #232D35;
-  font-weight: 700;
-}
-.stepper_top_menus .stepper_items .stpe_box.process_done .number {
-  display: none;
-}
-.stepper_top_menus .stepper_items .stpe_box.process_done .check {
-  display: block;
-}
-.stepper_top_menus .stepper_items .stpe_box.process_done .step_name {
-  color: #232D35;
-  font-weight: 700;
-}
-.stepper_top_menus .stepper_items .a.active {
-  color: #232D35;
-  font-weight: 700;
-}
-.stepper_top_menus .stepper_items .a.active svg circle {
-  fill: #E3F0FA;
-}
-.stepper_top_menus .stepper_items .a.active svg path {
-  display: none;
-}
-.stepper_top_menus .stepper_items .center_icon a svg {
-  margin: 5px 0px 0px 0px;
 }
 
 .card_footer {
@@ -4290,4 +4191,85 @@ a.add_new_item svg {
 }
 .user_page .takeback_card.inner_card .header_items .form_check input {
   min-width: 320px;
+}
+
+.stepper_top_menus .stepper_items {
+  display: flex;
+  gap: 16px;
+}
+.stepper_top_menus .stepper_items .stpe_box {
+  display: flex;
+  align-items: baseline;
+}
+.stepper_top_menus .stepper_items .stpe_box .steps_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #7E8992;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+}
+.stepper_top_menus .stepper_items .stpe_box .steps_circle .number {
+  font-family: "Mont";
+  font-size: 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: -0.28px;
+  color: #7E8992;
+  margin-top: 3px;
+}
+.stepper_top_menus .stepper_items .stpe_box .step_name {
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  color: #7E8992;
+  margin-left: 12px;
+}
+@media (max-width: 1024px) {
+  .stepper_top_menus .stepper_items .stpe_box .step_name {
+    font-size: 14px;
+  }
+}
+.stepper_top_menus .stepper_items .stpe_box .check {
+  display: none;
+}
+.stepper_top_menus .stepper_items .stpe_box.active .steps_circle {
+  background-color: #E3F0FA;
+  border: 1px solid #232D35;
+}
+.stepper_top_menus .stepper_items .stpe_box.active .steps_circle .number {
+  color: #232D35;
+}
+.stepper_top_menus .stepper_items .stpe_box.active .step_name {
+  color: #232D35;
+  font-weight: 700;
+}
+.stepper_top_menus .stepper_items .stpe_box.process_done .number {
+  display: none;
+}
+.stepper_top_menus .stepper_items .stpe_box.process_done .check {
+  display: block;
+}
+.stepper_top_menus .stepper_items .stpe_box.process_done .step_name {
+  color: #232D35;
+  font-weight: 700;
+}
+.stepper_top_menus .stepper_items .a.active {
+  color: #232D35;
+  font-weight: 700;
+}
+.stepper_top_menus .stepper_items .a.active svg circle {
+  fill: #E3F0FA;
+}
+.stepper_top_menus .stepper_items .a.active svg path {
+  display: none;
+}
+.stepper_top_menus .stepper_items .center_icon a svg {
+  margin: 5px 0px 0px 0px;
 }/*# sourceMappingURL=style.css.map */
