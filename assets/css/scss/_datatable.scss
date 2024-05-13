@@ -207,10 +207,19 @@
             }
 
             td {
-                padding-right: 0px;
+                // padding-right: 0px;
+                .type_fields {
+                    &.bg_input {
+                        input {
+                            width: 130px;
+                        }
+                    }
+                }
                 &.count_td {
-                    display: flex;
-                    align-items: center;
+                    .td_inner {
+                        display: flex;
+                        align-items: center;
+                    }
                 }
 
                 &:last-child {
@@ -230,12 +239,12 @@
 
                 &:nth-child(2) {
                     position: sticky;
-                    left: 43px;
+                    left: 41px;
                     z-index: 1;
                 }
                 &:nth-child(3){
                     position: sticky;
-                    left: 193px;
+                    left: 156px;
                     z-index: 3;
                 }
                 @media (max-width: 1400px) {
