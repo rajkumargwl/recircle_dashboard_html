@@ -2,6 +2,7 @@
     .stepper_items {
         display: flex;
         gap: 16px;
+        flex-wrap: wrap;
         .stpe_box {
             display: flex;
             align-items: baseline;
