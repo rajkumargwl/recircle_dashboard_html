@@ -3768,6 +3768,13 @@ a.add_new_item svg {
   max-width: 272px;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .upload_file .upload_items {
+    left: 20px;
+    right: 20px;
+    max-width: 100%;
+  }
+}
 .upload_file .upload_items P {
   margin-bottom: 0px;
   text-align: center;
@@ -4216,6 +4223,7 @@ a.add_new_item svg {
 .stepper_top_menus .stepper_items {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 .stepper_top_menus .stepper_items .stpe_box {
   display: flex;
