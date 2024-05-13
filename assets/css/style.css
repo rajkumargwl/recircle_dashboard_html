@@ -2231,13 +2231,15 @@ a.add_new_item svg {
   font-weight: 700;
 }
 .tabs_filter .tabs li a.active .success_number {
-  background-color: #F2F2F4;
+  background-color: #F2F5F1;
   font-weight: 700;
+  color: #597559;
 }
 .tabs_filter .tabs li a .success_number {
   background-color: #F2F2F4;
   font-weight: 600;
   margin-left: 8px;
+  color: #444547;
 }
 
 .modal_main .modal-dialog {
