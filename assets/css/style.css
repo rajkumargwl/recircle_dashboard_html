@@ -189,6 +189,10 @@ h1 {
   box-shadow: none;
 }
 
+.nowrap_cls {
+  white-space: nowrap;
+}
+
 .align_items_center {
   align-items: center !important;
 }
@@ -311,7 +315,7 @@ h1 {
 }
 
 .mb_12 {
-  margin-bottom: 12px;
+  margin-bottom: 12px !important;
 }
 
 .mb_20 {
@@ -335,7 +339,7 @@ h1 {
 }
 
 .mb_16 {
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 .pd_0 {
@@ -348,6 +352,10 @@ h1 {
 
 .pt_8 {
   padding-top: 8px;
+}
+
+.pt_5 {
+  padding-top: 5px;
 }
 
 .form-control:focus {
@@ -367,7 +375,7 @@ h1 {
   line-height: 16px;
   letter-spacing: -0.14px;
   height: 48px;
-  padding: 12px;
+  padding: 16px;
 }
 .type_fields input::-moz-placeholder {
   color: #7E8992;
@@ -388,7 +396,7 @@ h1 {
   letter-spacing: -0.14px;
 }
 .type_fields select {
-  padding: 7px 12px;
+  padding: 7px 16px;
   min-width: 186px;
   height: 48px;
   color: #232D35;
@@ -497,6 +505,7 @@ h1 {
 }
 .custom_checkbox.size_20 {
   padding-left: 28px !important;
+  padding-top: 5px !important;
 }
 .custom_checkbox.size_20 .checkmark {
   width: 20px;
@@ -631,6 +640,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
   right: 0;
   top: 0;
   width: auto;
+}
+
+.circle {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.mulitiple_circle {
+  width: 248px !important;
+  height: 248px !important;
+}
+
+.verticle_chart {
+  height: 305px !important;
+  width: 100% !important;
 }
 
 .left_bar {
@@ -963,6 +987,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 38px;
   height: 38px;
 }
+.data_table table tbody tr td input {
+  padding: 12px;
+}
+.data_table table.first_sticky th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.data_table table.first_sticky td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
 .data_table table.pricing_table th:first-child {
   position: sticky;
   left: 0;
@@ -1053,15 +1090,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   top: -13px;
   height: 24px;
   width: 24px;
-  border-radius: #fff;
-}
-.data_table table.pricing_table .custom_checkbox input:checked ~ .checkmark {
-  background-image: url(../images/checkmark-new.svg);
-  border-radius: inherit;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: center;
 }
 .data_table table.clean_repair_table th:first-child {
   position: sticky;
@@ -1113,6 +1141,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .data_table table.clean_repair_table td input {
   height: 36px;
+  padding: 12px;
 }
 .data_table table.clean_repair_table td .input_icon .icon {
   padding: 5px 0px 0px 12px;
@@ -1137,20 +1166,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .data_table table.clean_repair_table td .table_fields .input_icon {
   width: 130px;
-}
-.data_table table.clean_repair_table .custom_checkbox .checkmark {
-  top: -13px;
-  height: 24px;
-  width: 24px;
-  border-radius: #fff;
-}
-.data_table table.clean_repair_table .custom_checkbox input:checked ~ .checkmark {
-  background-image: url(../images/checkmark-new.svg);
-  border-radius: inherit;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: center;
 }
 .data_table .success {
   color: #365236;
@@ -1473,6 +1488,11 @@ div.dt-container .dt-paging .dt-paging-button {
 .right_bar .right_header .right-items .header_item.filter {
   margin: 0px 12px;
 }
+@media (max-width: 767px) {
+  .right_bar .right_header .right-items .header_item.filter {
+    margin: 0px 12px 0px 0px;
+  }
+}
 .right_bar .right_header .right-items .header_item.filter a span {
   color: #365236;
   font-family: "Mont";
@@ -1723,87 +1743,6 @@ div.dt-container .dt-paging .dt-paging-button {
   .shipment_details .stepper_section {
     margin: 10px 0px;
   }
-}
-
-.stepper_top_menus .stepper_items {
-  display: flex;
-  gap: 16px;
-}
-.stepper_top_menus .stepper_items .stpe_box {
-  display: flex;
-  align-items: baseline;
-}
-.stepper_top_menus .stepper_items .stpe_box .steps_circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  border: 1px solid #7E8992;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-}
-.stepper_top_menus .stepper_items .stpe_box .steps_circle .number {
-  font-family: "Mont";
-  font-size: 14px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 10px;
-  letter-spacing: -0.28px;
-  color: #7E8992;
-  margin-top: 3px;
-}
-.stepper_top_menus .stepper_items .stpe_box .step_name {
-  font-family: "Mont";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 14px;
-  color: #7E8992;
-  margin-left: 12px;
-}
-@media (max-width: 1024px) {
-  .stepper_top_menus .stepper_items .stpe_box .step_name {
-    font-size: 14px;
-  }
-}
-.stepper_top_menus .stepper_items .stpe_box .check {
-  display: none;
-}
-.stepper_top_menus .stepper_items .stpe_box.active .steps_circle {
-  background-color: #E3F0FA;
-  border: 1px solid #232D35;
-}
-.stepper_top_menus .stepper_items .stpe_box.active .steps_circle .number {
-  color: #232D35;
-}
-.stepper_top_menus .stepper_items .stpe_box.active .step_name {
-  color: #232D35;
-  font-weight: 700;
-}
-.stepper_top_menus .stepper_items .stpe_box.process_done .number {
-  display: none;
-}
-.stepper_top_menus .stepper_items .stpe_box.process_done .check {
-  display: block;
-}
-.stepper_top_menus .stepper_items .stpe_box.process_done .step_name {
-  color: #232D35;
-  font-weight: 700;
-}
-.stepper_top_menus .stepper_items .a.active {
-  color: #232D35;
-  font-weight: 700;
-}
-.stepper_top_menus .stepper_items .a.active svg circle {
-  fill: #E3F0FA;
-}
-.stepper_top_menus .stepper_items .a.active svg path {
-  display: none;
-}
-.stepper_top_menus .stepper_items .center_icon a svg {
-  margin: 5px 0px 0px 0px;
 }
 
 .card_footer {
@@ -4251,26 +4190,6 @@ a.add_new_item svg {
   justify-content: space-between;
   align-items: center;
 }
-.user_page .row {
-  margin: 0px;
-}
-.user_page .row .col {
-  padding: 0px 20px 0px 0px;
-}
-.user_page .row .col:last-child {
-  padding-right: 0px;
-}
-.user_page .row .col:nth-child(2) {
-  padding-right: 20px;
-}
-.user_page .row .col:first-child {
-  padding-right: 20px;
-}
-@media (max-width: 950px) {
-  .user_page .row .col {
-    flex: 100%;
-  }
-}
 .user_page .takeback_card.inner_card {
   border-radius: 8px;
   border: 1px solid #EFEFEE;
@@ -4290,4 +4209,85 @@ a.add_new_item svg {
 }
 .user_page .takeback_card.inner_card .header_items .form_check input {
   min-width: 320px;
+}
+
+.stepper_top_menus .stepper_items {
+  display: flex;
+  gap: 16px;
+}
+.stepper_top_menus .stepper_items .stpe_box {
+  display: flex;
+  align-items: baseline;
+}
+.stepper_top_menus .stepper_items .stpe_box .steps_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #7E8992;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+}
+.stepper_top_menus .stepper_items .stpe_box .steps_circle .number {
+  font-family: "Mont";
+  font-size: 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: -0.28px;
+  color: #7E8992;
+  margin-top: 3px;
+}
+.stepper_top_menus .stepper_items .stpe_box .step_name {
+  font-family: "Mont";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  color: #7E8992;
+  margin-left: 12px;
+}
+@media (max-width: 1024px) {
+  .stepper_top_menus .stepper_items .stpe_box .step_name {
+    font-size: 14px;
+  }
+}
+.stepper_top_menus .stepper_items .stpe_box .check {
+  display: none;
+}
+.stepper_top_menus .stepper_items .stpe_box.active .steps_circle {
+  background-color: #E3F0FA;
+  border: 1px solid #232D35;
+}
+.stepper_top_menus .stepper_items .stpe_box.active .steps_circle .number {
+  color: #232D35;
+}
+.stepper_top_menus .stepper_items .stpe_box.active .step_name {
+  color: #232D35;
+  font-weight: 700;
+}
+.stepper_top_menus .stepper_items .stpe_box.process_done .number {
+  display: none;
+}
+.stepper_top_menus .stepper_items .stpe_box.process_done .check {
+  display: block;
+}
+.stepper_top_menus .stepper_items .stpe_box.process_done .step_name {
+  color: #232D35;
+  font-weight: 700;
+}
+.stepper_top_menus .stepper_items .a.active {
+  color: #232D35;
+  font-weight: 700;
+}
+.stepper_top_menus .stepper_items .a.active svg circle {
+  fill: #E3F0FA;
+}
+.stepper_top_menus .stepper_items .a.active svg path {
+  display: none;
+}
+.stepper_top_menus .stepper_items .center_icon a svg {
+  margin: 5px 0px 0px 0px;
 }/*# sourceMappingURL=style.css.map */

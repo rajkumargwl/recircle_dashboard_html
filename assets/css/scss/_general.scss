@@ -69,7 +69,9 @@ h1 {
         box-shadow: none;
     }
 }
-
+.nowrap_cls{
+    white-space: nowrap;
+}
 .align_items_center {
     align-items: center !important;
 }
@@ -193,7 +195,7 @@ h1 {
 }
 
 .mb_12 {
-    margin-bottom: 12px;
+    margin-bottom: 12px !important;
 }
 
 .mb_20 {
@@ -215,7 +217,7 @@ h1 {
 }
 
 .mb_16 {
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
 }
 
 .pd_0 {
@@ -227,6 +229,9 @@ h1 {
 }
 .pt_8{
     padding-top: 8px;
+}
+.pt_5{
+    padding-top: 5px;
 }
 .form-control {
     &:focus {
@@ -249,7 +254,7 @@ h1 {
         line-height: 16px;
         letter-spacing: -0.14px;
         height: 48px;
-        padding: 12px;
+        padding: 16px;
 
         &::placeholder {
             color: $color7E8992;
@@ -263,7 +268,7 @@ h1 {
     }
 
     select {
-        padding: 7px 12px;
+        padding: 7px 16px;
         min-width: 186px;
         height: 48px;
         color: $color232D35;
@@ -387,6 +392,7 @@ h1 {
     cursor: pointer;
     &.size_20{
         padding-left: 28px !important;
+        padding-top: 5px !important;
         .checkmark {
             width: 20px;
             height: 20px;
@@ -394,6 +400,7 @@ h1 {
         input:checked~.checkmark {
             background-size: 18px;
         }
+
     }
     input {
         position: absolute;
@@ -537,4 +544,21 @@ input[type='date']::-webkit-calendar-picker-indicator {
     right: 0;
     top: 0;
     width: auto;
+}
+
+
+.circle{
+    width: 200px !important;
+    height: 200px !important;
+   
+}
+
+.mulitiple_circle{
+    width: 248px !important;
+    height: 248px !important;
+}
+
+.verticle_chart{
+    height: 305px !important;
+    width: 100% !important;
 }

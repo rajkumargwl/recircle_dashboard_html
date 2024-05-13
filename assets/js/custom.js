@@ -234,9 +234,3 @@ function readUrl(input) {
     }
   
   }
-
-
-  //date picker
-  $(function(){
-    $('#datepicker').datepicker();
-  });
