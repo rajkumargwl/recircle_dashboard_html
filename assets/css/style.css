@@ -922,11 +922,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #DBDDDD !important;
   text-align: left !important;
   border: none !important;
-}
-@media (max-width: 1400px) {
-  .data_table table thead th {
-    min-width: 180px;
-  }
+  min-width: 170px;
 }
 .data_table table tbody tr:nth-child(even) {
   background-color: #FAFAFA !important;
@@ -956,6 +952,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: left !important;
   box-shadow: none !important;
   border: none !important;
+  min-width: 170px;
 }
 .data_table table tbody tr td.add_plus {
   text-align: right !important;
@@ -965,11 +962,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .data_table table tbody tr td.edit_view a {
   margin-right: 6px;
-}
-@media (max-width: 1400px) {
-  .data_table table tbody tr td {
-    min-width: 180px;
-  }
 }
 .data_table table tbody tr td .open_data {
   display: flex;
@@ -1001,16 +993,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   left: 0;
   z-index: 2;
 }
+.data_table table.pricing_table th {
+  min-width: 150px;
+  width: 150px;
+}
 .data_table table.pricing_table th:first-child {
   position: sticky;
   left: 0;
   z-index: 2;
-}
-@media (max-width: 1400px) {
-  .data_table table.pricing_table th:first-child {
-    min-width: 43px;
-    width: 43px;
-  }
+  min-width: 43px;
+  width: 43px;
 }
 .data_table table.pricing_table th:nth-child(2) {
   position: sticky;
@@ -1031,16 +1023,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 90px;
   display: block;
 }
-@media (max-width: 1400px) {
-  .data_table table.pricing_table th {
-    min-width: 150px;
-    width: 150px;
-  }
-}
 .data_table table.pricing_table td {
-  padding-right: 0px;
+  min-width: 150px;
+  width: 150px;
 }
-.data_table table.pricing_table td.count_td {
+.data_table table.pricing_table td .type_fields.bg_input input {
+  width: 130px;
+}
+.data_table table.pricing_table td.count_td .td_inner {
   display: flex;
   align-items: center;
 }
@@ -1051,28 +1041,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: sticky;
   left: 0;
   z-index: 2;
-}
-@media (max-width: 1400px) {
-  .data_table table.pricing_table td:first-child {
-    min-width: 43px;
-    width: 43px;
-  }
+  min-width: 43px;
+  width: 43px;
 }
 .data_table table.pricing_table td:nth-child(2) {
   position: sticky;
-  left: 43px;
+  left: 41px;
   z-index: 1;
 }
 .data_table table.pricing_table td:nth-child(3) {
   position: sticky;
-  left: 193px;
+  left: 191px;
   z-index: 3;
-}
-@media (max-width: 1400px) {
-  .data_table table.pricing_table td {
-    min-width: 150px;
-    width: 150px;
-  }
 }
 .data_table table.pricing_table td input {
   height: 36px;
@@ -1108,6 +1088,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   height: 24px;
   width: 24px;
 }
+.data_table table.clean_repair_table th {
+  min-width: 150px;
+  width: 150px;
+}
 .data_table table.clean_repair_table th:first-child {
   position: sticky;
   left: 0;
@@ -1122,14 +1106,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 130px;
   display: block;
 }
-@media (max-width: 1400px) {
-  .data_table table.clean_repair_table th {
-    min-width: 150px;
-    width: 150px;
-  }
-}
 .data_table table.clean_repair_table td {
   padding-right: 0px;
+  min-width: 150px;
+  width: 150px;
 }
 .data_table table.clean_repair_table td:last-child {
   padding-right: 20px;
@@ -1138,23 +1118,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
   position: sticky;
   left: 0;
   z-index: 2;
-}
-@media (max-width: 1400px) {
-  .data_table table.clean_repair_table td:first-child {
-    min-width: 43px;
-    width: 43px;
-  }
+  min-width: 43px;
+  width: 43px;
 }
 .data_table table.clean_repair_table td:nth-child(2) {
   position: sticky;
   left: 43px;
   z-index: 1;
-}
-@media (max-width: 1400px) {
-  .data_table table.clean_repair_table td {
-    min-width: 150px;
-    width: 150px;
-  }
 }
 .data_table table.clean_repair_table td input {
   height: 36px;
@@ -1178,7 +1148,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .data_table table.clean_repair_table td .table_fields {
   display: flex;
-  width: 100%;
   gap: 20px;
 }
 .data_table table.clean_repair_table td .table_fields .input_icon {
@@ -1677,6 +1646,8 @@ div.dt-container .dt-paging .dt-paging-button {
 
 .middle_bar {
   padding: 24px;
+  max-width: 1590px;
+  width: 100%;
 }
 @media (max-width: 950px) {
   .middle_bar {
