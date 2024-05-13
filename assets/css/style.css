@@ -189,6 +189,10 @@ h1 {
   box-shadow: none;
 }
 
+.nowrap_cls {
+  white-space: nowrap;
+}
+
 .align_items_center {
   align-items: center !important;
 }
@@ -311,7 +315,7 @@ h1 {
 }
 
 .mb_12 {
-  margin-bottom: 12px;
+  margin-bottom: 12px !important;
 }
 
 .mb_20 {
@@ -335,7 +339,7 @@ h1 {
 }
 
 .mb_16 {
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 .pd_0 {
@@ -371,7 +375,7 @@ h1 {
   line-height: 16px;
   letter-spacing: -0.14px;
   height: 48px;
-  padding: 12px;
+  padding: 16px;
 }
 .type_fields input::-moz-placeholder {
   color: #7E8992;
@@ -392,7 +396,7 @@ h1 {
   letter-spacing: -0.14px;
 }
 .type_fields select {
-  padding: 7px 12px;
+  padding: 7px 16px;
   min-width: 186px;
   height: 48px;
   color: #232D35;
@@ -636,6 +640,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
   right: 0;
   top: 0;
   width: auto;
+}
+
+.circle {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.mulitiple_circle {
+  width: 248px !important;
+  height: 248px !important;
+}
+
+.verticle_chart {
+  height: 305px !important;
+  width: 100% !important;
 }
 
 .left_bar {
@@ -968,6 +987,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 38px;
   height: 38px;
 }
+.data_table table tbody tr td input {
+  padding: 12px;
+}
+.data_table table.first_sticky th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.data_table table.first_sticky td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
 .data_table table.pricing_table th:first-child {
   position: sticky;
   left: 0;
@@ -1109,6 +1141,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .data_table table.clean_repair_table td input {
   height: 36px;
+  padding: 12px;
 }
 .data_table table.clean_repair_table td .input_icon .icon {
   padding: 5px 0px 0px 12px;
@@ -1454,6 +1487,11 @@ div.dt-container .dt-paging .dt-paging-button {
 }
 .right_bar .right_header .right-items .header_item.filter {
   margin: 0px 12px;
+}
+@media (max-width: 767px) {
+  .right_bar .right_header .right-items .header_item.filter {
+    margin: 0px 12px 0px 0px;
+  }
 }
 .right_bar .right_header .right-items .header_item.filter a span {
   color: #365236;
@@ -4151,26 +4189,6 @@ a.add_new_item svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.user_page .row {
-  margin: 0px;
-}
-.user_page .row .col {
-  padding: 0px 20px 0px 0px;
-}
-.user_page .row .col:last-child {
-  padding-right: 0px;
-}
-.user_page .row .col:nth-child(2) {
-  padding-right: 20px;
-}
-.user_page .row .col:first-child {
-  padding-right: 20px;
-}
-@media (max-width: 950px) {
-  .user_page .row .col {
-    flex: 100%;
-  }
 }
 .user_page .takeback_card.inner_card {
   border-radius: 8px;

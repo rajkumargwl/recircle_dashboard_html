@@ -142,10 +142,29 @@
                             height: 38px;
                         }
                     }
+                    input{
+                        padding: 12px;
+                    }
                 }
             }
         }
-
+        &.first_sticky{
+            th{
+                &:first-child {
+                    position: sticky;
+                    left: 0;
+                    z-index: 2;
+                }
+            }
+            td{
+                &:first-child {
+                    position: sticky;
+                    left: 0;
+                    z-index: 2;
+                }
+            }
+            
+        }
         &.pricing_table {
             th {
                 &:first-child {
@@ -316,6 +335,7 @@
 
                 input {
                     height: 36px;
+                    padding: 12px;
                 }
 
                 .input_icon {

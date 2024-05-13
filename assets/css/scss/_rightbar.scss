@@ -88,6 +88,9 @@
                 position: relative;
                 &.filter{
                     margin: 0px 12px;
+                    @media (max-width: 767px) {
+                        margin: 0px 12px 0px 0px;
+                    }
                     a {
                         span {
                             color: $color365236;
