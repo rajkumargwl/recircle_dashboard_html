@@ -15,7 +15,7 @@
         box-shadow: 0px 1px 6px -2px rgba(0, 0, 0, .1);
         background: #fff;
         margin-bottom: 0px;
-
+        border-collapse: collapse !important;
         thead {
             tr {
                 background-color: $colorDBDDDD;
@@ -183,6 +183,11 @@
                     left: 43px;
                     z-index: 1;
                 }
+                &:nth-child(3){
+                    position: sticky;
+                    left: 193px;
+                    z-index: 3;
+                }
 
                 .table_heading {
                     display: flex;
@@ -228,7 +233,11 @@
                     left: 43px;
                     z-index: 1;
                 }
-
+                &:nth-child(3){
+                    position: sticky;
+                    left: 193px;
+                    z-index: 3;
+                }
                 @media (max-width: 1400px) {
                     min-width: 150px;
                     width: 150px;
