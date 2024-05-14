@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recircled</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/datatables.min.css">
+</head>
+
+<body>
+    <div class="main brands_page">
+        <!-- left bar start -->
+
+        <section class="left_bar">
+            <div class="overlay_mobile"></div>
+            <div class="sidebar-main">
+                <div class="mobile_menu">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line three"></div>
+                </div>
+                <div class="sidebar">
+
+                    <div class="header_logo">
+                        <a href="brands.html">
+                            <img src="/assets/images/recircle_logo.png" alt="logo">
+                        </a>
+                        <button type="button" class="cancel_icon" data-bs-dismiss="offcanvas" aria-label="Close"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="sidebar_menu">
+                        <ul>
+                            <li><a href="/radmin/dashboard/dashboard.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.16675 8.33329H5.83341C7.50008 8.33329 8.33341 7.49996 8.33341 5.83329V4.16663C8.33341 2.49996 7.50008 1.66663 5.83341 1.66663H4.16675C2.50008 1.66663 1.66675 2.49996 1.66675 4.16663V5.83329C1.66675 7.49996 2.50008 8.33329 4.16675 8.33329Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.1667 8.33329H15.8334C17.5001 8.33329 18.3334 7.49996 18.3334 5.83329V4.16663C18.3334 2.49996 17.5001 1.66663 15.8334 1.66663H14.1667C12.5001 1.66663 11.6667 2.49996 11.6667 4.16663V5.83329C11.6667 7.49996 12.5001 8.33329 14.1667 8.33329Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.1667 18.3333H15.8334C17.5001 18.3333 18.3334 17.5 18.3334 15.8333V14.1666C18.3334 12.5 17.5001 11.6666 15.8334 11.6666H14.1667C12.5001 11.6666 11.6667 12.5 11.6667 14.1666V15.8333C11.6667 17.5 12.5001 18.3333 14.1667 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M4.16675 18.3333H5.83341C7.50008 18.3333 8.33341 17.5 8.33341 15.8333V14.1666C8.33341 12.5 7.50008 11.6666 5.83341 11.6666H4.16675C2.50008 11.6666 1.66675 12.5 1.66675 14.1666V15.8333C1.66675 17.5 2.50008 18.3333 4.16675 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Dashboard</span></a></li>
+                            <li class="active"><a href="brands.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M13.9163 15.8167H6.08301C5.73301 15.8167 5.34134 15.5417 5.22468 15.2083L1.77468 5.55834C1.28301 4.17501 1.85801 3.75001 3.04134 4.60001L6.29134 6.92501C6.83301 7.30001 7.44968 7.10834 7.68301 6.50001L9.14968 2.59167C9.61634 1.34167 10.3913 1.34167 10.858 2.59167L12.3247 6.50001C12.558 7.10834 13.1747 7.30001 13.708 6.92501L16.758 4.75001C18.058 3.81667 18.683 4.29168 18.1497 5.80001L14.783 15.225C14.658 15.5417 14.2663 15.8167 13.9163 15.8167Z"
+                                            stroke="#232D35" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.41699 18.3333H14.5837" stroke="#232D35" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.91699 11.6667H12.0837" stroke="#232D35" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Brands</span></a></li>
+                            <li><a href="/operator/takebake/home.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.50008 18.3333H12.5001C16.6667 18.3333 18.3334 16.6666 18.3334 12.5V7.49996C18.3334 3.33329 16.6667 1.66663 12.5001 1.66663H7.50008C3.33341 1.66663 1.66675 3.33329 1.66675 7.49996V12.5C1.66675 16.6666 3.33341 18.3333 7.50008 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M7.49992 12.8167H11.5999C13.0166 12.8167 14.1666 11.6667 14.1666 10.25C14.1666 8.83335 13.0166 7.68335 11.5999 7.68335H5.95825"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.14158 8.97497L5.83325 7.65831L7.14158 6.34998" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Takeback</span></a></li>
+                            <li><a href="/operator/sorting/sorting.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.6416 6.19995L9.99994 10.4583L17.3083 6.22495" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10 18.0083V10.45" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.27503 2.0667L3.82503 4.53336C2.8167 5.0917 1.9917 6.4917 1.9917 7.6417V12.35C1.9917 13.5 2.8167 14.9 3.82503 15.4584L8.27503 17.9334C9.22503 18.4584 10.7834 18.4584 11.7334 17.9334L16.1834 15.4584C17.1917 14.9 18.0167 13.5 18.0167 12.35V7.6417C18.0167 6.4917 17.1917 5.0917 16.1834 4.53336L11.7334 2.05836C10.775 1.53336 9.22503 1.53336 8.27503 2.0667Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Sorting</span></a></li>
+                            <li><a href="/operator/recycle/recycle.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6023 18.3334 9.99996C18.3334 5.39759 14.6025 1.66663 10.0001 1.66663C5.39771 1.66663 1.66675 5.39759 1.66675 9.99996C1.66675 14.6023 5.39771 18.3333 10.0001 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.67505 12.0917C6.82505 12.3417 7.00838 12.5751 7.21671 12.7834C8.75004 14.3167 11.2417 14.3167 12.7834 12.7834C13.4084 12.1584 13.7667 11.3667 13.8834 10.5583"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.1167 9.44169C6.23337 8.62502 6.59171 7.84165 7.21671 7.21665C8.75004 5.68332 11.2417 5.68332 12.7834 7.21665C13 7.43332 13.175 7.66666 13.325 7.90833"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.5166 14.3167V12.0917H8.74159" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.4833 5.68335V7.90834H11.2583" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Recycle</span></a></li>
+                            <li><a href="/operator/resale/resale.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.66675 1.66663H3.11675C4.01675 1.66663 4.72508 2.44163 4.65008 3.33329L3.95841 11.6333C3.84175 12.9916 4.91674 14.1583 6.28341 14.1583H15.1584C16.3584 14.1583 17.4084 13.175 17.5001 11.9833L17.9501 5.7333C18.0501 4.34996 17.0001 3.22496 15.6084 3.22496H4.85009"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 6.66663H17.5" stroke="#7E8992" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Resale</span></a></li>
+                            <li><a href="/radmin/utilities/utilities.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M5.0759 11.0667H7.6509V17.0667C7.6509 18.4667 8.40923 18.75 9.33423 17.7L15.6426 10.5333C16.4176 9.65835 16.0926 8.93335 14.9176 8.93335H12.3426V2.93335C12.3426 1.53335 11.5842 1.25002 10.6592 2.30002L4.3509 9.46668C3.58423 10.35 3.90923 11.0667 5.0759 11.0667Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Utilities</span></a></li>
+                            <li><a href="/radmin/components/components.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M16.6667 11.6666C17.5871 11.6666 18.3333 10.9205 18.3333 9.99998C18.3333 9.07951 17.5871 8.33331 16.6667 8.33331C15.7462 8.33331 15 9.07951 15 9.99998C15 10.9205 15.7462 11.6666 16.6667 11.6666Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.6667 5.00002C17.5871 5.00002 18.3333 4.25383 18.3333 3.33335C18.3333 2.41288 17.5871 1.66669 16.6667 1.66669C15.7462 1.66669 15 2.41288 15 3.33335C15 4.25383 15.7462 5.00002 16.6667 5.00002Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.6667 18.3333C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 17.5871 15 16.6667 15C15.7462 15 15 15.7462 15 16.6667C15 17.5871 15.7462 18.3333 16.6667 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M3.33268 11.6666C4.25316 11.6666 4.99935 10.9205 4.99935 9.99998C4.99935 9.07951 4.25316 8.33331 3.33268 8.33331C2.41221 8.33331 1.66602 9.07951 1.66602 9.99998C1.66602 10.9205 2.41221 11.6666 3.33268 11.6666Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 10H15" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.9993 3.33331H11.666C9.99935 3.33331 9.16602 4.16665 9.16602 5.83331V14.1666C9.16602 15.8333 9.99935 16.6666 11.666 16.6666H14.9993"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Components</span></a></li>
+                            <li class="user_name"><a href="#"><span class="avatar">J</span>
+                                    <p><span>Jessie MacGyver</span>
+                                        <span class="designation">Manager</span>
+                                    </p>
+                                </a></li>
+                            <li><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0166 1.66663C6.94992 1.66663 4.46658 4.14996 4.46658 7.21663V8.96663C4.46658 9.53329 4.23325 10.3833 3.94158 10.8666L2.88325 12.6333C2.23325 13.725 2.68325 14.9416 3.88325 15.3416C7.86658 16.6666 12.1749 16.6666 16.1582 15.3416C17.2832 14.9666 17.7666 13.65 17.1582 12.6333L16.0999 10.8666C15.8082 10.3833 15.5749 9.52496 15.5749 8.96663V7.21663C15.5666 4.16663 13.0666 1.66663 10.0166 1.66663Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round" />
+                                        <path
+                                            d="M12.7751 15.6833C12.7751 17.2083 11.5251 18.4583 10.0001 18.4583C9.24176 18.4583 8.54176 18.1417 8.04176 17.6417C7.54176 17.1417 7.2251 16.4417 7.2251 15.6833"
+                                            stroke="#7E8992" stroke-miterlimit="10" />
+                                    </svg><span>Notification</span><span class="notification_count">07</span></a></li>
+                            <li><a href="/login.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.5833 6.29995C12.3249 3.29995 10.7833 2.07495 7.40825 2.07495H7.29992C3.57492 2.07495 2.08325 3.56662 2.08325 7.29162V12.725C2.08325 16.45 3.57492 17.9416 7.29992 17.9416H7.40825C10.7583 17.9416 12.2999 16.7333 12.5749 13.7833"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.50006 10H16.9834" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15.1251 7.20837L17.9167 10L15.1251 12.7917" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- right bar end -->
+        <!-- right bar start -->
+        <section class="right_bar">
+            <div class="right_header">
+                <div class="header_logo mobile_logo">
+                    <a href="brands.html">
+                        <img src="/assets/images/recircle_logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="process_name">
+                    <h1 class="main_title"><a href="brand-name-contact.html"><svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="#232D35" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.5 12H3.67004" stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>H & M</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">All Brands</a></li>
+                            <li class="breadcrumb-item"><a href="#"><span>H & M</span></a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="middle_bar">
+
+                    <div class="takeback_card brand_card">
+                        <div class="brand_details_bar">
+                            <div class="brand_logo">
+                                <a href="#"><img src="/assets/images/brand_logo.svg" alt=""></a>
+                            </div>
+                            <div class="details_section">
+                            <div class="brand_details">
+                                <div class="left_brand_items">
+                                    <span class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10.1334 9.05835C10.05 9.05002 9.95005 9.05002 9.85838 9.05835C7.87505 8.99169 6.30005 7.36669 6.30005 5.36669C6.30005 3.32502 7.95005 1.66669 10 1.66669C12.0417 1.66669 13.7 3.32502 13.7 5.36669C13.6917 7.36669 12.1167 8.99169 10.1334 9.05835Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.9666 12.1333C3.94993 13.4833 3.94993 15.6833 5.9666 17.025C8.25827 18.5583 12.0166 18.5583 14.3083 17.025C16.3249 15.675 16.3249 13.475 14.3083 12.1333C12.0249 10.6083 8.2666 10.6083 5.9666 12.1333Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></span>
+                                </div>
+                                <div class="right_brand_items">
+                                    <p class="light_grey">
+                                        Contact Person
+                                    </p>
+                                    <p class="dark_font">
+                                        Andrew Matt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="brand_details">
+                                <div class="left_brand_items">
+                                    <span class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M14.5 17.0834H6.16667C3.66667 17.0834 2 15.8334 2 12.9167V7.08335C2 4.16669 3.66667 2.91669 6.16667 2.91669H14.5C17 2.91669 18.6667 4.16669 18.6667 7.08335V12.9167C18.6667 15.8334 17 17.0834 14.5 17.0834Z" stroke="#232D35" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.8333 4.16669L11.8916 9.58335C11.0332 10.2667 9.62491 10.2667 8.76658 9.58335L2.83325 4.16669" stroke="#232D35" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></span>
+                                </div>
+                                <div class="right_brand_items">
+                                    <p class="light_grey">
+                                        Email
+                                    </p>
+                                    <p class="dark_font">
+                                        support@company.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="brand_details">
+                                <div class="left_brand_items">
+                                    <span class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M10.6664 11.1916C12.1023 11.1916 13.2664 10.0276 13.2664 8.59164C13.2664 7.1557 12.1023 5.99164 10.6664 5.99164C9.23047 5.99164 8.06641 7.1557 8.06641 8.59164C8.06641 10.0276 9.23047 11.1916 10.6664 11.1916Z" stroke="#232D35"/>
+                                        <path d="M3.68325 7.07502C5.32492 -0.141644 16.0166 -0.133311 17.6499 7.08336C18.6083 11.3167 15.9749 14.9 13.6666 17.1167C11.9916 18.7334 9.34159 18.7334 7.65825 17.1167C5.35825 14.9 2.72492 11.3084 3.68325 7.07502Z" stroke="#232D35"/>
+                                        </svg></span>
+                                </div>
+                                <div class="right_brand_items">
+                                    <p class="light_grey">
+                                        Contact Number
+                                    </p>
+                                    <p class="dark_font">
+                                        +1 234 567 89
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="brand_details">
+                                <div class="left_brand_items">
+                                    <span class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9.9999 11.1916C11.4358 11.1916 12.5999 10.0276 12.5999 8.59164C12.5999 7.1557 11.4358 5.99164 9.9999 5.99164C8.56396 5.99164 7.3999 7.1557 7.3999 8.59164C7.3999 10.0276 8.56396 11.1916 9.9999 11.1916Z" stroke="#232D35"/>
+                                        <path d="M3.01675 7.07502C4.65842 -0.141644 15.3501 -0.133311 16.9834 7.08336C17.9417 11.3167 15.3084 14.9 13.0001 17.1167C11.3251 18.7334 8.67508 18.7334 6.99175 17.1167C4.69175 14.9 2.05842 11.3084 3.01675 7.07502Z" stroke="#232D35"/>
+                                        </svg></span>
+                                </div>
+                                <div class="right_brand_items">
+                                    <p class="light_grey">
+                                        Address
+                                    </p>
+                                    <p class="dark_font">
+                                        123 ARK street, Denver, 12345
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="brand_details">
+                                <div class="left_brand_items">
+                                    <span class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M7.83333 18.3334H12.8333C17 18.3334 18.6667 16.6667 18.6667 12.5V7.50002C18.6667 3.33335 17 1.66669 12.8333 1.66669H7.83333C3.66667 1.66669 2 3.33335 2 7.50002V12.5C2 16.6667 3.66667 18.3334 7.83333 18.3334Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.83317 12.8166H11.9332C13.3498 12.8166 14.4998 11.6666 14.4998 10.25C14.4998 8.83329 13.3498 7.68329 11.9332 7.68329H6.2915" stroke="#232D35" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.47484 8.97497L6.1665 7.65831L7.47484 6.34998" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></span>
+                                </div>
+                                <div class="right_brand_items">
+                                    <p class="light_grey">
+                                        Takeback Type
+                                    </p>
+                                    <p class="dark_font">
+                                        Warehouse Bulk and Store
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="brand_details">
+                                <div class="left_brand_items">
+                                    <span class="avatar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M13.1663 1.66669V10C13.1663 10.9167 12.4163 11.6667 11.4997 11.6667H2.33301V5.00002C2.33301 3.15835 3.82467 1.66669 5.66634 1.66669H13.1663Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.9997 11.6667V14.1667C18.9997 15.55 17.883 16.6667 16.4997 16.6667H15.6663C15.6663 15.75 14.9163 15 13.9997 15C13.083 15 12.333 15.75 12.333 16.6667H8.99967C8.99967 15.75 8.24967 15 7.33301 15C6.41634 15 5.66634 15.75 5.66634 16.6667H4.83301C3.44967 16.6667 2.33301 15.55 2.33301 14.1667V11.6667H11.4997C12.4163 11.6667 13.1663 10.9167 13.1663 10V4.16669H14.6997C15.2997 4.16669 15.8497 4.4917 16.1497 5.00836L17.5747 7.50002H16.4997C16.0413 7.50002 15.6663 7.87502 15.6663 8.33335V10.8334C15.6663 11.2917 16.0413 11.6667 16.4997 11.6667H18.9997Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.33317 18.3333C8.25364 18.3333 8.99984 17.5871 8.99984 16.6667C8.99984 15.7462 8.25364 15 7.33317 15C6.4127 15 5.6665 15.7462 5.6665 16.6667C5.6665 17.5871 6.4127 18.3333 7.33317 18.3333Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.9997 18.3333C14.9201 18.3333 15.6663 17.5871 15.6663 16.6667C15.6663 15.7462 14.9201 15 13.9997 15C13.0792 15 12.333 15.7462 12.333 16.6667C12.333 17.5871 13.0792 18.3333 13.9997 18.3333Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.9998 10V11.6667H16.4998C16.0415 11.6667 15.6665 11.2917 15.6665 10.8333V8.33333C15.6665 7.875 16.0415 7.5 16.4998 7.5H17.5748L18.9998 10Z" stroke="#232D35" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg></span>
+                                </div>
+                                <div class="right_brand_items">
+                                    <p class="light_grey">
+                                        Preferred Shipping
+                                    </p>
+                                    <p class="dark_font">
+                                        FedEx, AirDrop Shipping and DHL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tabs_filter mb_12">
+                        <ul class="tabs">
+                            <li><a  href="sub-brand-name.html">Sub Brands<span class="success_number">07</span></a></li>
+                            <li><a  href="brand-name-contact.html">Contact List<span class="success_number">07</span></a></li>
+                            <li><a class="active" href="brand-name-utility.html">Utilities</a></li>
+                            <li><a href="brand-name-pricing.html">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="data_table">
+                        <table cellspacing="0" cellpadding="10"  class="table  table-striped dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Electric KW/H</th>
+                                    <th>Water (Cubic Feet)</th>
+                                    <th>Gas (thm)</th>
+                                    <th>Manhours</th>
+                                    <th>Space (Ft2)</th>
+                                </tr>
+    
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Jan 2024</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">500</span></td>
+                                    <td><span class="light_font">170</span></td>
+                                    <td><span class="light_font">1880</span></td>
+                                    <td><span class="light_font">12,000</span></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Dec 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">600</span></td>
+                                    <td><span class="light_font">160</span></td>
+                                    <td><span class="light_font">1680</span></td>
+                                    <td><span class="light_font">16,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Nov 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">700</span></td>
+                                    <td><span class="light_font">185</span></td>
+                                    <td><span class="light_font">1720</span></td>
+                                    <td><span class="light_font">15,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Nov 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">700</span></td>
+                                    <td><span class="light_font">185</span></td>
+                                    <td><span class="light_font">1720</span></td>
+                                    <td><span class="light_font">15,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Oct 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">750</span></td>
+                                    <td><span class="light_font">180</span></td>
+                                    <td><span class="light_font">1680</span></td>
+                                    <td><span class="light_font">16,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Sep 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">580</span></td>
+                                    <td><span class="light_font">175</span></td>
+                                    <td><span class="light_font">1580</span></td>
+                                    <td><span class="light_font">14,500</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Aug 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">600</span></td>
+                                    <td><span class="light_font">160</span></td>
+                                    <td><span class="light_font">1680</span></td>
+                                    <td><span class="light_font">16,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Jul 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">700</span></td>
+                                    <td><span class="light_font">185</span></td>
+                                    <td><span class="light_font">1720</span></td>
+                                    <td><span class="light_font">15,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">Jun 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">750</span></td>
+                                    <td><span class="light_font">180</span></td>
+                                    <td><span class="light_font">1680</span></td>
+                                    <td><span class="light_font">16,000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <span class="dark_font">May 2023</span>
+                                       
+                                    </td>
+                                    <td><span class="light_font">2400</span></td>
+                                    <td><span class="light_font">580</span></td>
+                                    <td><span class="light_font">175</span></td>
+                                    <td><span class="light_font">1580</span></td>
+                                    <td><span class="light_font">14,500</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+
+    </div>
+
+    </section>
+    <!-- right bar end -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/datatables.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+</body>
+
+</html>
