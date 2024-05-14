@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recircled</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.min.css">
+    <link rel="stylesheet" href="../../assets/css/datatables.min.css">
+</head>
+
+<body>
+    <div class="main open_shipment">
+        <!-- left bar start -->
+        <section class="left_bar">
+            <div class="overlay_mobile"></div>
+            <div class="sidebar-main">
+                <div class="mobile_menu">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line three"></div>
+                </div>
+                <div class="sidebar">
+
+                    <div class="header_logo">
+                        <a href="sorting.html">
+                            <img src="../../assets/images/recircle_logo.png" alt="logo">
+                        </a>
+                        <button type="button" class="cancel_icon" data-bs-dismiss="offcanvas" aria-label="Close"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="sidebar_menu">
+                        <ul>
+                            <li><a href="/radmin/dashboard/dashboard.html"><svg width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.16675 8.33329H5.83341C7.50008 8.33329 8.33341 7.49996 8.33341 5.83329V4.16663C8.33341 2.49996 7.50008 1.66663 5.83341 1.66663H4.16675C2.50008 1.66663 1.66675 2.49996 1.66675 4.16663V5.83329C1.66675 7.49996 2.50008 8.33329 4.16675 8.33329Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.1667 8.33329H15.8334C17.5001 8.33329 18.3334 7.49996 18.3334 5.83329V4.16663C18.3334 2.49996 17.5001 1.66663 15.8334 1.66663H14.1667C12.5001 1.66663 11.6667 2.49996 11.6667 4.16663V5.83329C11.6667 7.49996 12.5001 8.33329 14.1667 8.33329Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.1667 18.3333H15.8334C17.5001 18.3333 18.3334 17.5 18.3334 15.8333V14.1666C18.3334 12.5 17.5001 11.6666 15.8334 11.6666H14.1667C12.5001 11.6666 11.6667 12.5 11.6667 14.1666V15.8333C11.6667 17.5 12.5001 18.3333 14.1667 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M4.16675 18.3333H5.83341C7.50008 18.3333 8.33341 17.5 8.33341 15.8333V14.1666C8.33341 12.5 7.50008 11.6666 5.83341 11.6666H4.16675C2.50008 11.6666 1.66675 12.5 1.66675 14.1666V15.8333C1.66675 17.5 2.50008 18.3333 4.16675 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Dashboard</span></a></li>
+                            <li><a href="brands.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M13.9163 15.8167H6.08301C5.73301 15.8167 5.34134 15.5417 5.22468 15.2083L1.77468 5.55834C1.28301 4.17501 1.85801 3.75001 3.04134 4.60001L6.29134 6.92501C6.83301 7.30001 7.44968 7.10834 7.68301 6.50001L9.14968 2.59167C9.61634 1.34167 10.3913 1.34167 10.858 2.59167L12.3247 6.50001C12.558 7.10834 13.1747 7.30001 13.708 6.92501L16.758 4.75001C18.058 3.81667 18.683 4.29168 18.1497 5.80001L14.783 15.225C14.658 15.5417 14.2663 15.8167 13.9163 15.8167Z"
+                                            stroke="#232D35" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.41699 18.3333H14.5837" stroke="#232D35" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.91699 11.6667H12.0837" stroke="#232D35" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Brands</span></a></li>
+                            <li><a href="home.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.50008 18.3333H12.5001C16.6667 18.3333 18.3334 16.6666 18.3334 12.5V7.49996C18.3334 3.33329 16.6667 1.66663 12.5001 1.66663H7.50008C3.33341 1.66663 1.66675 3.33329 1.66675 7.49996V12.5C1.66675 16.6666 3.33341 18.3333 7.50008 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M7.49992 12.8167H11.5999C13.0166 12.8167 14.1666 11.6667 14.1666 10.25C14.1666 8.83335 13.0166 7.68335 11.5999 7.68335H5.95825"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.14158 8.97497L5.83325 7.65831L7.14158 6.34998" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Takeback</span></a></li>
+                            <li class="active"><a href="/operator/sorting/sorting.html"><svg width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.6416 6.19995L9.99994 10.4583L17.3083 6.22495" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10 18.0083V10.45" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.27503 2.0667L3.82503 4.53336C2.8167 5.0917 1.9917 6.4917 1.9917 7.6417V12.35C1.9917 13.5 2.8167 14.9 3.82503 15.4584L8.27503 17.9334C9.22503 18.4584 10.7834 18.4584 11.7334 17.9334L16.1834 15.4584C17.1917 14.9 18.0167 13.5 18.0167 12.35V7.6417C18.0167 6.4917 17.1917 5.0917 16.1834 4.53336L11.7334 2.05836C10.775 1.53336 9.22503 1.53336 8.27503 2.0667Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Sorting</span></a></li>
+                            <li><a href="/operator/recycle/recycle.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6023 18.3334 9.99996C18.3334 5.39759 14.6025 1.66663 10.0001 1.66663C5.39771 1.66663 1.66675 5.39759 1.66675 9.99996C1.66675 14.6023 5.39771 18.3333 10.0001 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.67505 12.0917C6.82505 12.3417 7.00838 12.5751 7.21671 12.7834C8.75004 14.3167 11.2417 14.3167 12.7834 12.7834C13.4084 12.1584 13.7667 11.3667 13.8834 10.5583"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.1167 9.44169C6.23337 8.62502 6.59171 7.84165 7.21671 7.21665C8.75004 5.68332 11.2417 5.68332 12.7834 7.21665C13 7.43332 13.175 7.66666 13.325 7.90833"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.5166 14.3167V12.0917H8.74159" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.4833 5.68335V7.90834H11.2583" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Recycle</span></a></li>
+                            <li><a href="/operator/resale/resale.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.66675 1.66663H3.11675C4.01675 1.66663 4.72508 2.44163 4.65008 3.33329L3.95841 11.6333C3.84175 12.9916 4.91674 14.1583 6.28341 14.1583H15.1584C16.3584 14.1583 17.4084 13.175 17.5001 11.9833L17.9501 5.7333C18.0501 4.34996 17.0001 3.22496 15.6084 3.22496H4.85009"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 6.66663H17.5" stroke="#7E8992" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Resale</span></a></li>
+                            <li><a href="/radmin/utilities/utilities.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M5.0759 11.0667H7.6509V17.0667C7.6509 18.4667 8.40923 18.75 9.33423 17.7L15.6426 10.5333C16.4176 9.65835 16.0926 8.93335 14.9176 8.93335H12.3426V2.93335C12.3426 1.53335 11.5842 1.25002 10.6592 2.30002L4.3509 9.46668C3.58423 10.35 3.90923 11.0667 5.0759 11.0667Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Utilities</span></a></li>
+                            <li><a href="/radmin/components/components.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path
+                                            d="M16.6667 11.6666C17.5871 11.6666 18.3333 10.9205 18.3333 9.99998C18.3333 9.07951 17.5871 8.33331 16.6667 8.33331C15.7462 8.33331 15 9.07951 15 9.99998C15 10.9205 15.7462 11.6666 16.6667 11.6666Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.6667 5.00002C17.5871 5.00002 18.3333 4.25383 18.3333 3.33335C18.3333 2.41288 17.5871 1.66669 16.6667 1.66669C15.7462 1.66669 15 2.41288 15 3.33335C15 4.25383 15.7462 5.00002 16.6667 5.00002Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.6667 18.3333C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 17.5871 15 16.6667 15C15.7462 15 15 15.7462 15 16.6667C15 17.5871 15.7462 18.3333 16.6667 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M3.33268 11.6666C4.25316 11.6666 4.99935 10.9205 4.99935 9.99998C4.99935 9.07951 4.25316 8.33331 3.33268 8.33331C2.41221 8.33331 1.66602 9.07951 1.66602 9.99998C1.66602 10.9205 2.41221 11.6666 3.33268 11.6666Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 10H15" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.9993 3.33331H11.666C9.99935 3.33331 9.16602 4.16665 9.16602 5.83331V14.1666C9.16602 15.8333 9.99935 16.6666 11.666 16.6666H14.9993"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Components</span></a></li>
+                            <li class="user_name"><a href="#"><span class="avatar">J</span>
+                                    <p><span>Jessie MacGyver</span>
+                                        <span class="designation">Manager</span>
+                                    </p>
+                                </a></li>
+                            <li><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0166 1.66663C6.94992 1.66663 4.46658 4.14996 4.46658 7.21663V8.96663C4.46658 9.53329 4.23325 10.3833 3.94158 10.8666L2.88325 12.6333C2.23325 13.725 2.68325 14.9416 3.88325 15.3416C7.86658 16.6666 12.1749 16.6666 16.1582 15.3416C17.2832 14.9666 17.7666 13.65 17.1582 12.6333L16.0999 10.8666C15.8082 10.3833 15.5749 9.52496 15.5749 8.96663V7.21663C15.5666 4.16663 13.0666 1.66663 10.0166 1.66663Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round" />
+                                        <path
+                                            d="M12.7751 15.6833C12.7751 17.2083 11.5251 18.4583 10.0001 18.4583C9.24176 18.4583 8.54176 18.1417 8.04176 17.6417C7.54176 17.1417 7.2251 16.4417 7.2251 15.6833"
+                                            stroke="#7E8992" stroke-miterlimit="10" />
+                                    </svg><span>Notification</span><span class="notification_count">07</span></a></li>
+                            <li><a href="/login.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.5833 6.29995C12.3249 3.29995 10.7833 2.07495 7.40825 2.07495H7.29992C3.57492 2.07495 2.08325 3.56662 2.08325 7.29162V12.725C2.08325 16.45 3.57492 17.9416 7.29992 17.9416H7.40825C10.7583 17.9416 12.2999 16.7333 12.5749 13.7833"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.50006 10H16.9834" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15.1251 7.20837L17.9167 10L15.1251 12.7917" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- right bar end -->
+        <!-- right bar start -->
+        <section class="right_bar">
+            <div class="right_header">
+                <div class="header_logo mobile_logo">
+                    <a href="sorting.html">
+                        <img src="../../assets/images/recircle_logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="process_name">
+                    <h1 class="main_title"> <a class="mr_8" href="sorting.html"><svg width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="#232D35" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.5 12H3.67004" stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>Review Shipment</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Sorting</a></li>
+                            <li class="breadcrumb-item"><a href="#"><span>Shipment ID: TB58KJHR12JHBG</span></a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="right-items">
+                    <a class="secondary_btn  header_btn" href="open-shipment-box.html" data-bs-toggle="modal"
+                    data-bs-target="#successfullyModal">Approve Shipment</a>
+                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                                stroke="#232D35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 8V13" stroke="#232D35" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11.9945 16H12.0035" stroke="#232D35" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+
+            </div>
+            <div class="middle_bar">
+                <div class="details_bar">
+                    <div class="takeback_card">
+                        <div class="details_heading">
+                            <h2 class="section_heading">Shipment Details</h2>
+                            <div class="details">
+                                <div class="col">
+                                    <p class="light_font">Parent Brand</p>
+                                    <p class="dark_font">H & M</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Takeback Type</p>
+                                    <p class="dark_font">Warehouse Bulk</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Pallet Quantity</p>
+                                    <p class="dark_font">52</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Opened Pallet</p>
+                                    <p class="dark_font">0</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Total Weight</p>
+                                    <p class="dark_font">6240 LBS</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Date & Time</p>
+                                    <p class="dark_font">1/08/24,03:30:25 PM</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data_table">
+                    <table cellspacing="0" cellpadding="10" id="dash-table" class="table  table-striped dataTable">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Pallet ID</th>
+                                <th>Sub Brand</th>
+                                <th>Weight (lbs)</th>
+                                <th>Opened/ Total Box</th>
+                                <th>Status</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">12/28/23,10:12:10 AM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+                                </td>
+
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
+                                <td><span class="light_font">1/06/24,06:12:20 AM</span></td>
+                                <td><span class="light_font">Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">12/28/23,10:12:10 AM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
+                                <td><span class="light_font">12/20/23,08:15:14 AM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">11/30/23,09:02:30 AM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
+                                <td><span class="light_font">11/24/23,01:08:22 PM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">11/17/23,04:12:24 PM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">10/14/23,09:20:14 AM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">09/11/23,12:12:05 PM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">1/09/24,08:36:14 AM</span></td>
+                                <td><span class="light_font"> Weekday</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">-</span></td>
+                                <td><span class="danger">Unopened</span></td>
+                                <td><a href="#" class="open_data" data-bs-toggle="modal"
+                                        data-bs-target="#palletModal"><span class="success_font">Open Pallet</span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+
+                                </td>
+                                <td class="edit_view">
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9833 9.99993C12.9833 11.6499 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.6499 7.01666 9.99993C7.01666 8.34993 8.35 7.0166 10 7.0166C11.65 7.0166 12.9833 8.34993 12.9833 9.99993Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.8918C12.9417 16.8918 15.6833 15.1584 17.5917 12.1584C18.3417 10.9834 18.3417 9.00843 17.5917 7.83343C15.6833 4.83343 12.9417 3.1001 10 3.1001C7.05834 3.1001 4.31667 4.83343 2.40834 7.83343C1.65834 9.00843 1.65834 10.9834 2.40834 12.1584C4.31667 15.1584 7.05834 16.8918 10 16.8918Z"
+                                                stroke="#444547" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.1831 3.56243L3.47976 11.7162C3.18889 12.0258 2.9074 12.6357 2.8511 13.0579L2.50394 16.098C2.38196 17.1958 3.17012 17.9464 4.25853 17.7587L7.27982 17.2427C7.70205 17.1676 8.29317 16.858 8.58404 16.539L16.2874 8.38523C17.6198 6.9778 18.2203 5.37333 16.1466 3.41231C14.0824 1.47005 12.5155 2.155 11.1831 3.56243Z"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.89699 4.92285C10.3005 7.51253 12.4022 9.49231 15.0107 9.75503"
+                                                stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none">
+                                            <path
+                                                d="M4.16667 8.33337C3.25 8.33337 2.5 9.08337 2.5 10C2.5 10.9167 3.25 11.6667 4.16667 11.6667C5.08333 11.6667 5.83333 10.9167 5.83333 10C5.83333 9.08337 5.08333 8.33337 4.16667 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M15.8334 8.33337C14.9167 8.33337 14.1667 9.08337 14.1667 10C14.1667 10.9167 14.9167 11.6667 15.8334 11.6667C16.75 11.6667 17.5 10.9167 17.5 10C17.5 9.08337 16.75 8.33337 15.8334 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                            <path
+                                                d="M9.99998 8.33337C9.08331 8.33337 8.33331 9.08337 8.33331 10C8.33331 10.9167 9.08331 11.6667 9.99998 11.6667C10.9166 11.6667 11.6666 10.9167 11.6666 10C11.6666 9.08337 10.9166 8.33337 9.99998 8.33337Z"
+                                                stroke="#3B5A71" stroke-width="1.5" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- modal start -->
+    <div class="modal fade modal_main" id="successfullyModal" tabindex="-1" aria-labelledby="successfullyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal_title" id="successfullyModalLabel">Sorting Approved</h2>
+                    <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+                </div>
+                <div class="modal-body">
+                    <div class="main_content">
+                        <a href="home.html"><svg width="190" height="85" viewBox="0 0 190 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle opacity="0.1" cx="94.0002" cy="45" r="40" fill="#365236" />
+                                <circle cx="97.0002" cy="42" r="40" fill="#D2DDD0" />
+                                <path
+                                    d="M86.0833 47.7734C83.6558 50.3974 84.1053 54.8946 84.1053 54.8946C84.1053 54.8946 88.6025 55.3441 91.2265 52.9167L86.0833 47.7734Z"
+                                    fill="#365236" />
+                                <path
+                                    d="M91.2271 52.9141C88.6062 55.3407 84.1064 54.892 84.1064 54.892C84.1064 54.892 84.0302 54.1388 84.1064 53.0699C85.4565 53.0547 87.9292 52.8226 89.7666 51.4531L91.2271 52.9141Z"
+                                    fill="#365236" />
+                                <path
+                                    d="M95.3453 52.1777L94.1941 53.3285C94.0266 53.496 93.8278 53.6289 93.609 53.7195C93.3902 53.8101 93.1557 53.8568 92.9188 53.8568C92.682 53.8568 92.4475 53.8101 92.2287 53.7195C92.0099 53.6289 91.811 53.496 91.6436 53.3285L85.6691 47.3541C85.5016 47.1866 85.3688 46.9878 85.2782 46.769C85.1875 46.5502 85.1409 46.3157 85.1409 46.0788C85.1409 45.842 85.1875 45.6075 85.2782 45.3887C85.3688 45.1699 85.5016 44.971 85.6691 44.8036L86.82 43.6523L95.3453 52.1777Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M93.2853 50.1172C93.2754 50.1385 93.2636 50.1591 93.2533 50.18L93.3447 50.2715L92.1962 51.4242C91.918 51.7033 91.5558 51.8831 91.1654 51.9361C90.7749 51.9891 90.3779 51.9123 90.0354 51.7176L91.6445 53.3263C91.9825 53.6643 92.4409 53.8541 92.9188 53.8541C93.3968 53.8541 93.8551 53.6643 94.1931 53.3263L95.3455 52.1778L93.2853 50.1172Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M113.084 37.8663C114.118 36.818 114.736 35.4297 114.823 33.9596L115.277 26.2667C115.361 24.8282 114.171 23.6381 112.733 23.723L105.04 24.1764C103.57 24.2634 102.181 24.8815 101.133 25.9158L113.084 37.8663Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M115.279 26.2677L114.821 33.9591C114.737 35.4294 114.119 36.8184 113.083 37.8658L110.424 35.2067C111.46 34.1593 112.079 32.7709 112.167 31.3004L112.611 23.7305L112.733 23.7229C113.073 23.7029 113.413 23.7551 113.73 23.8759C114.048 23.9968 114.337 24.1835 114.577 24.4239C114.818 24.6643 115.004 24.9529 115.125 25.2707C115.246 25.5885 115.298 25.9283 115.279 26.2677Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M101.132 25.918L113.084 37.8696L113.054 37.8993L97.0619 53.8917L85.1038 41.9401L101.103 25.9477C101.114 25.9355 101.12 25.9298 101.132 25.918Z"
+                                    fill="white" />
+                                <path
+                                    d="M113.083 37.8706C113.071 37.882 113.064 37.8858 113.052 37.8972L100.119 50.8344L97.0606 53.893L94.4397 51.2721L97.4637 48.2481L110.431 35.2767C110.447 35.2652 110.45 35.2614 110.462 35.25L113.083 37.8706Z"
+                                    fill="#B7CEE1" />
+                                <path
+                                    d="M88.0066 39.0391L85.1038 41.9404L97.0619 53.892L100.119 50.8353L88.0066 39.0391Z"
+                                    fill="#365236" />
+                                <path d="M100.119 50.8359L97.0606 53.895L94.4397 51.274L97.4637 48.25L100.119 50.8359Z"
+                                    fill="#365236" />
+                                <path
+                                    d="M84.203 33.6212L81.6019 36.222C81.308 36.516 81.1428 36.9148 81.1428 37.3305C81.1428 37.7463 81.308 38.1451 81.6019 38.4391L85.1051 41.9424L94.1375 32.91L88.2309 32.2204C87.4973 32.1349 86.7539 32.2165 86.0564 32.4591C85.3588 32.7016 84.7252 33.099 84.203 33.6212Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M94.14 32.9098L85.1057 41.9399L81.6021 38.4363C81.4565 38.2907 81.341 38.1179 81.2622 37.9276C81.1834 37.7374 81.1428 37.5335 81.1428 37.3276C81.1428 37.1216 81.1834 36.9177 81.2622 36.7275C81.341 36.5373 81.4565 36.3644 81.6021 36.2188L81.9522 35.8725L84.0798 38.0001C84.216 38.1363 84.3777 38.2443 84.5557 38.318C84.7337 38.3917 84.9244 38.4296 85.117 38.4296C85.3097 38.4295 85.5004 38.3916 85.6783 38.3178C85.8563 38.2441 86.0179 38.136 86.1541 37.9998L91.5457 32.6055L94.14 32.9098Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M84.2624 60.098H84.262C84.2244 60.0981 84.1876 60.087 84.1564 60.0661C84.1251 60.0453 84.1008 60.0156 84.0864 59.9809C84.072 59.9462 84.0683 59.908 84.0756 59.8711C84.083 59.8343 84.1011 59.8005 84.1278 59.7739L84.128 59.7737L86.8095 57.0925L86.8095 57.0925C86.8451 57.0569 86.8934 57.0369 86.9438 57.0369C86.9942 57.0369 87.0425 57.0569 87.0781 57.0925C87.1137 57.1281 87.1337 57.1764 87.1337 57.2268C87.1337 57.2772 87.1137 57.3255 87.0781 57.3611C87.0781 57.3611 87.0781 57.3611 87.0781 57.3611L84.3965 60.0422L84.3962 60.0425C84.3787 60.0601 84.3579 60.0741 84.3349 60.0836C84.3119 60.0932 84.2873 60.0981 84.2624 60.098ZM84.2623 60.2885C84.187 60.2886 84.1133 60.2664 84.0507 60.2246L84.2623 60.2885ZM79.0922 54.9274L79.0917 54.9274C79.0541 54.9274 79.0174 54.9163 78.9861 54.8955C78.9548 54.8746 78.9305 54.845 78.9161 54.8102C78.9017 54.7755 78.898 54.7373 78.9053 54.7005C78.9127 54.6636 78.9309 54.6298 78.9575 54.6033L78.9577 54.603L81.6389 51.9219C81.6745 51.8863 81.7228 51.8663 81.7731 51.8663C81.8235 51.8663 81.8718 51.8863 81.9074 51.9219C81.943 51.9575 81.963 52.0058 81.963 52.0561C81.963 52.1065 81.943 52.1548 81.9074 52.1904L79.2263 54.8715L79.226 54.8718C79.2084 54.8895 79.1876 54.9034 79.1646 54.913L79.2376 55.0889L79.1646 54.913C79.1416 54.9225 79.117 54.9274 79.0922 54.9274ZM79.9145 59.2877L79.9016 59.2878C79.864 59.2878 79.8273 59.2767 79.796 59.2559C79.7647 59.235 79.7404 59.2053 79.726 59.1706C79.7116 59.1359 79.7079 59.0977 79.7152 59.0608C79.7226 59.024 79.7408 58.9902 79.7674 58.9636L79.7676 58.9634L81.6609 57.0705C81.6785 57.0529 81.6995 57.0389 81.7225 57.0294C81.7455 57.0199 81.7702 57.015 81.7952 57.015C81.8201 57.015 81.8448 57.02 81.8678 57.0295C81.8909 57.0391 81.9118 57.0531 81.9294 57.0707C81.947 57.0884 81.961 57.1093 81.9705 57.1324C81.98 57.1554 81.9849 57.1801 81.9849 57.205C81.9849 57.23 81.98 57.2547 81.9704 57.2777C81.9609 57.3007 81.9469 57.3216 81.9292 57.3393L81.9291 57.3394L80.0358 59.2327L80.0357 59.2328C80.0181 59.2504 79.9973 59.2643 79.9743 59.2738C79.9552 59.2817 79.935 59.2864 79.9145 59.2877Z"
+                                    fill="#DBDDDD" stroke="#DBDDDD" stroke-width="0.380952" />
+                                <path
+                                    d="M101.675 42.0172C104.266 42.0172 106.367 39.9164 106.367 37.325C106.367 34.7336 104.266 32.6328 101.675 32.6328C99.0834 32.6328 96.9827 34.7336 96.9827 37.325C96.9827 39.9164 99.0834 42.0172 101.675 42.0172Z"
+                                    fill="#365236" />
+                                <path
+                                    d="M104.993 40.6389C103.159 42.4724 100.189 42.4724 98.3591 40.6389C97.6352 39.9188 97.1686 38.9803 97.0315 37.9684C97.2372 38.3414 97.4993 38.6911 97.8151 39.0069C99.6486 40.8404 102.62 40.8404 104.453 39.0069C104.967 38.4952 105.354 37.8709 105.584 37.1836C105.815 36.4962 105.882 35.7647 105.78 35.0469C106.274 35.938 106.465 36.9657 106.323 37.9747C106.181 38.9836 105.714 39.9188 104.993 40.6389Z"
+                                    fill="#365236" />
+                                <path
+                                    d="M101.673 39.4236C102.834 39.4236 103.776 38.4814 103.776 37.3192C103.776 36.157 102.834 35.2148 101.673 35.2148C100.512 35.2148 99.5706 36.157 99.5706 37.3192C99.5706 38.4814 100.512 39.4236 101.673 39.4236Z"
+                                    fill="white" />
+                                <path
+                                    d="M103.16 38.8087C102.342 39.6266 101.015 39.6266 100.189 38.8087C99.8308 38.4527 99.6155 37.9776 99.5842 37.4735C99.9883 37.7628 100.482 37.8993 100.977 37.8589C101.472 37.8184 101.937 37.6036 102.289 37.2525C102.503 37.0394 102.668 36.7826 102.774 36.4997C102.88 36.2168 102.923 35.9145 102.902 35.6133C102.993 35.678 103.08 35.7542 103.16 35.8342C103.356 36.0291 103.512 36.2608 103.618 36.516C103.725 36.7712 103.779 37.045 103.779 37.3215C103.779 37.5979 103.725 37.8717 103.618 38.1269C103.512 38.3822 103.356 38.6139 103.16 38.8087Z"
+                                    fill="white" />
+                                <path
+                                    d="M105.382 54.7978L102.781 57.3989C102.487 57.6929 102.088 57.858 101.673 57.858C101.257 57.858 100.858 57.6929 100.564 57.3989L97.0608 53.8957L106.093 44.8633L106.783 50.77C106.868 51.5035 106.787 52.2469 106.544 52.9444C106.301 53.642 105.904 54.2756 105.382 54.7978Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M105.38 54.794L102.778 57.3959C102.632 57.5415 102.46 57.6571 102.269 57.7359C102.079 57.8147 101.875 57.8553 101.669 57.8553C101.463 57.8553 101.259 57.8147 101.069 57.7359C100.879 57.6571 100.706 57.5415 100.56 57.3959L97.0569 53.8922L98.3578 52.5913L100.56 54.794C100.706 54.9396 100.879 55.0552 101.069 55.134C101.259 55.2128 101.463 55.2534 101.669 55.2534C101.875 55.2534 102.079 55.2128 102.269 55.134C102.46 55.0552 102.632 54.9396 102.778 54.794L105.38 52.192C106.016 51.5545 106.465 50.7543 106.677 49.8789L106.78 50.7692C106.866 51.5022 106.784 52.2452 106.542 52.9422C106.299 53.6393 105.902 54.2724 105.38 54.794Z"
+                                    fill="#232D35" />
+                                <path
+                                    d="M107.965 26.2122C107.867 26.2114 107.774 26.1731 107.703 26.1051C107.633 26.0371 107.592 25.9447 107.588 25.8471C107.584 25.7494 107.618 25.654 107.682 25.5806C107.747 25.5071 107.837 25.4613 107.934 25.4526L109.91 25.2907C109.96 25.286 110.01 25.2914 110.058 25.3065C110.106 25.3216 110.15 25.346 110.189 25.3785C110.227 25.4109 110.258 25.4506 110.281 25.4953C110.304 25.5401 110.317 25.5889 110.321 25.6389C110.329 25.7394 110.297 25.839 110.232 25.9159C110.166 25.9927 110.073 26.0405 109.973 26.0488L107.996 26.2111C107.985 26.2119 107.975 26.2123 107.965 26.2122ZM105.663 26.4008C105.565 26.3991 105.473 26.3603 105.403 26.2925C105.334 26.2246 105.293 26.1328 105.289 26.0357C105.285 25.9387 105.318 25.8438 105.382 25.7705C105.446 25.6972 105.535 25.6511 105.632 25.6415L106.335 25.584C106.385 25.5795 106.435 25.5849 106.483 25.6C106.531 25.6151 106.575 25.6395 106.613 25.6719C106.652 25.7043 106.683 25.744 106.706 25.7886C106.728 25.8332 106.742 25.8819 106.746 25.9318C106.754 26.0323 106.722 26.132 106.657 26.2089C106.591 26.2859 106.498 26.3338 106.398 26.3421L105.694 26.3993C105.684 26.4002 105.673 26.4007 105.663 26.4008ZM91.8911 45.2453C91.7917 45.2455 91.6962 45.2067 91.6252 45.1372L89.7685 43.3234C89.6999 43.2522 89.6618 43.1571 89.6622 43.0582C89.6625 42.9593 89.7013 42.8645 89.7704 42.7938C89.8395 42.723 89.9333 42.6819 90.0322 42.6792C90.131 42.6764 90.227 42.7123 90.2999 42.7791L92.157 44.5928C92.2111 44.6457 92.2481 44.7134 92.2635 44.7874C92.2788 44.8615 92.2718 44.9384 92.2433 45.0084C92.2148 45.0784 92.166 45.1383 92.1033 45.1805C92.0406 45.2227 91.9667 45.2453 91.8911 45.2453ZM89.181 42.5985C89.0818 42.5986 88.9864 42.5597 88.9155 42.4903L88.6347 42.216C88.5662 42.1448 88.5281 42.0496 88.5284 41.9508C88.5288 41.8519 88.5676 41.7571 88.6367 41.6863C88.7057 41.6156 88.7996 41.5745 88.8985 41.5718C88.9973 41.569 89.0933 41.6048 89.1662 41.6716L89.4469 41.9459C89.501 41.9988 89.538 42.0666 89.5534 42.1406C89.5688 42.2146 89.5617 42.2915 89.5332 42.3615C89.5047 42.4315 89.4559 42.4915 89.3932 42.5337C89.3305 42.5759 89.2566 42.5984 89.181 42.5985ZM85.8416 35.0252C85.7663 35.0253 85.6926 35.003 85.63 34.9612C85.5674 34.9195 85.5185 34.86 85.4897 34.7904C85.4609 34.7208 85.4534 34.6443 85.4682 34.5704C85.4829 34.4966 85.5193 34.4288 85.5727 34.3756L86.3433 33.605C86.4146 33.5336 86.5114 33.4936 86.6123 33.4936C86.7131 33.4936 86.8099 33.5336 86.8812 33.605C86.9526 33.6763 86.9926 33.773 86.9926 33.8739C86.9926 33.9748 86.9526 34.0715 86.8812 34.1429L86.1106 34.9139C86.0753 34.9493 86.0333 34.9773 85.9872 34.9964C85.941 35.0155 85.8916 35.0253 85.8416 35.0252ZM84.7033 36.1634C84.628 36.1636 84.5544 36.1413 84.4917 36.0995C84.4291 36.0577 84.3802 35.9983 84.3514 35.9287C84.3226 35.8591 84.3151 35.7826 84.3299 35.7087C84.3447 35.6349 84.381 35.5671 84.4344 35.5139L84.6332 35.3154C84.6685 35.2801 84.7105 35.2521 84.7566 35.233C84.8028 35.2139 84.8522 35.204 84.9022 35.204C84.9521 35.204 85.0016 35.2139 85.0477 35.233C85.0939 35.2521 85.1358 35.2801 85.1711 35.3154C85.2064 35.3508 85.2345 35.3927 85.2536 35.4388C85.2727 35.485 85.2825 35.5344 85.2825 35.5844C85.2825 35.6343 85.2727 35.6838 85.2536 35.7299C85.2345 35.7761 85.2064 35.818 85.1711 35.8533L84.9723 36.0522C84.937 36.0876 84.8951 36.1156 84.8489 36.1347C84.8027 36.1538 84.7533 36.1635 84.7033 36.1634Z"
+                                    fill="white" />
+                                <path
+                                    d="M5.40437 55.2515C4.97557 55.1896 4.57485 55.4843 4.51303 55.9131C4.45121 56.3419 4.74587 56.7426 5.17467 56.8044C5.60347 56.8663 6.00419 56.5716 6.06601 56.1428C6.12783 55.714 5.83317 55.3133 5.40437 55.2515ZM11.7351 27.6203L11.9723 26.0693L10.4212 25.8321L10.1841 27.3832L11.7351 27.6203ZM4.62546 52.798C4.21329 52.3911 3.99871 52.0188 4.05389 51.8026C4.13189 51.497 4.70244 51.1901 4.99042 51.0572C5.95154 50.6198 6.90457 49.9342 7.16712 48.9057C7.50768 47.5715 6.47447 46.3631 5.82395 45.8636C5.57862 45.6739 4.90098 45.0008 5.04177 44.4492C5.17875 43.9126 6.0054 43.5044 6.48414 43.2773C7.63428 42.7214 8.32057 42.0233 8.53366 41.1885C8.87422 39.8544 7.84847 38.6478 7.18304 38.1445C6.98418 37.9905 6.25436 37.3041 6.39895 36.7376C6.52833 36.2308 7.27284 35.8334 7.74222 35.6118C10.0834 34.5264 10.3919 32.8824 9.49588 31.4787L9.49033 31.4693C9.12002 30.8985 8.24245 31.0396 8.07313 31.703C7.9818 32.0607 8.17639 32.3248 8.18194 32.3341C8.37447 32.6373 8.43475 32.8988 8.37022 33.1205C8.26209 33.4819 7.79747 33.8714 7.06073 34.2073C5.8359 34.7759 5.09727 35.4924 4.88403 36.3589C4.59294 37.4992 5.32944 38.7193 6.22719 39.401C6.47253 39.5906 7.15017 40.2638 7.00938 40.8153C6.91425 41.188 6.44964 41.5775 5.69419 41.9245C4.46935 42.493 3.73818 43.2114 3.51748 44.076C3.07799 45.7977 4.89966 47.1519 4.86811 47.12C5.11344 47.3097 5.78363 47.9809 5.65219 48.5269C5.62777 48.5604 5.6029 49.0621 4.337 49.6361C3.53667 50.0034 2.7503 50.5648 2.53341 51.4145C2.54944 51.5694 2.09516 52.5093 3.53402 53.9325C3.84596 54.2344 4.33851 54.2331 4.64788 53.9231C4.9498 53.6112 4.96341 53.1224 4.62546 52.798Z"
+                                    fill="#B2B7BA" />
+                                <path
+                                    d="M184.193 27.5546L184.031 25.9931L182.469 26.1546L182.631 27.7162L184.193 27.5546ZM186.377 44.6085C186.469 44.1854 186.193 43.77 185.769 43.6777C185.469 43.6162 184.877 43.447 184.746 43.1777C184.616 42.8854 184.946 42.2854 185.123 42.0162C185.662 41.1854 185.916 40.447 185.916 39.77C185.916 37.9239 184.023 37.2777 183.023 37.1931C183.008 37.1931 181.569 37.047 181.569 36.1777C181.569 35.7239 181.869 35.1623 182.116 34.7777C183.477 32.6623 182.777 31.447 182.246 30.9085C181.931 30.5393 181.054 30.0623 180.023 29.9546C180 29.9546 178.569 29.8085 178.569 28.9393C178.569 28.4777 178.869 27.9239 179.116 27.5393C180.531 25.3316 179.9 23.7777 178.377 23.0777L178.369 23.07C177.977 22.8931 177.508 23.0623 177.331 23.4546C177.154 23.8393 177.323 24.3162 177.716 24.4931C177.969 24.6085 178.231 24.7854 178.308 25.0546C178.416 25.4162 178.231 25.9931 177.793 26.6777C177.254 27.5085 177 28.247 177 28.9239C177 30.77 178.893 31.4162 179.893 31.5008C180.123 31.5239 180.777 31.647 181.131 31.9931L181.139 32.0008L181.146 32.0085C181.623 32.4854 181.169 33.3546 180.808 33.9239C180.269 34.7546 180.016 35.4931 180.016 36.17C180.016 38.0162 181.908 38.6623 182.908 38.747C182.923 38.747 184.362 38.8931 184.362 39.7623C184.362 40.2162 184.062 40.7777 183.816 41.1623C183.816 41.17 183.808 41.17 183.808 41.1777C182.523 43.1931 183.223 44.7162 185.4 45.2008C185.885 45.3239 186.293 45.0162 186.377 44.6085ZM189.608 40.1854C189.562 39.7546 189.177 39.4393 188.746 39.4854C188.316 39.5316 188 39.9162 188.046 40.347C188.093 40.7777 188.477 41.0931 188.908 41.047C189.339 41.0008 189.654 40.6162 189.608 40.1854Z"
+                                    fill="#B2B7BA" />
+                                <path
+                                    d="M38.2017 13.7154C39.5017 13.7154 40.5556 12.6615 40.5556 11.3615C40.5556 10.0615 39.5017 9 38.2017 9C36.9017 9 35.8479 10.0538 35.8479 11.3538C35.8479 12.6538 36.9017 13.7154 38.2017 13.7154ZM38.2017 10.5692C38.6325 10.5692 38.9864 10.9231 38.9864 11.3538C38.9864 11.7846 38.6325 12.1385 38.2017 12.1385C37.771 12.1385 37.4171 11.7846 37.4171 11.3538C37.4171 10.9231 37.771 10.5692 38.2017 10.5692Z"
+                                    fill="#B2B7BA" />
+                                <path
+                                    d="M152.582 23.7L154.736 24.9923C155.113 25.2154 155.59 25.0923 155.813 24.7231C156.036 24.3538 155.913 23.8692 155.544 23.6462L153.92 22.6692L155.344 21.8154C155.705 21.6 155.928 21.2077 155.928 20.7846V20.7538C155.928 20.3769 155.751 20.0154 155.451 19.7923L154.374 18.9846L154.982 18.6769C155.567 18.3846 155.928 17.8 155.928 17.1462V16.7846C155.928 16.3538 155.574 16 155.144 16C154.713 16 154.359 16.3538 154.359 16.7846V17.1538C154.359 17.2077 154.328 17.2615 154.282 17.2846L153.144 17.8538C152.336 18.2538 152.251 19.3615 152.959 19.8923L154.09 20.7385L152.59 21.6385C151.805 22.1077 151.805 23.2385 152.582 23.7Z"
+                                    fill="#B2B7BA" />
+                                <path
+                                    d="M123.866 1.56602C124.297 1.51987 124.612 1.13525 124.566 0.704485C124.52 0.273716 124.135 -0.0416687 123.705 0.00448518C123.274 0.050639 122.959 0.435254 123.005 0.866024C123.051 1.29679 123.435 1.60449 123.866 1.56602Z"
+                                    fill="#B2B7BA" />
+                            </svg>
+
+                        </a>
+                        <h4>Great!</h4>
+                        <p>Sorting has been approved, and the operator will receive a notification.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn_link primary-btn" href="sorting.html">Okay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/datatables.min.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -17,8 +17,9 @@
                 font-weight: 500;
                 line-height: 16px;
                 letter-spacing: -0.14px;
-                padding-bottom: 16px;
-                display: block;
+                padding-bottom: 12px;
+                display: flex;
+                align-items: center;
                 white-space: nowrap;
                 &.active{
                     border-bottom: 2px solid $color597559;
@@ -35,6 +36,7 @@
                     font-weight: 600;
                     margin-left: 8px;
                     color: $color444547;
+                    height: 20px;
                 }
             }
         }

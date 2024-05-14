@@ -358,6 +358,10 @@ h1 {
   padding-top: 5px;
 }
 
+.mr_8 {
+  margin-right: 8px;
+}
+
 .form-control:focus {
   box-shadow: 0 0 0 gray;
   border-color: #efefee;
@@ -1646,7 +1650,7 @@ div.dt-container .dt-paging .dt-paging-button {
 
 .middle_bar {
   padding: 24px;
-  max-width: 1590px;
+  max-width: 1600px;
   width: 100%;
 }
 @media (max-width: 950px) {
@@ -1876,7 +1880,7 @@ div.dt-container .dt-paging .dt-paging-button {
 }
 .primary-btn svg {
   margin-left: 5px;
-  width: 16px;
+  width: 100%;
   margin-top: -2px;
 }
 .primary-btn:hover {
@@ -2209,8 +2213,9 @@ a.add_new_item svg {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.14px;
-  padding-bottom: 16px;
-  display: block;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
 }
 .tabs_filter .tabs li a.active {
@@ -2228,6 +2233,7 @@ a.add_new_item svg {
   font-weight: 600;
   margin-left: 8px;
   color: #444547;
+  height: 20px;
 }
 
 .modal_main .modal-dialog {
