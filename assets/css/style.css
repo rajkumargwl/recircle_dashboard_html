@@ -1167,6 +1167,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 8px 10px;
   border-radius: 13px;
   background-color: #E8F7EE;
+  white-space: nowrap;
 }
 .data_table .danger {
   color: #F23939;
@@ -2234,6 +2235,7 @@ a.add_new_item svg {
   margin-left: 8px;
   color: #444547;
   height: 20px;
+  padding: 5px 4px;
 }
 
 .modal_main .modal-dialog {
