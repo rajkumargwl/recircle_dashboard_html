@@ -13,6 +13,7 @@
 <body>
     <div class="main">
         <!-- left bar start -->
+
         <section class="left_bar">
             <div class="overlay_mobile"></div>
             <div class="sidebar-main">
@@ -24,7 +25,7 @@
                 <div class="sidebar">
 
                     <div class="header_logo">
-                        <a href="sorting.html">
+                        <a href="resale.html">
                             <img src="../../assets/images/recircle_logo.png" alt="logo">
                         </a>
                         <button type="button" class="cancel_icon" data-bs-dismiss="offcanvas" aria-label="Close"><svg
@@ -79,7 +80,7 @@
                                         <path d="M7.14158 8.97497L5.83325 7.65831L7.14158 6.34998" stroke="#7E8992"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg><span>Takeback</span></a></li>
-                            <li class="active"><a href="sorting.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                            <li><a href="../sorting/sorting.html"><svg width="20" height="20" viewBox="0 0 20 20"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2.6416 6.19995L9.99994 10.4583L17.3083 6.22495" stroke="#7E8992"
                                             stroke-linecap="round" stroke-linejoin="round" />
@@ -106,7 +107,7 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <span>Recycle</span></a></li>
-                            <li><a href="../resale/resale.html"><svg width="20" height="20" viewBox="0 0 20 20"
+                            <li class="active"><a href="resale.html"><svg width="20" height="20" viewBox="0 0 20 20"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M1.66675 1.66663H3.11675C4.01675 1.66663 4.72508 2.44163 4.65008 3.33329L3.95841 11.6333C3.84175 12.9916 4.91674 14.1583 6.28341 14.1583H15.1584C16.3584 14.1583 17.4084 13.175 17.5001 11.9833L17.9501 5.7333C18.0501 4.34996 17.0001 3.22496 15.6084 3.22496H4.85009"
@@ -184,21 +185,27 @@
         <section class="right_bar">
             <div class="right_header">
                 <div class="header_logo mobile_logo">
-                    <a href="sorting.html">
+                    <a href="resale.html">
                         <img src="../../assets/images/recircle_logo.png" alt="logo">
                     </a>
                 </div>
                 <div class="process_name">
-                    <h1 class="main_title">Sorting</h1>
+                    <h1 class="main_title"><a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="#232D35" stroke-width="1.5"
+                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.5 12H3.67004" stroke="#232D35" stroke-width="1.5" stroke-miterlimit="10"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>Shipment</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Resale</a></li>
+                         
+                          <li class="breadcrumb-item"><a href=""><span>Shipment ID: TB58KJHR12JHBG</span></a></li>
+                        </ol>
+                      </nav>
                 </div>
                 <div class="right-items">
-                    <div class="header_item">
-                        <select name="H & M" id="">
-                            <option value="">H & M</option>
-                            <option value="">H & M</option>
-                            <option value="">H & M</option>
-                        </select>
-                    </div>
                     <div class="header_item">
 
                         <div class="form-group has-search">
@@ -241,38 +248,41 @@
                             </svg><span>Filter</span></a>
                         <div class="filter_modal">
                             <div class="container-fluid">
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                                    aria-labelledby="offcanvasNavbarLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title">Filter</h5>
-                                        <button type="button" class="btn_close" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path d="M12 4L4 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M4 4L12 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="item">
-                                            <label for="" class="field_label">Sorting Type</label>
-                                            <select>
-                                                <option value="">All</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                            </select>
+                                <form action="">
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                        aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Filter</h5>
+                                            <button type="button" class="btn_close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M12 4L4 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4 4L12 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
                                         </div>
-                                        <div class="item">
-                                            <label for="" class="field_label">Manager Approval</label>
-                                            <select>
-                                                <option value="">All</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                            </select>
+                                        <div class="offcanvas-body">
+                                            <div class="item">
+                                                <label for="" class="field_label">Resale Type</label>
+                                                <select>
+                                                    <option value="">All</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="item">
+                                                <label for="" class="field_label">Manager Approval</label>
+                                                <select>
+                                                    <option value="">All</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas_footer">
+                                            <a class="primary-btn btn_link" data-bs-dismiss="offcanvas"
+                                                    href="#">Apply Filters</a>
                                         </div>
                                     </div>
-                                    <div class="offcanvas_footer">
-                                        <a class="primary-btn" data-bs-dismiss="offcanvas" href="#">Apply Filters</a>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -280,250 +290,267 @@
 
             </div>
             <div class="middle_bar">
+                <div class="details_bar">
+                    <div class="takeback_card">
+                        <div class="details_heading">
+                            <h2 class="section_heading">Shipment Details</h2>
+                            <div class="details">
+                                <div class="col">
+                                    <p class="light_font">Brand</p>
+                                    <p class="dark_font">H & M</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Total Resalable Item</p>
+                                    <p class="dark_font">24,000</p>
+                                </div>
+                                <div class="col">
+                                    <p class="light_font">Total Weight</p>
+                                    <p class="dark_font">21,536</p>
+                                </div class="col">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="data_table">
                     <table cellspacing="0" cellpadding="10" id="dash-table" class="table  table-striped dataTable">
                         <thead>
                             <tr>
-                                <th>Shipment ID</th>
-                                <th>Date and Time</th>
-                                <th>Type</th>
-                                <th>Weight (lbs)</th>
-                                <th>Opened/ <br> Total Pallet</th>
+                                <th>Products</th>
+                                <th>ID</th>
+                                <th>Tier</th>
                                 <th>Status</th>
-                                <th>manager approval</th>
+                                <th>Warehouse Location</th>
                                 <th></th>
                             </tr>
 
                         </thead>
                         <tbody>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">12/28/23,10:12:10 AM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">7100</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="danger">Unopened</span></td>
-                                <td><span class="pending">Pending</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
-                                <td><span class="light_font">1/06/24,06:12:20 AM</span></td>
-                                <td><span class="light_font">Warehouse</span></td>
-                                <td><span class="light_font">4850</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="success">Opened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">12/28/23,10:12:10 AM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">7100</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="danger">Unopened</span></td>
-                                <td><span class="pending">Pending</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
-                                <td><span class="light_font">12/20/23,08:15:14 AM</span></td>
-                                <td><span class="light_font"> Warehouse</span></td>
-                                <td><span class="light_font">6400</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="success">Opened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">11/30/23,09:02:30 AM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">5880</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="danger">Unopened</span></td>
-                                <td><span class="pending">Pending</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
-                                <td><span class="light_font">11/24/23,01:08:22 PM</span></td>
-                                <td><span class="light_font"> Warehouse</span></td>
-                                <td><span class="light_font">5600</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="success">Opened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">11/17/23,04:12:24 PM</span></td>
-                                <td><span class="light_font"> Warehouse</span></td>
-                                <td><span class="light_font">6500</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="danger">Unopened</span></td>
-                                <td><span class="pending">Pending</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">10/14/23,09:20:14 AM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">8500</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="success">Opened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">09/11/23,12:12:05 PM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">4850</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="success">Opened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">1/09/24,08:36:14 AM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">6120</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="danger">Unopened</span></td>
-                                <td><span class="danger">Rejected</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">09/11/23,12:12:05 PM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">4850</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="danger">Unopened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
                             <tr>
-                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
-                                <td><span class="light_font">09/11/23,12:12:05 PM</span></td>
-                                <td><span class="light_font"> Store</span></td>
-                                <td><span class="light_font">4850</span></td>
-                                <td><span class="light_font">0/52</span></td>
-                                <td><span class="success">Opened</span></td>
-                                <td><span class="success">Approved</span></td>
-                                <td><a href="open-shipment.html" class="open_data"><span
-                                            class="success_font">Open</span>
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
-                                                stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></a>
-                                </td>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
                             </tr>
+                            <tr>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">Jeans</span></td>
+                                <td><span class="light_font">5QJL9N3B8T</span></td>
+                                <td><span class="light_font">Tier 3</span></td>
+                                <td><span class="light_font">Photographed</span> <span class="success_number">04</span></td>
+                                <td><span class="light_font">Florida</span></td>
+                                <td><a href="shipment-tabs.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>

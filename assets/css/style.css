@@ -1641,7 +1641,7 @@ div.dt-container .dt-paging .dt-paging-button {
   border-radius: 6px;
 }
 .right_bar .right_header .right-items .header_item a.add_new_item svg {
-  margin-right: 2px;
+  margin-right: 10px;
 }
 
 .main {
@@ -1947,6 +1947,7 @@ div.dt-container .dt-paging .dt-paging-button {
 }
 .add_new_material.add_product a span {
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 a.add_new_item {
@@ -3236,6 +3237,9 @@ a.add_new_item svg {
 .tabs_section .tabs_number li.active span.number {
   background-color: #E3F0FA;
 }
+.tabs_section .tabs_number li.active-in a {
+  border-color: #597559;
+}
 .tabs_section .tabs_number li span {
   color: #7E8992;
   font-family: "Mont";
@@ -3305,10 +3309,16 @@ a.add_new_item svg {
     max-width: 70%;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .tabs_section .col-md-10.process_fields {
     max-width: 100%;
     margin-top: 10px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .tabs_section .col-md-10.process_fields {
+    padding-left: 12px;
   }
 }
 .tabs_section .shipment_items {
@@ -3405,6 +3415,11 @@ a.add_new_item svg {
   width: -moz-max-content;
   width: max-content;
 }
+.tabs_section .shipment_items .item-main .right_items .checbox_field.completed_box .custom_checkbox {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
 .tabs_section .shipment_items .item-main .right_items .checbox_field.completed_box .custom_checkbox .checkmark {
   width: 16px;
   height: 16px;
@@ -3423,6 +3438,7 @@ a.add_new_item svg {
   line-height: 150%;
   letter-spacing: -0.14px;
   margin-left: 4px;
+  padding-top: 2px;
 }
 @media (max-width: 767px) {
   .tabs_section .shipment_items .item-main .right_items .checbox_field .check_title {

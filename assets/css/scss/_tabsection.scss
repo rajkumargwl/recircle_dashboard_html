@@ -65,7 +65,12 @@
                     }
                 }
             }
-
+            &.active-in{
+                a{
+                    border-color: $color597559;
+                }
+               
+            }
             span {
                 color: $color7E8992;
                 font-family: 'Mont';
@@ -138,9 +143,13 @@
             @media (max-width: 1400px) {
                 max-width: 70%;
             }
-            @media (max-width: 991px) {
+            @media (max-width: 1200px) {
                 max-width: 100%;
                 margin-top: 10px;
+                padding-left: 0px;
+            }
+            @media (max-width: 991px) {
+                padding-left: 12px;
             }
         }
 
@@ -284,6 +293,9 @@
                         width: max-content;
 
                         .custom_checkbox {
+                            display: flex;
+                            gap: 4px;
+                            align-items: center;
                             .checkmark {
                                 width: 16px;
                                 height: 16px;
@@ -306,6 +318,7 @@
                         line-height: 150%;
                         letter-spacing: -0.14px;
                         margin-left: 4px;
+                        padding-top: 2px;
                         @media (max-width: 767px) {
                             max-width: 250px;
                             display: block;
