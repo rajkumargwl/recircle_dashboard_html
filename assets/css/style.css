@@ -1652,7 +1652,6 @@ div.dt-container .dt-paging .dt-paging-button {
 
 .middle_bar {
   padding: 24px;
-  max-width: 1600px;
   width: 100%;
 }
 @media (max-width: 950px) {
