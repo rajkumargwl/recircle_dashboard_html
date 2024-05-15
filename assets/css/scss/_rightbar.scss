@@ -1,8 +1,18 @@
 .right_bar {
     width: 100%;
     background-color: $colorF2F2F4;
-
+    @media (min-width: 768px) {
+        margin-left: 240px;
+        width: auto;
+    }
     .right_header {
+        @media (min-width: 768px) {
+        padding: 0px 264px 0px 24px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+        z-index: 1;
         padding: 0px 24px;
         height: 80px;
         background-color: $colorwhite;
@@ -10,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+       
         .mobile_logo{
             display: none;
             @media (max-width: 767px) {

@@ -6,7 +6,11 @@
     border-bottom: none;
     min-height: 100vh;
     overflow: auto;
-
+    @media (min-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    }
     @media (max-width: 767px) {
         min-width: inherit;
     }
@@ -108,6 +112,8 @@
         }
 
         .sidebar_menu {
+            overflow: hidden scroll;
+            height: calc(100vh - 84px);
             ul {
                 padding-left: 0px;
 
