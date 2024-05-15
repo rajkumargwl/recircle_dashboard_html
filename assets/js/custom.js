@@ -145,6 +145,7 @@ $( document ).ready(function() {
         $('.tabs_number li.clean_repair_step .number').hide();
         $('.tabs_number li.clean_repair_step .check').show();
         $('.tabs_number li.clean_repair_step').removeClass('active');
+        $('.tabs_number li.clean_repair_step').addClass('active-in');
         $('.clean_repair_process').removeClass('show');
 
         $('.photography_process').addClass('show');
@@ -162,6 +163,7 @@ $( document ).ready(function() {
         $('.tabs_number li.photography_step .number').hide();
         $('.tabs_number li.photography_step .check').show();
         $('.tabs_number li.photography_step').removeClass('active');
+        $('.tabs_number li.photography_step').addClass('active-in');
         $('.photography_process').removeClass('show');
 
         $('.upload_photo_process').addClass('show');
@@ -178,6 +180,7 @@ $( document ).ready(function() {
         $('.tabs_number li.upload_step .number').hide();
         $('.tabs_number li.upload_step .check').show();
         $('.tabs_number li.upload_step').removeClass('active');
+        $('.tabs_number li.upload_step').addClass('active-in');
         $('.upload_photo_process').removeClass('show');
 
         $('.Warehouse_process').addClass('show');
@@ -194,6 +197,7 @@ $( document ).ready(function() {
         $('.tabs_number li.warehouse_step .number').hide();
         $('.tabs_number li.warehouse_step .check').show();
         $('.tabs_number li.warehouse_step').removeClass('active');
+        $('.tabs_number li.warehouse_step').addClass('active-in');
         $('.Warehouse_process').removeClass('show');
 
         $('.pack_process').addClass('show');
@@ -210,6 +214,7 @@ $( document ).ready(function() {
         $('.tabs_number li.ship_step .number').hide();
         $('.tabs_number li.ship_step .check').show();
         $('.tabs_number li.ship_step').removeClass('active');
+        $('.tabs_number li.ship_step').addClass('active-in');
         $('.pack_process').removeClass('show');
 
         $('.pack_process .target_block').hide();
