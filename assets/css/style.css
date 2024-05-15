@@ -1685,6 +1685,10 @@ div.dt-container .dt-paging .dt-paging-button {
   }
 }
 
+body.menu_open {
+  overflow: hidden;
+}
+
 .middle_bar {
   padding: 24px;
 }

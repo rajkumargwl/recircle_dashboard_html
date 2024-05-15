@@ -5,7 +5,11 @@
         display: block;
     }
 }
-
+body{
+    &.menu_open{
+        overflow: hidden;
+    }
+}
 .middle_bar {
     padding: 24px;
     // max-width: 1600px;

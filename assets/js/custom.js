@@ -1,18 +1,21 @@
 // mobile menu
 function headerToggle() {
+    const body = document.querySelector('body');
     const menuBtn = document.querySelector('.sidebar-main .mobile_menu');
     const cancelBtn = document.querySelector('.sidebar-main .cancel_icon');
     const leftbar = document.querySelector('.left_bar');
 
-    if (menuBtn && leftbar) {
+    if (menuBtn && leftbar && body) {
         menuBtn.addEventListener("click", function () {
             menuBtn.classList.toggle('is-active');
             leftbar.classList.toggle('show');
+            body.classList.toggle('menu_open');
         });
     }
-    if (cancelBtn && leftbar) {
+    if (cancelBtn && leftbar && body) {
         cancelBtn.addEventListener("click", function () {
             leftbar.classList.remove('show');
+            body.classList.remove('menu_open');
         });
     }
 }
