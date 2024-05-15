@@ -2,6 +2,9 @@
     position: relative;
     max-width: 735px;
     width: 100%;
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
     .form-control-file {
       position: relative;
       max-width: 735px;
@@ -41,10 +44,15 @@
         align-items: center;
         max-width: 272px;
         z-index: 1;
+        @media (max-width: 991px) {
+        transform: translate(52%, 0%);
+        left: 0;
+        }
         @media (max-width: 767px) {
           left: 20px;
           right: 20px;
           max-width: 100%;
+          transform: none;
         }
         P{
             margin-bottom: 0px;

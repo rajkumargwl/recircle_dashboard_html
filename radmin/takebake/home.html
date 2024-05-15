@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <div class="main shipment_details">
+    <div class="main">
         <!-- left bar start -->
+
         <section class="left_bar">
             <div class="overlay_mobile"></div>
             <div class="sidebar-main">
@@ -59,7 +60,7 @@
                                             stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                     </svg><span>Dashboard</span></a></li>
-                            <li class="active"><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            <li class="active"><a href="home.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M7.50008 18.3333H12.5001C16.6667 18.3333 18.3334 16.6666 18.3334 12.5V7.49996C18.3334 3.33329 16.6667 1.66663 12.5001 1.66663H7.50008C3.33341 1.66663 1.66675 3.33329 1.66675 7.49996V12.5C1.66675 16.6666 3.33341 18.3333 7.50008 18.3333Z"
@@ -154,164 +155,210 @@
                     </a>
                 </div>
                 <div class="process_name">
-                    <h1 class="main_title">New Takeback</h1>
+                    <h1 class="main_title">Takeback</h1>
                 </div>
-                <div class="right-items stepper_section">
-                    <div class="stepper_top_menus">
-                        <div class="stepper_items">
-                            <div class="item">
-                                <!-- <div class="circle">
+                <div class="right-items">
+                    <div class="header_item">
+                        <select name="H & M" id="">
+                            <option value="">H & M</option>
+                            <option value="">H & M</option>
+                            <option value="">H & M</option>
+                        </select>
+                    </div>
+                    <div class="header_item">
 
-                                </div> -->
-                                <div class="stpe_box active">
-                                    <div class="steps_circle">
-                                        <span class="number">1</span>
+                        <div class="form-group has-search">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.66659 14C11.1644 14 13.9999 11.1645 13.9999 7.66671C13.9999 4.1689 11.1644 1.33337 7.66659 1.33337C4.16878 1.33337 1.33325 4.1689 1.33325 7.66671C1.33325 11.1645 4.16878 14 7.66659 14Z"
+                                    stroke="#232D35" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6666 14.6667L13.3333 13.3334" stroke="#232D35" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="header_item filter">
+                        <a href="#" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.99992 14.6667H9.99992C13.3333 14.6667 14.6666 13.3334 14.6666 10V6.00004C14.6666 2.66671 13.3333 1.33337 9.99992 1.33337H5.99992C2.66659 1.33337 1.33325 2.66671 1.33325 6.00004V10C1.33325 13.3334 2.66659 14.6667 5.99992 14.6667Z"
+                                    stroke="#365236" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.3799 12.3333V9.73328" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.3799 4.96663V3.66663" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M10.3801 8.43334C11.3374 8.43334 12.1134 7.6573 12.1134 6.70001C12.1134 5.74271 11.3374 4.96667 10.3801 4.96667C9.42277 4.96667 8.64673 5.74271 8.64673 6.70001C8.64673 7.6573 9.42277 8.43334 10.3801 8.43334Z"
+                                    stroke="#365236" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.62012 12.3333V11.0333" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.62012 6.26663V3.66663" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M5.62005 11.0333C6.57735 11.0333 7.35338 10.2573 7.35338 9.29998C7.35338 8.34269 6.57735 7.56665 5.62005 7.56665C4.66276 7.56665 3.88672 8.34269 3.88672 9.29998C3.88672 10.2573 4.66276 11.0333 5.62005 11.0333Z"
+                                    stroke="#365236" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg><span>Filter</span></a>
+                        <div class="filter_modal">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                        aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Filter</h5>
+                                            <button type="button" class="btn_close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M12 4L4 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4 4L12 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="item">
+                                                <label for="" class="field_label">Takeback Type</label>
+                                                <select>
+                                                    <option value="">All</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="item">
+                                                <label for="" class="field_label">Manager Approval</label>
+                                                <select>
+                                                    <option value="">All</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas_footer">
+                                            <a class="primary-btn btn_link" data-bs-dismiss="offcanvas"
+                                                    href="#">Apply Filters</a>
+                                        </div>
                                     </div>
-                                    <span class="step_name">Shipment Details</span>
-                                </div>
-
-                                <!-- <a href="#" class="active"> <span>1 </span> <svg width="32" height="32"
-                                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="16" cy="16" r="15.5" fill="white" stroke="#7E8992" />
-                                    </svg> </a> -->
-                            </div>
-                            <div class="center_icon">
-                                <a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.94 13.28L10.2867 8.9333C10.8 8.41997 10.8 7.57997 10.2867 7.06664L5.94 2.71997"
-                                            stroke="#7E8992" stroke-width="1.5" stroke-miterlimit="10"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg></a>
-                            </div>
-                            <div class="item">
-                                <div class="stpe_box">
-                                    <div class="steps_circle">
-                                        <span class="number">2</span>
-                                    </div>
-                                    <span class="step_name">Pallet Details</span>
-                                </div>
+                                </form>
                             </div>
                         </div>
+                    </div>
+                    <div class="header_item">
+                        <a href="shipment-details.html" class="add_new_item"><svg width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8H14" stroke="white" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 14V2" stroke="white" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg><span>New Takeback</span></a>
                     </div>
                 </div>
 
             </div>
             <div class="middle_bar">
-                <form>
-                    <div class="takeback_card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h4 class="field_label">Takeback type</h4>
-                                    <div class="check_fileds">
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field" checked>
-                                            <label class="light_field_label">
-                                                Warehouse
-                                            </label>
-                                        </div>
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field">
-                                            <label class="light_field_label">
-                                                Store
-                                            </label>
-                                        </div>
-                                        <div class="form_check">
-                                            <input class="form-check-input" type="radio" name="field">
-                                            <label class="light_field_label">
-                                                Customer
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="type_fields mt_22">
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Parent Brand</label>
-                                            <select name="H & M" id="">
-                                                <option value="">H & M</option>
-                                                <option value="">H & M</option>
-                                                <option value="">H & M</option>
-                                            </select>
-                                            
-                                        </div>
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Shipment Origin
-                                                Zipcode</label>
-                                                <input type="text" class="form-control" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Shipping Carrier
-                                                Name</label>
-                                            <input type="text" class="form-control" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="form_check">
-                                            <label for="exampleInputEmail1" class="field_label">Pallet Quantity</label>
-                                            <input type="text" class="form-control" aria-describedby="emailHelp">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4 class="field_label">ASN</h4>
-                                    <div class="check_fileds">
+                <div class="data_table">
+                    <table cellspacing="0" cellpadding="10" id="dash-table" class="table  table-striped dataTable">
+                        <thead>
+                            <tr>
+                                <th>Shipment ID</th>
+                                <th>Date and Time</th>
+                                <th>Type</th>
+                                <th>Weight (lbs)</th>
+                                <th>Total Pallet</th>
+                                <th>Manager Approval</th>
+                            </tr>
 
-                                        <div class="form_check slide_check">
-                                            <label class="light_field_label" for="">No
-                                                <input type="checkbox" />
-                                                <span>Yes</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="type_fields mt_22">
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Shipment ID</label>
-                                            <input type="text" class="form-control" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Shipping Carrier</label>
-                                            <select name="H & M" id="">
-                                                <option value="">Other</option>
-                                                <option value="">Other</option>
-                                                <option value="">Other</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_check mb_12">
-                                            <label for="exampleInputEmail1" class="field_label">Type
-                                                (Pallet/Box)</label>
-                                            <select name="H & M" id="">
-                                                <option value="">Pallet</option>
-                                                <option value="">Pallet</option>
-                                                <option value="">Pallet</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_check">
-                                            <label for="exampleInputEmail1" class="field_label">Total Weight
-                                                (lbs)</label>
-                                            <input type="text" class="form-control" aria-describedby="emailHelp">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_footer">
-                        <a class="secondary_btn btn_link" href="home.html">Cancel</a>
-                        <a class="primary-btn btn_link" href="palletdetails.html">Next <svg width="20" height="20"
-                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.0247 4.94165L17.0831 9.99998L12.0247 15.0583" stroke="white"
-                                        stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M2.91666 10H16.9417" stroke="white" stroke-width="1.25"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg></a>
-                    </div>
-                </form>
-
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">12/28/23,10:12:10 AM</span></td>
+                                <td><span class="light_font"> Store</span></td>
+                                <td><span class="light_font">7100</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
+                                <td><span class="light_font">1/06/24,06:12:20 AM</span></td>
+                                <td><span class="light_font">Warehouse</span></td>
+                                <td><span class="light_font">4850</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">12/28/23,10:12:10 AM</span></td>
+                                <td><span class="light_font"> Store</span></td>
+                                <td><span class="light_font">7100</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
+                                <td><span class="light_font">12/20/23,08:15:14 AM</span></td>
+                                <td><span class="light_font"> Warehouse</span></td>
+                                <td><span class="light_font">6400</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">11/30/23,09:02:30 AM</span></td>
+                                <td><span class="light_font"> Store</span></td>
+                                <td><span class="light_font">5880</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="danger">Declined</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHXD</span></td>
+                                <td><span class="light_font">11/24/23,01:08:22 PM</span></td>
+                                <td><span class="light_font"> Warehouse</span></td>
+                                <td><span class="light_font">5600</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">11/17/23,04:12:24 PM</span></td>
+                                <td><span class="light_font"> Warehouse</span></td>
+                                <td><span class="light_font">6500</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">10/14/23,09:20:14 AM</span></td>
+                                <td><span class="light_font"> Store</span></td>
+                                <td><span class="light_font">8500</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">09/11/23,12:12:05 PM</span></td>
+                                <td><span class="light_font"> Store</span></td>
+                                <td><span class="light_font">4850</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">1/09/24,08:36:14 AM</span></td>
+                                <td><span class="light_font"> Store</span></td>
+                                <td><span class="light_font">6120</span></td>
+                                <td><span class="light_font">52</span></td>
+                                <td><span class="pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
         <!-- right bar end -->
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/datatables.min.js"></script>

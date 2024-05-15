@@ -7,9 +7,10 @@
     min-height: 100vh;
     overflow: auto;
     @media (min-width: 768px) {
-    position: fixed;
-    top: 0;
-    left: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        scrollbar-gutter: stable both-edges;
     }
     @media (max-width: 767px) {
         min-width: inherit;
@@ -234,7 +235,7 @@
                             color: $color232D35;
                             margin-left: 12px;
                             margin-top: 4px;
-
+                            white-space: nowrap;
                             &.designation {
                                 font-family: 'Mont';
                                 font-size: 12px;

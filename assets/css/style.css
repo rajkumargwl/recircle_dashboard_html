@@ -652,7 +652,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fff;
 }
 
 /* Handle */
@@ -679,6 +679,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: fixed;
     top: 0;
     left: 0;
+    scrollbar-gutter: stable both-edges;
   }
 }
 @media (max-width: 767px) {
@@ -869,6 +870,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #232D35;
   margin-left: 12px;
   margin-top: 4px;
+  white-space: nowrap;
 }
 .left_bar .sidebar .sidebar_menu ul li a span.designation {
   font-family: "Mont";
@@ -941,7 +943,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #DBDDDD !important;
   text-align: left !important;
   border: none !important;
-  min-width: 170px;
 }
 .data_table table tbody tr:nth-child(even) {
   background-color: #FAFAFA !important;
@@ -971,7 +972,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: left !important;
   box-shadow: none !important;
   border: none !important;
-  min-width: 170px;
 }
 .data_table table tbody tr td.add_plus {
   text-align: right !important;
@@ -1415,7 +1415,7 @@ div.dt-container .dt-paging .dt-paging-button {
   }
 }
 .right_bar .right_header {
-  z-index: 1;
+  z-index: 999;
   padding: 0px 24px;
   height: 80px;
   background-color: #fff;
@@ -3840,6 +3840,11 @@ a.add_new_item svg {
   max-width: 735px;
   width: 100%;
 }
+@media (max-width: 991px) {
+  .upload_file {
+    max-width: 100%;
+  }
+}
 .upload_file .form-control-file {
   position: relative;
   max-width: 735px;
@@ -3880,11 +3885,18 @@ a.add_new_item svg {
   max-width: 272px;
   z-index: 1;
 }
+@media (max-width: 991px) {
+  .upload_file .upload_items {
+    transform: translate(52%, 0%);
+    left: 0;
+  }
+}
 @media (max-width: 767px) {
   .upload_file .upload_items {
     left: 20px;
     right: 20px;
     max-width: 100%;
+    transform: none;
   }
 }
 .upload_file .upload_items P {

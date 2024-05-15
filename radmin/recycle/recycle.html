@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recircled</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.min.css">
+    <link rel="stylesheet" href="../../assets/css/datatables.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- left bar start -->
+
+        <section class="left_bar">
+            <div class="overlay_mobile"></div>
+            <div class="sidebar-main">
+                <div class="mobile_menu">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line three"></div>
+                </div>
+                <div class="sidebar">
+
+                    <div class="header_logo">
+                        <a href="recycle.html">
+                            <img src="../../assets/images/recircle_logo.png" alt="logo">
+                        </a>
+                        <button type="button" class="cancel_icon" data-bs-dismiss="offcanvas" aria-label="Close"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M18 6L6 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 6L18 18" stroke="#232D35" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="sidebar_menu">
+
+
+                        <ul>
+                            <li><a href="../dashboard/dashboard.html" class="active"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.16675 8.33329H5.83341C7.50008 8.33329 8.33341 7.49996 8.33341 5.83329V4.16663C8.33341 2.49996 7.50008 1.66663 5.83341 1.66663H4.16675C2.50008 1.66663 1.66675 2.49996 1.66675 4.16663V5.83329C1.66675 7.49996 2.50008 8.33329 4.16675 8.33329Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.1667 8.33329H15.8334C17.5001 8.33329 18.3334 7.49996 18.3334 5.83329V4.16663C18.3334 2.49996 17.5001 1.66663 15.8334 1.66663H14.1667C12.5001 1.66663 11.6667 2.49996 11.6667 4.16663V5.83329C11.6667 7.49996 12.5001 8.33329 14.1667 8.33329Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.1667 18.3333H15.8334C17.5001 18.3333 18.3334 17.5 18.3334 15.8333V14.1666C18.3334 12.5 17.5001 11.6666 15.8334 11.6666H14.1667C12.5001 11.6666 11.6667 12.5 11.6667 14.1666V15.8333C11.6667 17.5 12.5001 18.3333 14.1667 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M4.16675 18.3333H5.83341C7.50008 18.3333 8.33341 17.5 8.33341 15.8333V14.1666C8.33341 12.5 7.50008 11.6666 5.83341 11.6666H4.16675C2.50008 11.6666 1.66675 12.5 1.66675 14.1666V15.8333C1.66675 17.5 2.50008 18.3333 4.16675 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg><span>Dashboard</span></a></li>
+                            <li ><a href="../takebake/home.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.50008 18.3333H12.5001C16.6667 18.3333 18.3334 16.6666 18.3334 12.5V7.49996C18.3334 3.33329 16.6667 1.66663 12.5001 1.66663H7.50008C3.33341 1.66663 1.66675 3.33329 1.66675 7.49996V12.5C1.66675 16.6666 3.33341 18.3333 7.50008 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M7.49992 12.8167H11.5999C13.0166 12.8167 14.1666 11.6667 14.1666 10.25C14.1666 8.83335 13.0166 7.68335 11.5999 7.68335H5.95825"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.14158 8.97497L5.83325 7.65831L7.14158 6.34998" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Takeback</span></a></li>
+                            <li><a href="../sorting/sorting.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.6416 6.19995L9.99994 10.4583L17.3083 6.22495" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10 18.0083V10.45" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.27503 2.0667L3.82503 4.53336C2.8167 5.0917 1.9917 6.4917 1.9917 7.6417V12.35C1.9917 13.5 2.8167 14.9 3.82503 15.4584L8.27503 17.9334C9.22503 18.4584 10.7834 18.4584 11.7334 17.9334L16.1834 15.4584C17.1917 14.9 18.0167 13.5 18.0167 12.35V7.6417C18.0167 6.4917 17.1917 5.0917 16.1834 4.53336L11.7334 2.05836C10.775 1.53336 9.22503 1.53336 8.27503 2.0667Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Sorting</span></a></li>
+                            <li class="active"><a href="recycle.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6023 18.3334 9.99996C18.3334 5.39759 14.6025 1.66663 10.0001 1.66663C5.39771 1.66663 1.66675 5.39759 1.66675 9.99996C1.66675 14.6023 5.39771 18.3333 10.0001 18.3333Z"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.67505 12.0917C6.82505 12.3417 7.00838 12.5751 7.21671 12.7834C8.75004 14.3167 11.2417 14.3167 12.7834 12.7834C13.4084 12.1584 13.7667 11.3667 13.8834 10.5583"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M6.1167 9.44169C6.23337 8.62502 6.59171 7.84165 7.21671 7.21665C8.75004 5.68332 11.2417 5.68332 12.7834 7.21665C13 7.43332 13.175 7.66666 13.325 7.90833"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.5166 14.3167V12.0917H8.74159" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.4833 5.68335V7.90834H11.2583" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Recycle</span></a></li>
+                            <li><a href="../resale/resale.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.66675 1.66663H3.11675C4.01675 1.66663 4.72508 2.44163 4.65008 3.33329L3.95841 11.6333C3.84175 12.9916 4.91674 14.1583 6.28341 14.1583H15.1584C16.3584 14.1583 17.4084 13.175 17.5001 11.9833L17.9501 5.7333C18.0501 4.34996 17.0001 3.22496 15.6084 3.22496H4.85009"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 6.66663H17.5" stroke="#7E8992" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Resale</span></a></li>
+                            <li class="user_name"><a href="#"><span class="avatar">J</span>
+                                    <p><span>Jeannie Sporer</span>
+                                        <span class="designation"> Operator</span>
+                                    </p>
+                                </a></li>
+                            <li><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0166 1.66663C6.94992 1.66663 4.46658 4.14996 4.46658 7.21663V8.96663C4.46658 9.53329 4.23325 10.3833 3.94158 10.8666L2.88325 12.6333C2.23325 13.725 2.68325 14.9416 3.88325 15.3416C7.86658 16.6666 12.1749 16.6666 16.1582 15.3416C17.2832 14.9666 17.7666 13.65 17.1582 12.6333L16.0999 10.8666C15.8082 10.3833 15.5749 9.52496 15.5749 8.96663V7.21663C15.5666 4.16663 13.0666 1.66663 10.0166 1.66663Z"
+                                            stroke="#7E8992" stroke-miterlimit="10" stroke-linecap="round" />
+                                        <path
+                                            d="M12.7751 15.6833C12.7751 17.2083 11.5251 18.4583 10.0001 18.4583C9.24176 18.4583 8.54176 18.1417 8.04176 17.6417C7.54176 17.1417 7.2251 16.4417 7.2251 15.6833"
+                                            stroke="#7E8992" stroke-miterlimit="10" />
+                                    </svg><span>Notification</span><span class="notification_count">07</span></a></li>
+                            <li><a href="../login.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.5833 6.29995C12.3249 3.29995 10.7833 2.07495 7.40825 2.07495H7.29992C3.57492 2.07495 2.08325 3.56662 2.08325 7.29162V12.725C2.08325 16.45 3.57492 17.9416 7.29992 17.9416H7.40825C10.7583 17.9416 12.2999 16.7333 12.5749 13.7833"
+                                            stroke="#7E8992" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.50006 10H16.9834" stroke="#7E8992" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15.1251 7.20837L17.9167 10L15.1251 12.7917" stroke="#7E8992"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- right bar end -->
+        <!-- right bar start -->
+        <section class="right_bar">
+            <div class="right_header">
+                <div class="header_logo mobile_logo">
+                    <a href="recycle.html">
+                        <img src="../../assets/images/recircle_logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="process_name">
+                    <h1 class="main_title">Recycle</h1>
+                </div>
+                <div class="right-items">
+                    <div class="header_item">
+                        <select name="H & M" id="">
+                            <option value="">H & M</option>
+                            <option value="">H & M</option>
+                            <option value="">H & M</option>
+                        </select>
+                    </div>
+                    <div class="header_item">
+
+                        <div class="form-group has-search">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.66659 14C11.1644 14 13.9999 11.1645 13.9999 7.66671C13.9999 4.1689 11.1644 1.33337 7.66659 1.33337C4.16878 1.33337 1.33325 4.1689 1.33325 7.66671C1.33325 11.1645 4.16878 14 7.66659 14Z"
+                                    stroke="#232D35" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6666 14.6667L13.3333 13.3334" stroke="#232D35" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="header_item filter">
+                        <a href="#" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.99992 14.6667H9.99992C13.3333 14.6667 14.6666 13.3334 14.6666 10V6.00004C14.6666 2.66671 13.3333 1.33337 9.99992 1.33337H5.99992C2.66659 1.33337 1.33325 2.66671 1.33325 6.00004V10C1.33325 13.3334 2.66659 14.6667 5.99992 14.6667Z"
+                                    stroke="#365236" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.3799 12.3333V9.73328" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.3799 4.96663V3.66663" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M10.3801 8.43334C11.3374 8.43334 12.1134 7.6573 12.1134 6.70001C12.1134 5.74271 11.3374 4.96667 10.3801 4.96667C9.42277 4.96667 8.64673 5.74271 8.64673 6.70001C8.64673 7.6573 9.42277 8.43334 10.3801 8.43334Z"
+                                    stroke="#365236" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M5.62012 12.3333V11.0333" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.62012 6.26663V3.66663" stroke="#365236" stroke-width="1.25"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M5.62005 11.0333C6.57735 11.0333 7.35338 10.2573 7.35338 9.29998C7.35338 8.34269 6.57735 7.56665 5.62005 7.56665C4.66276 7.56665 3.88672 8.34269 3.88672 9.29998C3.88672 10.2573 4.66276 11.0333 5.62005 11.0333Z"
+                                    stroke="#365236" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg><span>Filter</span></a>
+                        <div class="filter_modal">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                        aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Filter</h5>
+                                            <button type="button" class="btn_close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M12 4L4 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4 4L12 12" stroke="#232D35" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="item">
+                                                <label for="" class="field_label">Recycle Type</label>
+                                                <select>
+                                                    <option value="">All</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="item">
+                                                <label for="" class="field_label">Manager Approval</label>
+                                                <select>
+                                                    <option value="">All</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas_footer">
+                                            <a class="primary-btn btn_link" data-bs-dismiss="offcanvas"
+                                                    href="#">Apply Filters</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="middle_bar">
+                <div class="data_table">
+                    <table cellspacing="0" cellpadding="10" id="dash-table" class="table  table-striped dataTable">
+                        <thead>
+                            <tr>
+                                <th>Shipment ID</th>
+                                <th>Product Quantity</th>
+                                <th>Total Weight (LBS)</th>
+                                <th>Disassembled Weight (lbs)</th>
+                                <th>Difference Weight (LBS)</th>
+                                <th>Status</th>
+                                <th>Manager Approval</th>
+                                <th></th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">75,000</span></td>
+                                <td><span class="light_font">5660</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0% DIsassembled</span></td>
+                                <td>-</td>
+                                <td><a href="recycle-shipment-pull.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">75,000</span></td>
+                                <td><span class="light_font">5660</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0% DIsassembled</span></td>
+                                <td>-</td>
+                                <td><a href="recycle-shipment-pull.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">75,000</span></td>
+                                <td><span class="light_font">5660</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0% DIsassembled</span></td>
+                                <td>-</td>
+                                <td><a href="recycle-shipment-pull.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">75,000</span></td>
+                                <td><span class="light_font">5660</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0% DIsassembled</span></td>
+                                <td>-</td>
+                                <td><a href="recycle-shipment-pull.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">75,000</span></td>
+                                <td><span class="light_font">5660</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0% DIsassembled</span></td>
+                                <td>-</td>
+                                <td><a href="recycle-shipment-pull.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><span class="dark_font">TB58KJHR12JHBG</span></td>
+                                <td><span class="light_font">75,000</span></td>
+                                <td><span class="light_font">5660</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0</span></td>
+                                <td><span class="light_font">0% DIsassembled</span></td>
+                                <td>-</td>
+                                <td><a href="recycle-shipment-pull.html" class="open_data" ><span class="success_font">Open</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45499 9.96004L7.71499 6.70004C8.09999 6.31504 8.09999 5.68504 7.71499 5.30004L4.45499 2.04004"
+                                            stroke="#3B5A71" stroke-width="1.25" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></a>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- right bar end -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/datatables.min.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+</body>
+
+</html>
