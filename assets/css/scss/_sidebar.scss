@@ -10,7 +10,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        scrollbar-gutter: stable both-edges;
+        // scrollbar-gutter: stable both-edges;
     }
     @media (max-width: 767px) {
         min-width: inherit;
