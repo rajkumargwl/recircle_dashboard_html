@@ -499,7 +499,9 @@
                 &.open_box_content {
                     max-width: 528px;
                     min-width: 528px;
-
+                    .primary-btn{
+                        white-space: nowrap;
+                    }
                     select {
                         height: 36px;
                     }

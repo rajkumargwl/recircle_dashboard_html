@@ -2740,6 +2740,9 @@ a.add_new_item svg {
   max-width: 528px;
   min-width: 528px;
 }
+.modal_main.modal_fields .modal-dialog .modal-content.open_box_content .primary-btn {
+  white-space: nowrap;
+}
 .modal_main.modal_fields .modal-dialog .modal-content.open_box_content select {
   height: 36px;
 }
