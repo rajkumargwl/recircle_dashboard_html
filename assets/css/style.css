@@ -3347,6 +3347,10 @@ a.add_new_item svg {
 .tabs_section .tabs_number li.active-in a {
   border-color: #597559;
 }
+.tabs_section .tabs_number li.active-in span {
+  color: #232D35;
+  font-weight: 700;
+}
 .tabs_section .tabs_number li span {
   color: #7E8992;
   font-family: "Mont";
