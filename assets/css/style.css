@@ -3459,10 +3459,13 @@ a.add_new_item svg {
   display: none;
 }
 .tabs_section .shipment_items .item_img svg path {
-  stroke: #365236;
+  stroke: #444547;
 }
 .tabs_section .shipment_items.show {
   border: 1px solid #597559;
+}
+.tabs_section .shipment_items.show .item_img svg path {
+  stroke: #365236;
 }
 .tabs_section .shipment_items.upload_photo_process .item-main .right_items .target_block .check_fileds {
   display: flex;

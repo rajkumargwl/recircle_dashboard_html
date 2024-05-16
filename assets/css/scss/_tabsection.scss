@@ -216,7 +216,7 @@
         .item_img {
             svg {
                 path {
-                    stroke: $color365236;
+                    stroke: $color444547;
                 }
 
             }
@@ -224,7 +224,14 @@
 
         &.show {
             border: 1px solid $color597559;
-
+            .item_img {
+                svg {
+                    path {
+                        stroke: $color365236;
+                    }
+    
+                }
+            }
         }
 
         &.upload_photo_process {
